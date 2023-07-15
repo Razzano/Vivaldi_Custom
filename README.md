@@ -1,4 +1,4 @@
-Direct download: https://github.com/srazzano/Vivaldi_Custom/raw/main/vivaldi-custom.zip
+Direct download: https://github.com/Razzano/Vivaldi_Custom/raw/main/vivaldi-custom.zip
 
 Un-zip vivaldi-custom.zip into newly created folder (recommended) or use existing folder, but the files need to remain together. DO NOT rename the files. Click the installed vivaldi-custom.bat file to load created files into browser app. Follow the simple instructions in the How-To.txt and Install.txt files.
 
