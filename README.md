@@ -17,4 +17,4 @@ Description:
 12. Reposition Options Menu to Top Left, Top Ceneter, Top Right, Centered [ <img src="https://github.com/srazzano/Images/blob/master/position.png"/> ]
 13. Refer to How-To.txt and Install.txt files for full instructions.
 
-<img src="https://github.com/Razzano/Images/blob/master/OptionsMenu.png"/>
+<img src="https://github.com/Razzano/Images/blob/master/VivaldiCustom.png"/>
