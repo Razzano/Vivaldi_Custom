@@ -16,5 +16,6 @@ Description:
 11. Rearranges footer, .bookmark-bar and .mainbar toolbars to desired positions.
 12. Reposition Options Menu to Top Left, Top Ceneter, Top Right, Centered [ <img src="https://github.com/srazzano/Images/blob/master/position.png"/> ]
 13. Refer to How-To.txt and Install.txt files for full instructions.
+14. Options Menu item discriptions are displayed in tooltip for each.
 
 <img src="https://github.com/Razzano/Images/blob/master/VivaldiCustom.png"/>
