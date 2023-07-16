@@ -1,6 +1,6 @@
 Direct download: https://github.com/Razzano/Vivaldi_Custom/raw/main/vivaldi-custom.zip
 
-Un-zip vivaldi-custom.zip into newly created folder (recommended) or use existing folder, but the files need to remain together. DO NOT rename the files. First edit 3rd line in Install.bat file by replacing $username="Sonny" with your user profile name in between the quotes. Click the installed Install.bat file to load created files into browser app. Follow the simple instructions in the How-To.txt and Install.txt files.
+Un-zip vivaldi-custom.zip into newly created folder (recommended) or use existing folder, but the files need to remain together. DO NOT rename the files. Click the installed Install.bat file to load created files into browser app. Follow the simple instructions in the How-To.txt and Install.txt files.
 
 Description:
 1. Installs a bat file (Install.bat) to auto-insert edits/changes made to js and css files into Vivaldi Browser App.
