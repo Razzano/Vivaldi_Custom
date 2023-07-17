@@ -17,7 +17,7 @@ Try {
   del $dstdir\style\*.png
   del $dstdir\style\*.txt
   del $dstdir\style\vivaldi-custom.css
-  Xcopy $srcdir\browser.html $dstdir
+  Copy $srcdir\browser.html $dstdir
   write-host "Done"
 } Catch {
   write-host "Error: " $_
