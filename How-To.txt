@@ -1,0 +1,9 @@
+To add the "Inspect" context-menuitem to the drop down list:
+
+ --flag-switches-begin --debug-packed-apps --silent-debugger-extension-api --flag-switches-end
+
+(1) Copy line above, including leading space. Right-click on Vivaldi browser icon on Desktop > Properties > and paste text into the "Target" textbox at the end, after \vivaldi.exe, ensuring there is a space between the .exe and the pasted text. Example: C:\Users\YOUR USERNAME\AppData\Local\Vivaldi\Application\vivaldi.exe --flag-switches-begin --debug-packed-apps --silent-debugger-extension-api --flag-switches-end
+
+Or:
+
+(2) Type vivaldi://flags into urlbar > Enter > Seach for "Debugging for packed apps" entry and set to Enabled.
