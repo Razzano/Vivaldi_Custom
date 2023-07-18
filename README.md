@@ -19,6 +19,6 @@ Description:
 14. Options Menu item discriptions are displayed in tooltip for each.
 
 NOTE:<br>
-If Vivaldi App install path is NOT your user profile folder or C:\Program Files folder, the Install.bat and Uninstall.bat files need to be edited.
+If Vivaldi App install path is NOT your Users folder or C:\Program Files folder, the Install.bat and Uninstall.bat files need to be edited.
 
 <img src="https://github.com/Razzano/Images/blob/master/VivaldiCustom.png"/>
