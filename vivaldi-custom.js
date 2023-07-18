@@ -14,7 +14,7 @@
         optionsCloseTooltip = 'Closes options menu',
         optionsMenuTooltip = 'Open/Close Options Menu',
         optionsMenuPositionTooltip = 'Repositions menu: Top Left - Top Center - Top Right - Centered',
-		calendarTooltip = 'Left click to reset Calendar',
+	calendarTooltip = 'Mouseover to reset Calendar',
         label1Tooltip = 'Replaces bookmark folders wtih custom icon',
         span1Text = 'Bookmark Folder Custom Icon',
         label3Tooltip = 'Calendar Before Clock',
@@ -29,7 +29,7 @@
         span6Text = 'Tab Close Button Expanded',
         label7Tooltip = 'Moves clicked/active tab to first position in tabbar',
         span7Text = 'Tab Active Moves To First Position',
-		label9Tooltip = 'Show/Hide Workspaces Menu Button In Tabbar',
+	label9Tooltip = 'Show/Hide Workspaces Menu Button In Tabbar',
         span9Text = 'Workspaces Menu Button In Tabbar',
         span10aTooltip = 'Increase time to acquire site favicon before sending to urlbar',
         span10bTooltip = 'Increase time for toolbars to properly load after exiting fullscreen mode',
@@ -46,22 +46,22 @@
         hyphen = '-',
         slash = '/',
         space = ' ',
-		star = '\u2606',
+	star = '\u2606',
         dayNameAbbr = 'Sun.,Mon.,Tue.,Wed.,Thu.,Fri.,Sat.',
-		dayabbr = dayNameAbbr.split(','),
+	dayabbr = dayNameAbbr.split(','),
         dayNameLong = 'Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday',
-		daylong = dayNameLong.split(','),
+	daylong = dayNameLong.split(','),
         monthNameAbbr = 'Jan.,Feb.,Mar.,Apr.,May,Jun.,Jul.,Aug.,Sep.,Oct.,Nov.,Dec.',
-		monthname = monthNameAbbr.split(','),
+	monthname = monthNameAbbr.split(','),
         monthNameLong = 'January,February,March,April,May,June,July,August,September,October,November,December',
         monthlong = monthNameLong.split(','),
-		monthNo = '1,2,3,4,5,6,7,8,9,10,11,12',
+	monthNo = '1,2,3,4,5,6,7,8,9,10,11,12',
         monthno = monthNo.split(','),
-		monthNum = '01,02,03,04,05,06,07,08,09,10,11,12',
+	monthNum = '01,02,03,04,05,06,07,08,09,10,11,12',
         monthnum = monthNum.split(','),
         dayNo = '"",1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31',
-		dayno = dayNo.split(','),
-		dayNum = '"",01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31',
+	dayno = dayNo.split(','),
+	dayNum = '"",01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31',
         daynum = dayNum.split(','),
         dayOrd = '"",1st,2nd,3rd,4th,5th,6th,7th,8th,9th,10th,11th,12th,13th,14th,15th,16th,17th,18th,19th,20th,21st,22nd,23rd,24th,25th,26th,27th,28th,29th,30th,31st',
         dayord = dayOrd.split(',');
@@ -77,7 +77,7 @@
       positionOptionsMenu,
       resizeDelay,
       showCalendar,
-	  showWorkspaces,
+      showWorkspaces,
       toolbarList;
 
   function $c(type, props, evls) {
@@ -107,7 +107,7 @@
 
   function initialize() {
     let browser = $q('#browser'),
-	    workspace = $q('div.button-toolbar.tabbar-workspace-button > button.ToolbarButton-Button > span.button-title');
+	workspace = $q('div.button-toolbar.tabbar-workspace-button > button.ToolbarButton-Button > span.button-title');
     try {
       chrome.storage.local.get(['closeButtonKey'], result => {
         closeButton = result.closeButtonKey;
@@ -166,7 +166,7 @@
         toolbarList = result.toolbarListKey;
         if (toolbarList) getToolbarList(toolbarList);
       });
-	  workspace.innerHTML = '';
+      workspace.innerHTML = '';
       getCalendarHolder();
       optionsMenu();
       removeDupes('aCal');
@@ -181,11 +181,11 @@
         yr = date.getFullYear(),
         w = dayabbr[dy], // Mon.
         ww = daylong[dy], // Monday
-		m = monthno[mth], // 1
-		mm = monthnum[mth], // 01
-		mmm = monthname[mth], // Jan.
+	m = monthno[mth], // 1
+	mm = monthnum[mth], // 01
+	mmm = monthname[mth], // Jan.
         mmmm = monthlong[mth], // January
-		d = dayno[dt], // 1
+	d = dayno[dt], // 1
         dd = daynum[dt], // 01
         ddd = dayord[dt], // 1st
         yy = yr - 2000, // 23
@@ -233,7 +233,7 @@
   function getCalendarFormat() {
     let inp3 = $q('#input3'),
         cal = $q('#calendar'),
-		span3 = $q('#span3b');
+	span3 = $q('#span3b');
     if (!showCalendar) return;
 	if (calendarFormat === '1') calendarFormat = '2';
 	else if (calendarFormat === '2') calendarFormat = '3';
@@ -246,16 +246,16 @@
   }
 
   function getCalendarHolder() {
-    let cal = $c('button', {id: 'calendar', className: 'aCal', title: calendarTooltip}, [{type: 'click', fn: function () {getCalendarText()}}]),
+    let cal = $c('button', {id: 'calendar', className: 'aCal', title: calendarTooltip}, [{type: 'mouseover', fn: function () {getCalendarText()}}]),
         clk = $q('.ClockButton');
-	cal.textContent = aCalendar(calendarFormat);
+    cal.textContent = aCalendar(calendarFormat);
     clk.insertBefore(cal, clk.firstChild);
     removeDupes('aCal');
   }
 
   function getCalendarText() {
     let cal = $q('#calendar');
-	cal.textContent = aCalendar(calendarFormat);
+    cal.textContent = aCalendar(calendarFormat);
   }
   
   function getCurrentTab() {
@@ -510,7 +510,7 @@
       $q('div#options-menu #input1').checked = folderImage;
       $q('div#options-menu #input3').checked = showCalendar;
       $q('div#options-menu #input4').checked = homeRestart;
-	  $q('div#options-menu #input9').checked = showWorkspaces;
+      $q('div#options-menu #input9').checked = showWorkspaces;
       $q('div#options-menu #input5').checked = favInUrl;
       $q('div#options-menu #input6').checked = closeButton;
       $q('div#options-menu #input7').checked = moveActiveTab;
@@ -563,8 +563,8 @@
         homeRestart = el.checked;
         chrome.storage.local.set({homeRestartKey: homeRestart});
         homeToRestart(homeRestart);
-       break;
-	  case 'input9':
+        break;
+      case 'input9':
         showWorkspaces = el.checked;
         chrome.storage.local.set({showWorkspacesKey: showWorkspaces});
         if (showWorkspaces) browser.setAttribute('show-workspaces', true);
@@ -590,12 +590,12 @@
         moveActiveTab = el.checked;
         chrome.storage.local.set({moveActiveTabKey: moveActiveTab});
         moveTab(moveActiveTab);
-       break;
+        break;
       case 'input10a':
         favInterval = el.value;
         chrome.storage.local.set({favIntervalKey: favInterval});
         break;
-     case 'input10b':
+      case 'input10b':
         resizeDelay = el.value;
         chrome.storage.local.set({resizeDelayKey: resizeDelay});
         break;
@@ -614,7 +614,7 @@
 
   function onOptionsMenuPosition(e) {
     let width = window.innerWidth,
-		height = window.innerHeight,
+	height = window.innerHeight,
         header = $q('#header'),
         headerHeight = header.clientHeight,
         inner = $q('.inner'),
@@ -646,9 +646,9 @@
       getCalendarHolder();
       chrome.storage.local.get(['resizeDelayKey'], result => { resizeDelay = result.resizeDelayKey; });
       if (browser.hasAttribute('options-menu')) browser.removeAttribute('options-menu');
-	  optionsMenu();
-	  removeDupes('options-menu-popup');
-	  getToolbarList(toolbarList);
+      optionsMenu();
+      removeDupes('options-menu-popup');
+      getToolbarList(toolbarList);
     } catch(ex) {}
   }
 
@@ -678,7 +678,7 @@
         break;
     }
     toolbarList = inp11.value;
-	getToolbarList(toolbarList);
+    getToolbarList(toolbarList);
     chrome.storage.local.set({toolbarListKey: toolbarList});
   }
 
@@ -743,8 +743,7 @@
 
   chrome.tabs.onActivated.addListener(e => moveTabPosition(e));
 
-  chrome.tabs.onHighlighted.addListener((tabId, changeInfo, tab) =>
-    getCurrentTab());
+  chrome.tabs.onHighlighted.addListener((tabId, changeInfo, tab) => getCurrentTab());
 
   chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
     if (tab.status === 'complete') {
@@ -775,7 +774,7 @@
     chrome.storage.local.get(['showCalendarKey'], result => {
       showCalendar = result.showCalendarKey;
     });
-	chrome.storage.local.get(['showWorkspacesKey'], result => {
+    chrome.storage.local.get(['showWorkspacesKey'], result => {
       showWorkspaces = result.showWorkspacesKey;
     });
     chrome.storage.local.get(['toolbarListKey'], result => {
@@ -803,7 +802,7 @@
     chrome.storage.local.set({positionOptionsMenuKey: positionOptionsMenu});
     chrome.storage.local.set({resizeDelayKey: resizeDelay});
     chrome.storage.local.set({showCalendarKey: showCalendar});
-	chrome.storage.local.set({showWorkspacesKey: showWorkspaces});
+    chrome.storage.local.set({showWorkspacesKey: showWorkspaces});
     chrome.storage.local.set({toolbarListKey: toolbarList});
     onClose();
   };
