@@ -4,7 +4,7 @@ Un-zip vivaldi-custom.zip into newly created folder (recommended) or use existin
 
 Description:
 1. Installs a bat file (Install.bat) to auto-insert edits/changes made to js and css files into Vivaldi Browser App.
-2. Installs a bat file (Delete.bat) to auto-remove all created files and restores app to default mode.
+2. Installs a bat file (Uninstall.bat) to auto-remove all created files and restores app to default mode.
 3. Creates js & css files for theming/functionality of browser ui.
 4. Creates button [ <img src="https://github.com/srazzano/Images/blob/master/options.png"/> ] in footer to display Options Menu with close button. Shows menu under header when activated.
 5. Option for larger tab close button.
