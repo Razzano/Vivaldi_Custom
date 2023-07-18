@@ -193,8 +193,8 @@
     switch (int) {
       case '1': return ww + space + bullet + space + mmmm + space + ddd + comma + space + yyyy; // Monday ? January 1st, 2023
       case '2': return w + space + bullet + space + mmm + space + d + comma + space + yyyy; // Mon. ? Jan. 1, 2023
-	  case '3': return ww + space + bullet + space + mm + slash + dd + slash + yyyy; // Monday ? 01/01/2023
-	  case '4': return w + space + bullet + space + mm + hyphen + dd + hyphen + yyyy; // Mon. ? 01-01-2023
+      case '3': return ww + space + bullet + space + mm + slash + dd + slash + yyyy; // Monday ? 01/01/2023
+      case '4': return w + space + bullet + space + mm + hyphen + dd + hyphen + yyyy; // Mon. ? 01-01-2023
   } }
 
   function customClose(e) {
@@ -235,10 +235,10 @@
         cal = $q('#calendar'),
 	span3 = $q('#span3b');
     if (!showCalendar) return;
-	if (calendarFormat === '1') calendarFormat = '2';
-	else if (calendarFormat === '2') calendarFormat = '3';
-	else if (calendarFormat === '3') calendarFormat = '4';
-	else calendarFormat = '1';
+    if (calendarFormat === '1') calendarFormat = '2';
+    else if (calendarFormat === '2') calendarFormat = '3';
+    else if (calendarFormat === '3') calendarFormat = '4';
+    else calendarFormat = '1';
     chrome.storage.local.set({calendarFormatKey: calendarFormat});
     inp3.value = calendarFormat;
 	span3.textContent = 'Format ' + calendarFormat;
