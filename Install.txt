@@ -1,7 +1,0 @@
-(1) Create a new folder and name it, for an example, Vivaldi Custom Install.
-(2) Unzip/Extract the contents of the zip file into the new folder.
-(3) Keep all files together in the new folder and do not rename any file.
-(4) Left-click on Install.bat file to auto install all files into Vivaldi App.
-(5) Whenever Vivaldi Browser updates, it will remove all change made. Necessary to go to new folder and left-click on Install.bat to reinstall files.
-(6) If any edits/changes to vivaldi-custom.css or vivaldi-custom.js files, in the new folder, Install.bat file needs to be left-clicked to add the changes.
-(7) Left-click on Uninstall.bat file to remove all created files and back to Vivaldi App default mode.
