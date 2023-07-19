@@ -17,7 +17,7 @@ Try {
   del $dstdir\style\*.png
   del $dstdir\style\*.txt
   del $dstdir\style\vivaldi-custom.css
-  write-host "Inserting origianl browser.html file"
+  write-host "Inserting original browser.html file"
   Copy $srcdir\browser.html $dstdir
   write-host "Done"
 } Catch {
