@@ -16,6 +16,7 @@ Try {
   $outhtml = @()
   $writeneeded = 0
   $break = 0
+  Copy $dstdir\browser.html $srcdir
   $html | Where-Object { $break -Eq 0 } | ForEach-Object {
     $line = $_
     if ($line.tolower().contains('<link rel="stylesheet" href="style/vivaldi-custom.css" />')) {
