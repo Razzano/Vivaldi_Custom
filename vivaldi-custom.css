@@ -196,6 +196,7 @@ div#app > div#browser div#titlebar > div.window-buttongroup > button:not(.window
 /* Header */
 div#app > div#browser > div#header {
   background-color: #2E2F37 !important;
+  min-height: 32px !important;
 }
 
 /* Main */
