@@ -219,9 +219,13 @@ div#app > div#browser.fullscreen div.tab-strip {
 }
 div#app > div#browser div.tab-strip {
   background-color: #111 !important;
+  border-left: 1px solid #999 !important;
   border-bottom: 1px solid #999 !important;
   border-right: 1px solid #999 !important;
   max-height: 30px !important;
+}
+div#app > div#browser div.tab-strip > span:first-of-type > div.tab-position {
+  margin-left: 3px !important;
 }
 div#app > div#browser div.tab {
   background-color: #111 !important;
@@ -229,15 +233,18 @@ div#app > div#browser div.tab {
   border-bottom: none !important;
   border-radius: 10px 10px 0 0 !important;
   margin-top: -1px !important;
+  padding-left: 3px !important;
 }
 div#app > div#browser div.tab.active {
   background-color: #2E2F37 !important;
   border-color: #999 !important;
   margin-bottom: -1px !important;
 }
+div#app > div#browser div.tab-position > div.tab span.title {
+  padding-left: 3px !important;
+}
 div#app > div#browser div.tab-position > div.tab.active.active span.title {
   color: yellow !important;
-  padding-left: 3px !important;
   text-shadow: 1px 1px 1px #000 !important;
 }
 div#app > div#browser div.tab:not(.active):hover {
@@ -604,4 +611,5 @@ button#options-button (
 #main > div.mainbar > div > div.UrlBar-AddressField.button-textonly.below > div.toolbar.toolbar-small.toolbar-insideinput > div.UrlBar-UrlObfuscationWarning > svg > path {
   fill: #FF0 !important;
 }
+
 
