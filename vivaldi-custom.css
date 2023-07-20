@@ -219,6 +219,8 @@ div#app > div#browser.fullscreen div.tab-strip {
 }
 div#app > div#browser div.tab-strip {
   background-color: #111 !important;
+  border-bottom: 1px solid #999 !important;
+  border-right: 1px solid #999 !important;
   max-height: 30px !important;
 }
 div#app > div#browser div.tab {
@@ -226,13 +228,16 @@ div#app > div#browser div.tab {
   border: 1px solid transparent !important;
   border-bottom: none !important;
   border-radius: 10px 10px 0 0 !important;
+  margin-top: -1px !important;
 }
 div#app > div#browser div.tab.active {
   background-color: #2E2F37 !important;
-  border-color: #555 !important;
+  border-color: #999 !important;
+  margin-bottom: -1px !important;
 }
 div#app > div#browser div.tab-position > div.tab.active.active span.title {
   color: yellow !important;
+  padding-left: 3px !important;
   text-shadow: 1px 1px 1px #000 !important;
 }
 div#app > div#browser div.tab:not(.active):hover {
@@ -274,6 +279,11 @@ div#app > div#browser button[title^="Show Closed Tabs"]:hover {
 div#app > div#browser div.tab > div > span.favicon.jstest-favicon-image {
   filter: none !important;
   margin: 0 2px !important;
+}
+div#app > div#browser div.tab > div > span.favicon.jstest-favicon-image > img[srcset*="https://tv.youtube.com"] {
+  background: url(/style/youtubetv.png) !important;
+  padding-left: 16px !important;
+  width: 0 !important;
 }
 
 /* Statusbar */
@@ -371,7 +381,7 @@ div#app > div#browser div.UrlBar-UrlFieldWrapper {
 }
 div#app > div#browser div.UrlBar-AddressField,
 div#app > div#browser div.UrlBar-SearchField.iconmenu-container.SearchField {
-  background-color: #1B1C24 !important;
+  background-color: #14151C !important;
   border: 1px solid #555 !important;
   height: 34px !important;
 }
@@ -565,9 +575,9 @@ div#app > div#browser button#restart-browser:hover {
 
 /* Close Button & Custom Close Button */
 div#app > div#browser div.tab-strip button.close {
-  height: 22px !important;
-  margin-top: -2px !important;
-  width: 22px !important;
+  height: 26px !important;
+  margin: -4px 0 0 -4px !important;
+  width: 26px !important;
 }
 div#app > div#browser[custom-close] div.tab-strip button.close {
   background: #CCC !important;
@@ -594,3 +604,4 @@ button#options-button (
 #main > div.mainbar > div > div.UrlBar-AddressField.button-textonly.below > div.toolbar.toolbar-small.toolbar-insideinput > div.UrlBar-UrlObfuscationWarning > svg > path {
   fill: #FF0 !important;
 }
+
