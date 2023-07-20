@@ -229,7 +229,7 @@ div#app > div#browser div.tab-strip > span:first-of-type > div.tab-position {
 }
 div#app > div#browser div.tab {
   background-color: #111 !important;
-  border: 1px solid transparent !important;
+  border: 1px solid #777 !important;
   border-bottom: none !important;
   border-radius: 10px 10px 0 0 !important;
   margin-top: -1px !important;
