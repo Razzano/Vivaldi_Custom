@@ -8,7 +8,7 @@ if ($vivpath.tolower().contains("appdata")) {
   $dstdir = split-path ((Get-ChildItem -path "C:\Program Files\Vivaldi\Application\" -recurse browser.html | Sort-Object -property CreationTime -descending | Select-Object -first 1).FullName)
 }
 
-Try {
+try {
   write-host "Destination directory: $dstdir"
   $encoding = (New-Object System.Text.UTF8Encoding($False))
   write-host "Checking browser.html"
@@ -16,38 +16,37 @@ Try {
   $outhtml = @()
   $writeneeded = 0
   $break = 0
-  Copy $dstdir\browser.html $srcdir
+  write-host "Writing _complete_.css and _complete_.js into vivaldi browser.html file"
   $html | Where-Object { $break -Eq 0 } | ForEach-Object {
     $line = $_
-    if ($line.tolower().contains('<link rel="stylesheet" href="style/vivaldi-custom.css" />')) {
+    if ($line.tolower().contains('<link rel="stylesheet" href="style/_complete_.css" />')) {
       $break = 1;
     } elseif ($line.tolower().contains('</head>')) {
       $writeneeded = 1
-      $outhtml += '    <link rel="stylesheet" href="style/vivaldi-custom.css" />'
+      $outhtml += '    <link rel="stylesheet" href="style/_complete_.css" />'
     }
-    if ($line.tolower().contains('<script src="vivaldi-custom.js">')) {
+    if ($line.tolower().contains('<script src="_complete_.js">')) {
        $break = 1;
     } elseif ($line.tolower().contains('</body>')) {
       $writeneeded = 1
-      $outhtml += '    <script src="vivaldi-custom.js"></script>'
+      $outhtml += '    <script src="_complete_.js"></script>'
     }
     $outhtml += $_
   }
   if ($writeneeded -eq 1) {
-    write-host "Writing to browser.html"
     [System.IO.File]::WriteAllLines( (join-path $dstdir "browser.html"), $outhtml, $encoding)
   } else {
-    write-host "The browser.html already includes references to vivaldi-custom.css and vivaldi-custom.js"
+    write-host "The vivaldi browser.html already includes references to _complete_.css and _complete_.js"
   }
-  write-host "Copying files"
-  Copy $srcdir\vivaldi-custom.js $dstdir
-  Copy $srcdir\vivaldi-custom.css $dstdir\style
-  Copy $srcdir\*.png $dstdir\style
-  Copy $srcdir\*.txt $dstdir\style
-  write-host "Done"
-} Catch {
+  write-host "Copying _complete_.js to vivaldi folder"
+  copy $srcdir\_complete_.js $dstdir
+  write-host "Copying _complete_.css, _*_.png files into style folder"
+  copy $srcdir\_*_.css $dstdir\style
+  copy $srcdir\_*_.png $dstdir\style
+  write-host "Copying Done"
+} catch {
   write-host "Error: " $_
 }
 
-Write-Host -NoNewLine "Press any key to continue..."
+write-host -NoNewLine "Press any key to continue..."
 $null = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
