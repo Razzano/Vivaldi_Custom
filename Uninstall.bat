@@ -8,22 +8,15 @@ if ($vivpath.tolower().contains("appdata")) {
   $dstdir = split-path ((Get-ChildItem -path "C:\Program Files\Vivaldi\Application\" -recurse browser.html | Sort-Object -property CreationTime -descending | Select-Object -first 1).FullName)
 }
 
-write-host "Destination directory: $dstdir"
-write-host "Deleting vivaldi-custom.js file from vivaldi folder"
-
-Try {
-  del $dstdir\vivaldi-custom.js
-  write-host "Deleting vivaldi-custom.css, png, and txt files from style folder"
-  del $dstdir\browser.html
-  del $dstdir\style\*.png
-  del $dstdir\style\*.txt
-  del $dstdir\style\vivaldi-custom.css
-  write-host "Inserting original browser.html file"
-  Copy $srcdir\browser.html $dstdir
-  write-host "Done"
-} Catch {
+try {
+  write-host "Destination directory: $dstdir"
+  write-host "Deleting all vivaldi-custom files from Vivaldi App"
+  del $dstdir\_complete_.js
+  del $dstdir\style\_*_.*
+  write-host "Deletes Done"
+} catch {
   write-host "Error: " $_
 }
 
-Write-Host -NoNewLine "Press any key to continue..."
+write-host -NoNewLine "Press any key to continue..."
 $null = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
