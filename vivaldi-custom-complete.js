@@ -3,11 +3,11 @@
   'use strict';
 
   const initializeDelay = 1000,
-        clearIcon = 'background: url(/style/_delete_.png) center no-repeat',
-        closeIcon = 'background: url(/style/_close_.png) center no-repeat',
-        optionsIcon = 'background: url(/style/_options_.png) center no-repeat',
-        positionIcon = 'background: url(/style/_position_.png) center no-repeat',
-        restartIcon = 'background: url(/style/_restart_.png) center no-repeat',
+        clearIcon = 'background: url(/style/complete/delete.png) center no-repeat',
+        closeIcon = 'background: url(/style/complete/close.png) center no-repeat',
+        optionsIcon = 'background: url(/style/complete/options.png) center no-repeat',
+        positionIcon = 'background: url(/style/complete/position.png) center no-repeat',
+        restartIcon = 'background: url(/style/complete/restart.png) center no-repeat',
         favIntervalText = 'Fav Interval',
         resizeDelayText = 'Resize Delay',
         homeAsRestartTooltip = 'Restart browser',
@@ -267,13 +267,13 @@
         return;
       }
       chrome.tabs.query({currentWindow: true, active: true}, tabs => {
-        if (tabs[0].title.match(/^Extensions$/)) img.src = '/style/_extensions_.png';
-        else if (tabs[0].title.match(/Settings$/)) img.src = '/style/_settings_.png';
-        else if (tabs[0].title.match(/^Start Page$/)) img.src = '/style/_star_.png';
-        else if (tabs[0].title.match(/^Installed Userscripts$/)) img.src = '/style/_tampermonkey16_.png';
-        else if (tabs[0].title.match(/^YouTube TV$/)) img.src = '/style/_youtubetv_.png';
-        else if (tabs[0].url.match(/https:\/\/www\.aarpmedicareplans/)) img.src = '/style/_united_.png';
-        else if (tabs[0].favIconUrl === '')  img.src = '/style/_page_.png';
+        if (tabs[0].title.match(/^Extensions$/)) img.src = '/style/complete/extensions.png';
+        else if (tabs[0].title.match(/Settings$/)) img.src = '/style/complete/setting.png';
+        else if (tabs[0].title.match(/^Start Page$/)) img.src = '/style/complete/star.png';
+        else if (tabs[0].title.match(/^Installed Userscripts$/)) img.src = '/style/complete/tampermonkey16.png';
+        else if (tabs[0].title.match(/^YouTube TV$/)) img.src = '/style/complete/youtubetv.png';
+        else if (tabs[0].url.match(/https:\/\/www\.aarpmedicareplans/)) img.src = '/style/complete/united.png';
+        else if (tabs[0].favIconUrl === '')  img.src = '/style/complete/page.png';
         else img.src = tabs[0].favIconUrl;
       });
     } catch(ex) {}
