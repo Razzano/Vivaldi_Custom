@@ -11,8 +11,10 @@ if ($vivpath.tolower().contains("appdata")) {
 try {
   write-host "Destination directory: $dstdir"
   write-host "Deleting all vivaldi-custom files from Vivaldi App"
-  del $dstdir\_complete_.js
-  del $dstdir\style\_*_.*
+  del $dstdir\vivaldi-custom-complete.js
+  write-host "Deleting all files from style\complete folder"
+  del $dstdir\style\complete\*.css
+  del $dstdir\style\complete\*.png
   write-host "Deletes Done"
 } catch {
   write-host "Error: " $_
