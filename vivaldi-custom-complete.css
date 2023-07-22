@@ -176,7 +176,7 @@ div#app > div#browser div#titlebar > button.vivaldi {
   margin-top: -3px !important;
 }
 div#app > div#browser div#titlebar > button.vivaldi svg {
-  background: url(/style/_vivaldi24_.png) !important;
+  background: url(/style/complete/vivaldi24.png) !important;
   height: 24px !important;
   padding-left: 24px !important;
   width: 0 !important;
@@ -265,7 +265,7 @@ div#app > div#browser div#tabs-tabbar-container div.toggle-trash > button {
   width: 33px !important;
 }
 div#app > div#browser div#tabs-tabbar-container div.toggle-trash > button svg {
-  background: url(/style/_trash_.png) center no-repeat !important;
+  background: url(/style/complete/trash.png) center no-repeat !important;
   height: 16px !important;
   padding-left: 16px !important;
   width: 0 !important;
@@ -286,14 +286,14 @@ div#app > div#browser div.tab > div > span.favicon.jstest-favicon-image {
   margin: 0 2px !important;
 }
 div#app > div#browser div.tab > div > span.favicon.jstest-favicon-image > img[srcset*="https://tv.youtube.com"] {
-  background: url(/style/_youtubetv_.png) !important;
+  background: url(/style/complete/youtubetv.png) !important;
   padding-left: 16px !important;
   width: 0 !important;
 }
 
 /* Statusbar */
 div#app > div#browser[options-menu] button#options-button > span > svg {
-  background: url(/style/_optionsOn_.png) !important;
+  background: url(/style/complete/optionsOn.png) !important;
   height: 16px !important;
   padding-left: 16px !important;
   width: 0 !important;
@@ -356,17 +356,17 @@ div#app > div#browser div.ClockButton > button:hover {
 
 /* Bookmarks-bar & Custom Folder */
 div#app > div#browser[custom-folder] button.folder > svg {
-  background: url(/style/_folder_.png) !important;
+  background: url(/style/complete/folder.png) !important;
   padding-left: 16px !important;
   width: 0 !important;
 }
 div#app > div#browser button[title="chrome://extensions/"] > img {
-  background: url(/style/_extensions_.png) !important;
+  background: url(/style/complete/extensions.png) !important;
   padding-left: 16px !important;
   width: 0 !important;
 }
 div#app > div#browser button[title*="tv.youtube"] > img {
-  background: url(/style/_youtubetv_.png) !important;
+  background: url(/style/complete/youtubetv.png) !important;
   padding-left: 16px !important;
   width: 0 !important;
 }
@@ -395,19 +395,19 @@ div#app > div#browser button.button-addressfield.SiteInfoButton {
   width: 22px !important;
 }
 div#app > div#browser button.button-addressfield.SiteInfoButton.secure svg {
-  background: url(/style/_lock1_.png) center no-repeat !important;
+  background: url(/style/complete/lock1.png) center no-repeat !important;
   height: 16px !important;
   padding-left: 16px !important;
   width: 0 !important;
 }
 div#app > div#browser button.button-addressfield.SiteInfoButton.certified svg {
-  background: url(/style/_lock3_.png) center no-repeat !important;
+  background: url(/style/complete/lock3.png) center no-repeat !important;
   height: 16px !important;
   padding-left: 18px !important;
   width: 0 !important;
 }
 div#app > div#browser button.button-addressfield.SiteInfoButton.warning svg {
-  background: url(/style/_warning_.png) center no-repeat !important;
+  background: url(/style/complete/warning.png) center no-repeat !important;
   height: 16px !important;
   padding-left: 18px !important;
   width: 0 !important;
@@ -424,7 +424,7 @@ div#app > div#browser div.button-toolbar.BookmarkButton-Button > button {
   padding: 2px !important;
 }
 div#app > div#browser div.button-toolbar.BookmarkButton-Button > button svg {
-  background: url(/style/_bookmark_.png) center no-repeat !important;
+  background: url(/style/complete/bookmark.png) center no-repeat !important;
   filter: grayscale(1) brightness(.5) !important;
   height: 16px !important;
   padding-left: 16px !important;
@@ -477,14 +477,14 @@ div#app > div#browser div.toolbar-extensions button > img {
 
 /* Footer */
 div#app > div#browser div.button-toolbar > button[title="Page Actions"] svg {
-  background: url(/style/_css_.png) center no-repeat !important;
+  background: url(/style/complete/css.png) center no-repeat !important;
   height: 16px !important;
   opacity: .6 !important;
   padding-left: 16px !important;
   width: 0 !important;
 }
 div#app > div#browser div.button-toolbar > button[title="Page Actions"].button-pressed svg {
-  background: url(/style/_cssOn_.png) center no-repeat !important;
+  background: url(/style/complete/cssOn.png) center no-repeat !important;
   height: 16px !important;
   opacity: .6 !important;
   padding-left: 16px !important;
