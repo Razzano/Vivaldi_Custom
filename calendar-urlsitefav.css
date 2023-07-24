@@ -1,0 +1,25 @@
+/# Calendar */
+div#app > div#browser img#calendar-image {
+  height: 16px !important;
+  margin: -3px 6px 0 0 !important;
+  position: relative !important;
+  top: -1px !important;
+  width: 16px !important;
+}
+div#app > div#browser span#calendar-span {
+  display: none !important;
+}
+div#app > div#browser[show-calendar] span#calendar-span {
+  display: flex !important;
+  margin-left: 4px !important;
+}
+
+/* Sitefav In Urlbar */
+div#app > div#browser[fav-in-url] img#favImg {
+  margin: -2px 0 0 3px !important;
+  max-height: 16px !important;
+  max-width: 16px !important;
+}
+div#app > div#browser[fav-in-url] div.UrlFragment-Wrapper {
+  margin-left: 20px !important;
+}
