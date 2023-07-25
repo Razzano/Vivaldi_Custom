@@ -1,6 +1,6 @@
 3 Mods listed: calendar-urlsitefav.zip, complete.zip and move-active-tab.zip. Each zip file contains 2 bat file, 1 js file, 1 css file and a how-to install text file. Also listed each zip file contents separately minus the how-to install text file..
 
-Un-zip whichever mod zip into newly created folder (recommended) or if insatlling more than 1 mod, create a sub-folder under newly created folder and give it the name of the mod and unizip the mod there, but the files need to remain together. DO NOT rename the files. Click the installed Install.bat file to load created files into Vivaldi browser app. Follow the simple instructions in the How-To.txt file.
+Un-zip whichever mod zip into newly created folder (recommended) and name it (for example) Vivaldi UI Mods and if insatlling more than 1 mod, create a sub-folder under newly created folder and give it the name of the mod and unzip the mod there, but the files need to remain together. DO NOT rename the files. Click the installed Install.bat file to load created files into Vivaldi browser app. Follow the simple instructions in the How-To.txt file.
 
 Description for complete mod:
 1. Installs a bat file (complete-Install.bat) to auto-insert edits/changes made to js and css files into Vivaldi Browser App.
