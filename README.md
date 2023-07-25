@@ -1,4 +1,4 @@
-3 Mods listed: calendar-urlsitefav.zip, complete.zip and move-active-tab.zip. Each zip file contains 2 bat file, 1 js file, 1 css file and a how-to install text file. Also listed each zip file contents separately.
+3 Mods listed: calendar-urlsitefav.zip, complete.zip and move-active-tab.zip. Each zip file contains 2 bat file, 1 js file, 1 css file and a how-to install text file. Also listed each zip file contents separately minus the how-to install text file..
 
 Un-zip whichever zip into newly created folder (recommended) or use existing folder, but the files need to remain together. DO NOT rename the files. Click the installed Install.bat file to load created files into Vivaldi browser app. Follow the simple instructions in the How-To.txt file.
 
