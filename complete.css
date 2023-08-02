@@ -1,5 +1,4 @@
 /* Options Menu */
-
 div#options-menu {
   background-color: #303030 !important;
   border: 1px solid #666 !important;
@@ -166,14 +165,211 @@ div#options-menu > span#span13 > button {
   margin: 0 4px !important;
 }
 
-/* Browser */
+/* Fav In Url */
+div#app > div#browser[fav-in-url] div.tab > div > span.favicon.jstest-favicon-image > img[srcset="chrome://favicon/chrome://extensions/"] {
+  background: url(/style/complete/extensions.png) !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser[fav-in-url] div.tab > div > span.favicon.jstest-favicon-image > img[srcset*="gmail.ico"] {
+  background: url(/style/complete/gmail.png) !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser[fav-in-url] div.tab > div > span.favicon.jstest-favicon-image > img[srcset*="https://tv.youtube.com"] {
+  background: url(/style/complete/youtubetv.png) !important;
+  height: 16px !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser[fav-in-url] div.tab > div > span.favicon.jstest-favicon-image > img[srcset*="https://www.lincoln.com"] {
+  background: url(/style/complete/lincoln.png) !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser[fav-in-url] div.tab > div > span.favicon.jstest-favicon-image > img[srcset*="tampermonkey"] {
+  background: url(/style/complete/tampermonkey16.png) !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser[fav-in-url] .transparent-tabbar .tab-position .tab.active .tab-header .favicon:not(.svg),
+div#app > div#browser[fav-in-url] .theme-dark .tab-position .tab.active .tab-header .favicon:not(.svg),
+div#app > div#browser[fav-in-url] .acc-dark.color-behind-tabs-off .tab-position .tab.active .tab-header .favicon:not(.svg) {
+  filter: none !important;
+}
 
+/* Statusbar */
+div#app > div#browser[options-menu] button#options-button > span > svg {
+  background: url(/style/complete/optionsOn.png) !important;
+  height: 16px !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser div.toolbar-statusbar {
+  float: right !important;
+  width: 100% !important;
+}
+
+/* Bookmarks & Custom Folders */
+div#app > div#browser[custom-folder] button.folder > svg:not(.sd) {
+  background: url(/style/complete/folder.png) !important;
+  height: 16px !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser[custom-folder] button.folder > svg.sd > g {
+  display: none !important;
+}
+div#app > div#browser[custom-folder] button.folder > svg.sd {
+  background: url(/style/complete/speeddial.png) !important;
+  height: 16px !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser button[title="chrome://extensions/"] > img {
+  background: url(/style/complete/extensions.png) !important;
+  height: 16px !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser button[title*="https://mail.google.com"] > img {
+  background: url(/style/complete/gmail.png) !important;
+  height: 16px !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser button[title*="settings.html"] > span > svg > path {
+  display: none !important;
+}
+div#app > div#browser button[title*="settings.html"] > span > svg {
+  background: url(/style/complete/settings.png) !important;
+  height: 16px !important;
+  width: 16px !important;
+}
+div#app > div#browser button[title*="tv.youtube"] > img {
+  background: url(/style/complete/youtubetv.png) !important;
+  height: 16px !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser[fav-in-url] button.button-addressfield.SiteInfoButton.secure svg {
+  background: url(/style/complete/lock1.png) center no-repeat !important;
+  height: 16px !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser[fav-in-url] button.button-addressfield.SiteInfoButton.certified svg {
+  background: url(/style/complete/lock3.png) center no-repeat !important;
+  height: 16px !important;
+  padding-left: 18px !important;
+  width: 0 !important;
+}
+div#app > div#browser[fav-in-url] button.button-addressfield.SiteInfoButton.warning svg {
+  background: url(/style/complete/warning.png) center no-repeat !important;
+  height: 16px !important;
+  padding-left: 18px !important;
+  width: 0 !important;
+}
+div#app > div#browser[fav-in-url] div.UrlBar div[title^="Caution!"],
+div#app > div#browser[fav-in-url] div.toolbar.toolbar-small.toolbar-insideinput {
+  margin-right: 3px !important;
+}
+div#app > div#browser[fav-in-url] div.button-toolbar.BookmarkButton-Button > button svg {
+  background: url(/style/complete/bookmark.png) center no-repeat !important;
+  filter: grayscale(1) brightness(.5) !important;
+  height: 16px !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser[fav-in-url] img#favImg {
+  margin: 1px 0 0 3px !important;
+  max-height: 16px !important;
+  max-width: 16px !important;
+}
+div#app > div#browser[fav-in-url] div.UrlFragment-Wrapper {
+  margin-left: 22px !important;
+}
+
+/* Footer */
+div#app > div#browser span#calendar {
+  display: none !important;
+}
+div#app > div#browser[show-calendar] span#calendar {
+  border: 1px solid transparent !important;
+  border-radius: 4px !important;
+  display: block !important;
+  flex: none !important;
+  padding: 5px 8px !important;
+  text-shadow: 1px 1px 2px #000 !important;
+}
+div#app > div#browser .tabbar-workspace-button > button {
+  display: none !important;
+  height: 28px !important;
+}
+div#app > div#browser[show-workspaces] .tabbar-workspace-button > button {
+  display: flex !important;
+  gap: 0 !important;
+}
+
+/* Buttons & Custom Buttons */
+div#app > div#browser button.ToolbarButton-Button.custom-button {
+  opacity: .6 !important;
+  width: 32px !important;
+}
+div#app > div#browser button#restart-browser,
+div#app > div#browser button#move-tab-button {
+  opacity: .7 !important;
+}
+div#app > div#browser button.ToolbarButton-Button.custom-button svg {
+  filter: invert(0%) !important;
+}
+div#app > div#browser button#restart-browser:hover,
+div#app > div#browser button#move-tab-button:hover,
+div#app > div#browser button.ToolbarButton-Button.custom-button:hover {
+  opacity: 1 !important;
+}
+div#app > div#browser button svg {
+  color: #AAA !important;
+}
+div#app > div#browser button:hover svg {
+  color: #FFF !important;
+  opacity: 1 !important;
+}
+div#app > div#browser button#restart-browser:hover {
+  background-color: #1A73E8 !important;
+  border: 1px solid transparent !important;
+}
+
+/* Close Button & Custom Close Button */
+div#app > div#browser[custom-close] div.tab > div > span.favicon.jstest-favicon-image {
+  filter: none !important;
+  margin: 0 2px !important;
+}
+div#app > div#browser[custom-close] div.tab-strip button.close {
+  height: 26px !important;
+  margin: -4px 0 0 -4px !important;
+  width: 26px !important;
+}
+div#app > div#browser[custom-close] div.tab-strip button.close {
+  background: #CCC !important;
+  border-radius: 50% !important;
+}
+div#app > div#browser[custom-close] div.tab-strip button.close svg {
+  color: #000 !important;
+}
+div#app > div#browser[custom-close] div.tab-strip button.close:hover {
+  background: #F00 !important;
+}
+div#app > div#browser[custom-close] div.tab-strip button.close:hover svg {
+  color: #FFF !important;
+}
+
+
+/* -------- Personalized Browser CSS -------- */
+/*
 div#app > div#browser {
   background-image: none !important;
 }
-
-/* Titlebar */
-
 div#app > div#browser div#titlebar > button.vivaldi {
   background-color: transparent !important;
   height: 32px !important;
@@ -192,26 +388,16 @@ div#app > div#browser div#titlebar > div.window-buttongroup > button:not(.window
   background-color: #111 !important;
   border-color: #666 !important;
 }
-
-/* Header */
-div#app > #browser.win:not(.fullscreen, .disable-titlebar) > #header {
+div#app > #browser.win:not(.fullscreen) > #header {
   background: #111 !important;
   min-height: 32px !important;
 }
-
-
-
-/* Main */
-
 div#app > div#browser > #main {
   background-color: #2E2F37 !important;
 }
 div#app > div#browser > #main > div.inner {
   border-top: 1px solid transparent !important;
 }
-
-/* Tabbar & Tabs */
-
 div#app > div#browser div#tabs-tabbar-container {
   background: #111 !important;
   padding: 0 !important;
@@ -288,58 +474,13 @@ div#app > div#browser button[title^="Show Closed Tabs"]:hover {
   background-color: #555 !important;
   opacity: 1 !important;
 }
-div#app > div#browser div.tab > div > span.favicon.jstest-favicon-image {
-  filter: none !important;
-  margin: 0 2px !important;
-}
-div#app > div#browser div.tab > div > span.favicon.jstest-favicon-image > img[srcset="chrome://favicon/chrome://extensions/"] {
-  background: url(/style/complete/extensions.png) !important;
-  padding-left: 16px !important;
-  width: 0 !important;
-}
-div#app > div#browser div.tab > div > span.favicon.jstest-favicon-image > img[srcset*="gmail.ico"] {
-  background: url(/style/complete/gmail.png) !important;
-  padding-left: 16px !important;
-  width: 0 !important;
-}
-div#app > div#browser div.tab > div > span.favicon.jstest-favicon-image > img[srcset*="https://tv.youtube.com"] {
-  background: url(/style/complete/youtubetv.png) !important;
-  height: 16px !important;
-  padding-left: 16px !important;
-  width: 0 !important;
-}
-div#app > div#browser div.tab > div > span.favicon.jstest-favicon-image > img[srcset*="https://www.lincoln.com"] {
-  background: url(/style/complete/lincoln.png) !important;
-  padding-left: 16px !important;
-  width: 0 !important;
-}
-div#app > div#browser div.tab > div > span.favicon.jstest-favicon-image > img[srcset*="tampermonkey"] {
-  background: url(/style/complete/tampermonkey16.png) !important;
-  padding-left: 16px !important;
-  width: 0 !important;
-}
-.transparent-tabbar .tab-position .tab.active .tab-header .favicon:not(.svg),
-.theme-dark .tab-position .tab.active .tab-header .favicon:not(.svg),
-.acc-dark.color-behind-tabs-off .tab-position .tab.active .tab-header .favicon:not(.svg) {
-  filter: none !important;
-}
-
-/* Statusbar */
-
-div#app > div#browser[options-menu] button#options-button > span > svg {
-  background: url(/style/complete/optionsOn.png) !important;
-  height: 16px !important;
-  padding-left: 16px !important;
-  width: 0 !important;
-}
 div#app > div#browser div.toolbar-statusbar {
   background-color: #2E2F37 !important;
-  float: right !important;
   padding: 3px 0 !important;
-  width: 100% !important;
 }
 div#app > div#browser > div#main footer button#options-button {
   height: 28px !important;
+  width: 32px !important;
 }
 div#app > div#browser p > span {
   padding-right: 0 !important;
@@ -389,9 +530,6 @@ div#app > div#browser div.ClockButton > button:hover {
   border-radius: 4px !important;
   color: yellow !important;
 }
-
-/* Bookmarks-bar & Custom Folder */
-
 div#app > div#browser button.bookmarkbarItem {
   border: 1px solid transparent !important;
   border-radius: 4px !important;
@@ -399,47 +537,6 @@ div#app > div#browser button.bookmarkbarItem {
 div#app > div#browser button.bookmarkbarItem:hover {
   background-color: #1B1C24 !important;
   border-color: #999 !important;
-}
-div#app > div#browser[custom-folder] button.folder > svg:not(.sd) {
-  background: url(/style/complete/folder.png) !important;
-  height: 16px !important;
-  padding-left: 16px !important;
-  width: 0 !important;
-}
-div#app > div#browser[custom-folder] button.folder > svg.sd > g {
-  display: none !important;
-}
-div#app > div#browser[custom-folder] button.folder > svg.sd {
-  background: url(/style/complete/speeddial.png) !important;
-  height: 16px !important;
-  padding-left: 16px !important;
-  width: 0 !important;
-}
-div#app > div#browser button[title="chrome://extensions/"] > img {
-  background: url(/style/complete/extensions.png) !important;
-  height: 16px !important;
-  padding-left: 16px !important;
-  width: 0 !important;
-}
-div#app > div#browser button[title*="https://mail.google.com"] > img {
-  background: url(/style/complete/gmail.png) !important;
-  height: 16px !important;
-  padding-left: 16px !important;
-  width: 0 !important;
-}
-div#app > div#browser button[title*="settings.html"] > span > svg > path {
-  display: none !important;
-}
-div#app > div#browser button[title*="settings.html"] > span > svg {
-  background: url(/style/complete/settings.png) !important;
-  height: 16px !important;
-  width: 16px !important;
-}
-div#app > div#browser button[title*="tv.youtube"] > img {
-  background: url(/style/complete/youtubetv.png) !important;
-  height: 16px !important;
-  padding-left: 16px !important;
-  width: 0 !important;
 }
 div#app > div#browser div.UrlBar div.UrlField {
   top: -1px !important;
@@ -457,38 +554,9 @@ div#app > div#browser button.button-addressfield.SiteInfoButton {
   height: 22px !important;
   width: 22px !important;
 }
-div#app > div#browser button.button-addressfield.SiteInfoButton.secure svg {
-  background: url(/style/complete/lock1.png) center no-repeat !important;
-  height: 16px !important;
-  padding-left: 16px !important;
-  width: 0 !important;
-}
-div#app > div#browser button.button-addressfield.SiteInfoButton.certified svg {
-  background: url(/style/complete/lock3.png) center no-repeat !important;
-  height: 16px !important;
-  padding-left: 18px !important;
-  width: 0 !important;
-}
-div#app > div#browser button.button-addressfield.SiteInfoButton.warning svg {
-  background: url(/style/complete/warning.png) center no-repeat !important;
-  height: 16px !important;
-  padding-left: 18px !important;
-  width: 0 !important;
-}
-div#app > div#browser div.UrlBar div[title^="Caution!"],
-div#app > div#browser div.toolbar.toolbar-small.toolbar-insideinput {
-  margin-right: 3px !important;
-}
-div#app > div#browser div.button-toolbar.BookmarkButton-Button > button {
+div#app > div#browser[fav-in-url] div.button-toolbar.BookmarkButton-Button > button {
   margin-left: 4px !important;
   padding: 2px !important;
-}
-div#app > div#browser div.button-toolbar.BookmarkButton-Button > button svg {
-  background: url(/style/complete/bookmark.png) center no-repeat !important;
-  filter: grayscale(1) brightness(.5) !important;
-  height: 16px !important;
-  padding-left: 16px !important;
-  width: 0 !important;
 }
 div#app > div#browser div.button-toolbar.BookmarkButton-Button > button.button-on svg {
   filter: grayscale(0) brightness(1) !important;
@@ -508,16 +576,8 @@ div#app > div#browser[fav-in-url] button.warning {
 div#app > div#browser[fav-in-url] button.certified {
   color: lime !important;
 }
-div#app > div#browser[fav-in-url] img#favImg {
-  margin: 1px 0 0 3px !important;
-  max-height: 16px !important;
-  max-width: 16px !important;
-}
 div#app > div#browser[fav-in-url] div.UrlBar-UrlFieldWrapper > div > div > input {
   padding-left: 9px !important;
-}
-div#app > div#browser[fav-in-url] div.UrlFragment-Wrapper {
-  margin-left: 22px !important;
 }
 div#app > div#browser div.UrlBar button[title="Bookmark Page"] {
   height: 22px !important;
@@ -534,9 +594,10 @@ div#app > div#browser div.toolbar-extensions button > img {
   height: 26px !important;
   width: 26px !important;
 }
-
-/* Footer */
-
+div#app > div#browser[show-calendar] span#calendar:hover {
+  background: #111 !important;
+  border-color: #999 !important;
+}
 div#app > div#browser div.button-toolbar > button[title="Page Actions"] svg {
   background: url(/style/complete/css.png) center no-repeat !important;
   height: 16px !important;
@@ -583,32 +644,6 @@ div#app > div#browser div#header > footer + div#tabs-tabbar-container div.toggle
   right: 99px !important;
   top: -28px !important;
 }
-div#app > div#browser span#calendar {
-  display: none !important;
-}
-div#app > div#browser[show-calendar] span#calendar {
-  border: 1px solid transparent !important;
-  border-radius: 4px !important;
-  display: block !important;
-  flex: none !important;
-  padding: 5px 8px !important;
-  text-shadow: 1px 1px 2px #000 !important;
-}
-div#app > div#browser[show-calendar] span#calendar:hover {
-  background: #111 !important;
-  border-color: #999 !important;
-}
-div#app > div#browser .tabbar-workspace-button > button {
-  display: none !important;
-  height: 28px !important;
-}
-div#app > div#browser[show-workspaces] .tabbar-workspace-button > button {
-  display: flex !important;
-  gap: 0 !important;
-}
-
-/* Buttons & Custom Buttons */
-
 div#app > div#browser button.ToolbarButton-Button {
   background-color: transparent !important;
   border: 1px solid transparent !important;
@@ -618,75 +653,16 @@ div#app > div#browser button.ToolbarButton-Button:hover {
   background-color: #222 !important;
   border-color: #999 !important;
 }
-div#app > div#browser button.ToolbarButton-Button.custom-button {
-  opacity: .6 !important;
-  width: 32px !important;
-}
-div#app > div#browser button#restart-browser,
-div#app > div#browser button#move-tab-button {
-  opacity: .7 !important;
-}
-div#app > div#browser button.ToolbarButton-Button.custom-button svg {
-  filter: invert(0%) !important;
-}
-div#app > div#browser button#restart-browser:hover,
-div#app > div#browser button#move-tab-button:hover,
-div#app > div#browser button.ToolbarButton-Button.custom-button:hover {
-  opacity: 1 !important;
-}
-div#app > div#browser button svg {
-  color: #AAA !important;
-}
-div#app > div#browser button:hover svg {
-  color: #FFF !important;
-  opacity: 1 !important;
-}
-div#app > div#browser button#restart-browser:hover {
-  background-color: #1A73E8 !important;
-  border: 1px solid transparent !important;
-}
-
-/* Custom Button Popups */
-
-
-/* Close Button & Custom Close Button */
-
-div#app > div#browser div.tab-strip button.close {
-  height: 26px !important;
-  margin: -4px 0 0 -4px !important;
-  width: 26px !important;
-}
-div#app > div#browser[custom-close] div.tab-strip button.close {
-  background: #CCC !important;
-  border-radius: 50% !important;
-}
-div#app > div#browser[custom-close] div.tab-strip button.close svg {
-  color: #000 !important;
-}
-div#app > div#browser[custom-close] div.tab-strip button.close:hover {
-  background: #F00 !important;
-}
-div#app > div#browser[custom-close] div.tab-strip button.close:hover svg {
-  color: #FFF !important;
-}
-
-/* Misc */
-
 #app .toolbar .toolbar-spacer-flexible {
   flex: 0 !important;
 }
-button#options-button (
-  width: 32px !important;
-}
-
 div#app > div#browser.fullscreen footer {
   height: 0 !important;
 }
-
 div.UrlBar-UrlObfuscationWarning > svg > path {
   display: none !important;
 }
-
 div.UrlBar-UrlObfuscationWarning > svg {
   background: url(/style/complete/caution.png) center no-repeat !important;
 }
+*/
