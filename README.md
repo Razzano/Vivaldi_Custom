@@ -4,7 +4,7 @@
 
 Each zip file contains 2 bat files, 1 js file, 1 css file and icons. Also includes a how-to install text file. Listed both zip file contents separately minus the how-to install text file. Install one mod only to avoid any conflicts.
 
-Create a new folder (recommended) and name it (for example) Vivaldi UI Mod. Un-zip either the calendar-fav-tab.zip or complete.zip mod into newly created folder. All the un-zipped files need to remain together and DO NOT rename any file. Click the Install.bat file to load created files into Vivaldi browser app. Follow the simple instructions in the How-To.txt file.
+Create a new folder (recommended) and name it (for example) Vivaldi UI Mod. Un-zip either the calendar-fav-tab.zip or complete.zip mod into newly created folder. All the un-zipped files need to remain together and DO NOT rename any file. Click the Install.bat file to load created files into Vivaldi browser app. Click the Uninstall.bat to remove the installed files from Vivaldi browser app. Follow the simple instructions in the How-To.txt file.
 
 Description for complete mod:
 1. Installs a bat file (complete-Install.bat) to auto-insert edits/changes made to js and css files into Vivaldi Browser App.
