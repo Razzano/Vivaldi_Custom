@@ -1,7 +1,0 @@
-#browser button#move-button {
-  opacity: .5 !important;
-}
-
-#browser[move-tab] button#move-button {
-  opacity: 1 !important;
-}
