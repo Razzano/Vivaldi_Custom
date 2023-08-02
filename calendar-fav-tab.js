@@ -210,7 +210,7 @@
         else if (tabs[0].title.match(/Start Page$/)) img.src = '/style/calendar-fav-tab/star.png';
         else if (tabs[0].title.match(/Installed Userscripts$/)) img.src = '/style/calendar-fav-tab/tampermonkey16.png';
         else if (tabs[0].title.match(/YouTube TV$/)) img.src = '/style/calendar-fav-tab/youtubetv.png';
-        else if (!tabs[0].favIconUrl)  img.src = '/style/calendar-fav-tab/page.png';
+        else if (!tabs[0].favIconUrl)  img.src = '/style/calendar-fav-tab/page2.png';
         else img.src = tabs[0].favIconUrl;
       });
     } catch(ex) {}
