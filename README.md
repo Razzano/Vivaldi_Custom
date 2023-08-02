@@ -9,7 +9,7 @@ Create a new folder (recommended) and name it (for example) Vivaldi UI Mod. Un-z
 Description for complete mod:
 1. Installs a bat file (complete-Install.bat) to auto-insert edits/changes made to js and css files into Vivaldi Browser App.
 2. Installs a bat file (complete-Uninstall.bat) to auto-remove all created files and restores app to default mode.
-3. Creates js & css files for theming/functionality of browser ui.
+3. Creates complete.css & complete.js files for theming/functionality of browser ui.
 4. Creates button [ <img src="https://github.com/srazzano/Images/blob/master/options.png"/> ] in footer to display Options Menu with close button. Shows menu under header when activated.
 5. Option for larger tab close button.
 6. Display/Hide calendar before clock.
