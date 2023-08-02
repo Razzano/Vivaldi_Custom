@@ -1,6 +1,6 @@
-2 Zip Mods posted:<br>
-(1) calendar-fav-tab.zip: Show/Hide calendar, site favicon in urlbar and activate/deactivate moving of active tab.<br>
-(2) complete.zip: Includes everything in the Options Menu drop down list as seen in the preview screenshot below.
+2 Zip Mods posted:
+1. calendar-fav-tab.zip: Show/Hide calendar, site favicon in urlbar and activate/deactivate moving of active tab.<br>
+2. complete.zip: Includes everything in the Options Menu drop down list as seen in the preview screenshot below.
 
 Each zip file contains 2 bat files, 1 js file, 1 css file and icons. Also includes a how-to install text file. Listed both zip file contents separately minus the how-to install text file. Install one mod only to avoid any conflicts.
 
