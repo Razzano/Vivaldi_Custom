@@ -1,6 +1,10 @@
-2 Zip Mods posted: (1) calendar-fav-tab.zip (Show/Hide calendar, site favicon in urlbar and activate/deactivate moving of active tab) and (2) complete.zip (includes everything in the Options Menu drop down list as seen in the preview pic below). Each zip file contains 2 bat files, 1 js file, 1 css file and icons. Also includes a how-to install text file. Listed both zip file contents separately minus the how-to install text file. Install one mod only to avoid any conflicts.
+2 Zip Mods posted:<br>
+(1) calendar-fav-tab.zip: Show/Hide calendar, site favicon in urlbar and activate/deactivate moving of active tab.<br>
+(2) complete.zip: Includes everything in the Options Menu drop down list as seen in the preview screenshot below.
 
-Created a new folder (recommended) and name it (for example) Vivaldi UI Mod. Un-zip either the calendar-fav-tab.zip or complete.zip mod into newly created folder. All the un-zipped files need to remain together and DO NOT rename any file. Click the Install.bat file to load created files into Vivaldi browser app. Follow the simple instructions in the How-To.txt file.
+Each zip file contains 2 bat files, 1 js file, 1 css file and icons. Also includes a how-to install text file. Listed both zip file contents separately minus the how-to install text file. Install one mod only to avoid any conflicts.
+
+Create a new folder (recommended) and name it (for example) Vivaldi UI Mod. Un-zip either the calendar-fav-tab.zip or complete.zip mod into newly created folder. All the un-zipped files need to remain together and DO NOT rename any file. Click the Install.bat file to load created files into Vivaldi browser app. Follow the simple instructions in the How-To.txt file.
 
 Description for complete mod:
 1. Installs a bat file (complete-Install.bat) to auto-insert edits/changes made to js and css files into Vivaldi Browser App.
