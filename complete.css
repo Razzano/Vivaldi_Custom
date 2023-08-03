@@ -366,7 +366,7 @@ div#app > div#browser[custom-close] div.tab-strip button.close:hover svg {
 
 
 /* -------- Personalized Vivaldi UI CSS -------- */
-
+/*
 div#app > div#browser {
   background-image: none !important;
 }
@@ -386,6 +386,9 @@ div#app > div#browser div#titlebar > button.vivaldi svg {
 div#app > div#browser div#titlebar > div.window-buttongroup > button {
   border: 1px solid transparent !important;
   width: 32px !important;
+}
+.tabs-top#browser.win div.window-buttongroup button:not(.vivaldi) {
+  height: 32px !important;
 }
 div#app > div#browser div#titlebar > div.window-buttongroup > button:not(.window-close):hover {
   background-color: #111 !important;
@@ -646,3 +649,4 @@ div.UrlBar-UrlObfuscationWarning > svg > path {
 div.UrlBar-UrlObfuscationWarning > svg {
   background: url(/style/complete/caution.png) center no-repeat !important;
 }
+*/
