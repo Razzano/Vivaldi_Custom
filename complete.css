@@ -547,6 +547,10 @@ div#app > div#browser button.bookmarkbarItem:hover {
   background-color: #1B1C24 !important;
   border-color: #999 !important;
 }
+div#app > div#browser div.UrlField {
+  right: 24px !important;
+  top: -1px !important;
+}
 div#app > div#browser div.UrlBar div.UrlField {
   top: -1px !important;
 }
