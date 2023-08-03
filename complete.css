@@ -558,6 +558,7 @@ div#app > div#browser div.UrlBar-AddressField,
 div#app > div#browser div.UrlBar-SearchField.iconmenu-container.SearchField {
   background-color: #14151C !important;
   border: 1px solid #555 !important;
+  border-radius: 8px !important;
   height: 34px !important;
 }
 div#app > div#browser button.button-addressfield.SiteInfoButton {
