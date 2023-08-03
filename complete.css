@@ -287,7 +287,7 @@ div#app > div#browser[fav-in-url] img#favImg {
   max-width: 16px !important;
 }
 div#app > div#browser[fav-in-url] div.UrlFragment-Wrapper {
-  margin-left: 22px !important;
+  margin-left: 20px !important;
 }
 
 /* Footer */
@@ -397,6 +397,9 @@ div#app > div#browser > #main {
 }
 div#app > div#browser > #main > div.inner {
   border-top: 1px solid transparent !important;
+}
+div#app > div#browser div.mainbar > div.toolbar-mainbar {
+  border-bottom: none !important;;
 }
 div#app > div#browser div#tabs-tabbar-container {
   background: #111 !important;
@@ -544,9 +547,6 @@ div#app > div#browser button.bookmarkbarItem:hover {
 div#app > div#browser div.UrlBar div.UrlField {
   top: -1px !important;
 }
-div#app > div#browser div.UrlBar-UrlFieldWrapper {
-  margin-right: 20px !important;
-}
 div#app > div#browser div.UrlBar-AddressField,
 div#app > div#browser div.UrlBar-SearchField.iconmenu-container.SearchField {
   background-color: #14151C !important;
@@ -620,32 +620,6 @@ div#app > div#browser div.button-toolbar > button[title="Page Actions"]:hover sv
 }
 div#app > div#browser div.button-toolbar > button[title="Page Actions"] svg > path {
   display: none !important;
-}
-div#app > div#browser footer {
-  display: flex !important;
-}
-div#app > div#browser > div#main + footer {
-  height: 26px !important;
-}
-div#app > div#browser.fullscreen > div#main + footer {
-  height: 0 !important;
-}
-div#app > div#browser > div#main + footer div.page-zoom-controls {
-  position: relative !important;
-  top: 3px !important;
-}
-div#app > div#browser div#header > footer {
-  margin: 0 138px 0 35px !important;
-  position: relative !important;
-  top: 1px !important;
-}
-div#app > div#browser div#header > footer + div#tabs-tabbar-container {
-  height: 0 !important;
-}
-div#app > div#browser div#header > footer + div#tabs-tabbar-container div.toggle-trash {
-  position: absolute !important;
-  right: 99px !important;
-  top: -28px !important;
 }
 div#app > div#browser button.ToolbarButton-Button {
   background-color: transparent !important;
