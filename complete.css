@@ -530,6 +530,9 @@ div#app > div#browser div.ClockButton > button:hover {
   border-radius: 4px !important;
   color: yellow !important;
 }
+div#app > div#browser div.bookmark-bar {
+  border-bottom: none !important;
+}
 div#app > div#browser button.bookmarkbarItem {
   border: 1px solid transparent !important;
   border-radius: 4px !important;
