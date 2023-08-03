@@ -1,0 +1,119 @@
+div#app > div#browser[fav-in-url] img#favImg {
+  margin: 0 0 0 4px !important;
+  max-height: 16px !important;
+  max-width: 16px !important;
+}
+
+div#app > div#browser[fav-in-url] div.UrlFragment-Wrapper {
+  margin-left: 20px !important;
+}
+
+div#app > div#browser[fav-in-url]  div.UrlField {
+  margin-right: 24px !important;
+  top: 0 !important;
+}
+
+div#app > div#browser button#move-button,
+div#app > div#browser button#fav-button {
+  opacity: .4 !important;
+}
+
+div#app > div#browser[move-tab] button#move-button,
+div#app > div#browser[fav-in-url] button#fav-button {
+  opacity: 1 !important;
+}
+
+div#app > div#browser[fav-in-url] div.tab > div > span.favicon.jstest-favicon-image > img[srcset="chrome://favicon/chrome://extensions/"] {
+  background: url(/style/calendar-fav-tab/extensions.png) !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+
+div#app > div#browser[fav-in-url] div.tab > div > span.favicon.jstest-favicon-image > img[srcset*="gmail.ico"] {
+  background: url(/style/calendar-fav-tab/gmail.png) !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+
+div#app > div#browser[fav-in-url] div.tab > div > span.favicon.jstest-favicon-image > img[srcset*="https://tv.youtube.com"] {
+  background: url(/style/calendar-fav-tab/youtubetv.png) !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+
+div#app > div#browser[fav-in-url] button.button-addressfield.SiteInfoButton.secure svg {
+  background: url(/style/calendar-fav-tab/lock1.png) center no-repeat !important;
+  height: 16px !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser[fav-in-url] button.button-addressfield.SiteInfoButton.certified svg {
+  background: url(/style/calendar-fav-tab/lock3.png) center no-repeat !important;
+  height: 16px !important;
+  padding-left: 18px !important;
+  width: 0 !important;
+}
+
+div#app > div#browser[fav-in-url] div.button-toolbar.BookmarkButton-Button > button svg {
+  background: url(/style/calendar-fav-tab/bookmark.png) center no-repeat !important;
+  filter: grayscale(1) brightness(.5) !important;
+  height: 16px !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+
+div#app > div#browser[fav-in-url] button[title="chrome://extensions/"] > img {
+  background: url(/style/calendar-fav-tab/extensions.png) !important;
+  height: 16px !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+
+div#app > div#browser[fav-in-url] button[title*="https://mail.google.com"] > img {
+  background: url(/style/calendar-fav-tab/gmail.png) !important;
+  height: 16px !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+
+div#app > div#browser[fav-in-url] button[title*="settings.html"] > span > svg > path {
+  display: none !important;
+}
+
+div#app > div#browser[fav-in-url] button[title*="settings.html"] > span > svg {
+  background: url(/style/calendar-fav-tab/settings.png) !important;
+  height: 16px !important;
+  width: 16px !important;
+}
+
+div#app > div#browser[fav-in-url] button[title*="tv.youtube"] > img {
+  background: url(/style/calendar-fav-tab/youtubetv.png) !important;
+  height: 16px !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+
+div#app > div#browser[fav-in-url] div.UrlBar div[title^="Caution!"],
+div#app > div#browser[fav-in-url] div.toolbar.toolbar-small.toolbar-insideinput {
+  margin-right: 3px !important;
+}
+
+iv#app > div#browser[fav-in-url] div.UrlBar-UrlObfuscationWarning > svg {
+  background: url(/style/calendar-fav-tab/caution.png) center no-repeat !important;
+}
+
+div#app .transparent-tabbar .tab-position .tab.active .tab-header .favicon:not(.svg),
+div#app .theme-dark .tab-position .tab.active .tab-header .favicon:not(.svg),
+div#app .acc-dark.color-behind-tabs-off .tab-position .tab.active .tab-header .favicon:not(.svg) {
+  filter: none !important;
+}
+
+div#app > div#browser span#calendar-span {
+  display: none !important;
+  margin-left: 6px !important;
+}
+
+div#app > div#browser[show-calendar] span#calendar-span {
+  display: block !important;
+  flex: none !important;
+}
