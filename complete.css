@@ -370,6 +370,9 @@ div#app > div#browser[custom-close] div.tab-strip button.close:hover svg {
 div#app > div#browser {
   background-image: none !important;
 }
+div#app > div#browser > div#header {
+  margin-top: -1px !important;
+}
 div#app > div#browser div#titlebar > button.vivaldi {
   background-color: transparent !important;
   height: 32px !important;
