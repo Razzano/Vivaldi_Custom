@@ -226,9 +226,6 @@ div#app > div#browser[custom-folder] button.folder > svg.sd {
   padding-left: 16px !important;
   width: 0 !important;
 }
-div#app > div#browser div.tab-position > div.tab span.title {
-  margin-top: -2px !important;
-}
 div#app > div#browser button[title="chrome://extensions/"] > img {
   background: url(/style/complete/extensions.png) !important;
   height: 16px !important;
@@ -453,10 +450,6 @@ div#app > div#browser div.tab.active {
   background-color: #2E2F37 !important;
   border-color: #999 !important;
   margin-bottom: -1px !important;
-}
-div#app > div#browser div.tab-position > div.tab span.title {
-  margin-top: -3px !important;
-  padding-left: 3px !important;
 }
 div#app > div#browser div.tab-position > div.tab.active.active span.title {
   color: yellow !important;
