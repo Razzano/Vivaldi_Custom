@@ -422,6 +422,7 @@ div#app > div#browser div.tab-strip {
   border-left: 1px solid #999 !important;
   border-bottom: 1px solid #999 !important;
   border-right: 1px solid #999 !important;
+  margin-top: 1px !important;
   max-height: 30px !important;
 }
 div#app > div#browser div.tab-strip > span:first-of-type > div.tab-position {
