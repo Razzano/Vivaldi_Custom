@@ -659,10 +659,10 @@ div#app > div#browser button.ToolbarButton-Button:hover {
 div#app > div#browser.fullscreen footer {
   height: 0 !important;
 }
-div.UrlBar-UrlObfuscationWarning > svg > path {
+div#app > div#browser[fav-in-url] div.UrlBar-UrlObfuscationWarning > svg > path {
   display: none !important;
 }
-div.UrlBar-UrlObfuscationWarning > svg {
+div#app > div#browser[fav-in-url] div.UrlBar-UrlObfuscationWarning > svg {
   background: url(/style/complete/caution.png) center no-repeat !important;
 }
 */
