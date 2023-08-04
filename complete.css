@@ -541,6 +541,11 @@ div#app > div#browser div.ClockButton > button:hover {
 }
 div#app > div#browser div.bookmark-bar {
   border-bottom: none !important;
+  margin-top: 1px !important;
+}
+div#app > div#browser div.mainbar,
+div#app > div#browser footer {
+  margin-top: 1px !important;
 }
 div#app > div#browser button.bookmarkbarItem {
   border: 1px solid transparent !important;
@@ -650,4 +655,5 @@ div.UrlBar-UrlObfuscationWarning > svg > path {
 div.UrlBar-UrlObfuscationWarning > svg {
   background: url(/style/complete/caution.png) center no-repeat !important;
 }
+
 */
