@@ -422,7 +422,7 @@ div#app > div#browser div.tab-strip {
   border-left: 1px solid #999 !important;
   border-bottom: 1px solid #999 !important;
   border-right: 1px solid #999 !important;
-  margin-top: 1px !important;
+  margin: 1px 0 !important;
   max-height: 30px !important;
 }
 div#app > div#browser div.tab-strip > span:first-of-type > div.tab-position {
@@ -542,11 +542,6 @@ div#app > div#browser div.ClockButton > button:hover {
 }
 div#app > div#browser div.bookmark-bar {
   border-bottom: none !important;
-  margin-top: 1px !important;
-}
-div#app > div#browser div.mainbar,
-div#app > div#browser footer {
-  margin-top: 1px !important;
 }
 div#app > div#browser button.bookmarkbarItem {
   border: 1px solid transparent !important;
