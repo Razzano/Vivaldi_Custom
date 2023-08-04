@@ -343,7 +343,10 @@ div#app > div#browser button#restart-browser:hover {
 /* Close Button & Custom Close Button */
 div#app > div#browser[custom-close] div.tab > div > span.favicon.jstest-favicon-image {
   filter: none !important;
-  margin: 0 2px !important;
+  margin: -1px 2px 0 2px !important;
+}
+div#app > div#browser[custom-close] span.title {
+  margin-top: -3px !important;
 }
 div#app > div#browser[custom-close] div.tab-strip button.close {
   height: 26px !important;
@@ -651,5 +654,4 @@ div.UrlBar-UrlObfuscationWarning > svg > path {
 div.UrlBar-UrlObfuscationWarning > svg {
   background: url(/style/complete/caution.png) center no-repeat !important;
 }
-
 */
