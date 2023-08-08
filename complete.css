@@ -279,7 +279,7 @@ div#app > div#browser button:hover svg {
   color: #FFF !important;
   opacity: 1 !important;
 }
-*/
+
 /* Button Popup w/Arrow and Dark Theme */
 
 div#app > div#browser.theme-dark div.button-popup:before {
