@@ -19,7 +19,8 @@ Description for complete mod:
 14. Options Menu item discriptions are displayed in tooltip for each.
 
 NOTE:<br>
-&nbsp;&nbsp;&nbsp; If Vivaldi App install path is NOT your C:\Users folder or C:\Program Files folder, the Install.bat and Uninstall.bat files needs to be amended.
-
+&nbsp;&nbsp;&nbsp; If Vivaldi App install path is NOT your C:\Users folder or C:\Program Files folder, the Install.bat and Uninstall.bat files needs to be amended.<br>
+Complete Mod View
 <img src="https://github.com/Razzano/Images/blob/master/Complete_Mod_View.png"/>
+Options Menu Dropdown List
 <img src="https://github.com/Razzano/Images/blob/master/Options_Menu_Dropdown.png"/>
