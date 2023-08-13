@@ -21,4 +21,5 @@ Description for complete mod:
 NOTE:<br>
 &nbsp;&nbsp;&nbsp; If Vivaldi App install path is NOT your C:\Users folder or C:\Program Files folder, the Install.bat and Uninstall.bat files needs to be amended.
 
-<img src="https://github.com/Razzano/Images/blob/master/Vivaldi_Custom_Complete_Mod.png"/>
+<img src="https://github.com/Razzano/Images/blob/master/Complete_Mod_View.png"/>
+<img src="https://github.com/Razzano/Images/blob/master/Options_Menu_Dropdown.png"/>
