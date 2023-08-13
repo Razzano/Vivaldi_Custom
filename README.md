@@ -21,6 +21,7 @@ Description for complete mod:
 NOTE: 
 1. If Vivaldi App install path is NOT your C:\Users folder or C:\Program Files folder, the Install.bat and Uninstall.bat files needs to be amended.
 2. Requires re-install after each Vivaldi Browser App update by left-clicking on Install.bat file.
+3. Un-install using completeUninstall.bat to restore Vivaldi Browser App to default settings.
 
 Complete Mod View For Dark Theme
 
