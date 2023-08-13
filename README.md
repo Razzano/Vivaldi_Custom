@@ -18,8 +18,7 @@ Description for complete mod:
 13. Refer to How-To.txt file for full instructions.
 14. Options Menu item discriptions are displayed in tooltip for each.
 
-NOTE:<br>
-&nbsp;&nbsp;&nbsp; If Vivaldi App install path is NOT your C:\Users folder or C:\Program Files folder, the Install.bat and Uninstall.bat files needs to be amended.<br>
+NOTE: If Vivaldi App install path is NOT your C:\Users folder or C:\Program Files folder, the Install.bat and Uninstall.bat files needs to be amended.<br>
 
 Complete Mod View
 
