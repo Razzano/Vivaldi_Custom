@@ -20,7 +20,7 @@ Description for complete mod:
 
 NOTE: If Vivaldi App install path is NOT your C:\Users folder or C:\Program Files folder, the Install.bat and Uninstall.bat files needs to be amended.<br>
 
-Complete Mod View
+Complete Mod View For Dark Theme
 
 <img src="https://github.com/Razzano/Images/blob/master/Complete_Mod_View.png"/>
 
