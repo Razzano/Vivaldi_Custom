@@ -7,21 +7,23 @@ Description for complete.zip mod:
 2. Installs a bat file (complete-Uninstall.bat) to auto-remove all created files and restores app to default mode.
 3. Creates complete.css & complete.js files for theming/functionality of browser ui.
 4. Creates button [ <img src="https://github.com/srazzano/Images/blob/master/options.png"/> ] in footer to display Options Menu with close button. Shows menu under header when activated.
-5. Option for larger tab close button.
-6. Display/Hide calendar before clock.
-7. Display site favicon in urlbar.
-8. Replace bookmark folder icon with custom icon [ <img src="https://github.com/srazzano/Images/blob/master/folderIcon.png"/> ].
-9. Home as restart browser function with restart icon [ <img src="https://github.com/srazzano/Images/blob/master/restartIcon.png"/> ]. See tooltip for instructions.
-10. Move active/clicked tab to first position in tabbar.
-11. Rearranges footer, .bookmark-bar and .mainbar toolbars to desired positions.
-12. Reposition Options Menu to Top Left, Top Ceneter, Top Right, Centered [ <img src="https://github.com/srazzano/Images/blob/master/position.png"/> ]
-13. Refer to How-To.txt file for full instructions.
-14. Options Menu item discriptions are displayed in tooltip for each.
+5. Reposition Options Menu to Top Left, Top Ceneter, Top Right, Centered [ <img src="https://github.com/srazzano/Images/blob/master/position.png"/> ]
+6. Options Menu item discriptions are displayed in tooltip for each.
+7. Option for larger tab close button.
+8. Show/Hide calendar before clock with 4 formats, which can be edited in complete.js file.
+9. Enable/Disable site favicon in urlbar.
+10. Replace bookmark folder icon with custom icon [ <img src="https://github.com/srazzano/Images/blob/master/folderIcon.png"/> ].
+11. Home as restart browser function with restart icon [ <img src="https://github.com/srazzano/Images/blob/master/restartIcon.png"/> ]. See tooltip for instructions.
+12. Enable/Disable active/clicked tab to first position in tabbar.
+13. Rearranges footer, .bookmark-bar and .mainbar toolbars to desired vertical positions.
+14. Show/Hide Workspaces menu button in tabbar.
+15. Enable/Disable Complete Custom CSS.
+16. Refer to How-To.txt file for full instructions.
 
 NOTE: 
 1. If Vivaldi App install path is NOT your C:\Users folder or C:\Program Files folder, the Install.bat and Uninstall.bat files needs to be amended.
-2. Requires re-install after each Vivaldi Browser App update by left-clicking on Install.bat file.
-3. Un-install using completeUninstall.bat to restore Vivaldi Browser App to default settings.
+2. Requires re-install after each Vivaldi Browser App update by left-clicking on complete-Install.bat file.
+3. Un-install using complete-Uninstall.bat to restore Vivaldi Browser App to default settings.
 
 Complete Mod View For Dark Theme
 
