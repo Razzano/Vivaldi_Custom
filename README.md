@@ -1,4 +1,4 @@
-Zip file contains 2 bat files, 1 js file, 1 css file and icons. Also includes a how-to install text file. Posted complete.zip file contents separately minus the how-to install text file.
+Zip file contains 2 bat files, 1 js file, 1 css file and png icons. Also includes a how-to install text file. Posted complete.zip file contents separately minus the how-to install text file.
 
 Create a new folder (recommended) and name it (for example) Vivaldi UI Mod. Un-zip the complete.zip mod into newly created folder. All the un-zipped files need to remain together and DO NOT rename any file. Click the Install.bat file to load created files into Vivaldi browser app. Click the Uninstall.bat to remove the installed files from Vivaldi browser app. Follow the simple instructions in the How-To.txt file.
 
