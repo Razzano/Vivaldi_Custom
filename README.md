@@ -33,6 +33,6 @@ Options Menu Dropdown List
 
 <img src="https://github.com/Razzano/Images/blob/master/Options_Menu_Dropdown.png"/>
 
-Complete Mod View Without Complete Custom CSS (Default CSS)
+Complete Mod View Without Complete Custom CSS (Vivaldi Default CSS)
 
 <img src="https://github.com/Razzano/Images/blob/master/Complete_Mod_View2.png"/>
