@@ -25,7 +25,7 @@ NOTE:
 2. Requires re-install after each Vivaldi Browser App update by left-clicking on complete-Install.bat file.
 3. Un-install using complete-Uninstall.bat to restore Vivaldi Browser App to default UI.
 
-Complete Mod View With Complete Custom CSSFor (Vivaldi Dark Theme)
+Complete Mod View With Complete Custom CSS (Vivaldi Dark Theme)
 
 <img src="https://github.com/Razzano/Images/blob/master/Complete_Mod_View.png"/>
 
