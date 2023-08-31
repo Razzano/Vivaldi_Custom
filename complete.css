@@ -1,0 +1,854 @@
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Global */
+
+#browser .bookmark-bar,
+#browser .toolbar-mainbar,
+#browser .toolbar-statusbar {
+  border: none !important;
+}
+#browser .toolbar-statusbar {
+  background: #2E2F37 !important;
+}
+
+/* Tabbar */
+
+div#app > div#browser div.tabbar-workspace-button > button,
+div#app > div#browser div.tabbar-workspace-button span.button-toolbar-menu-indicator,
+div#app > div#browser[show-workspaces][custom-css] div.tabbar-workspace-button span.button-toolbar-menu-indicator {
+  display: none !important;
+}
+div#app > div#browser[show-workspaces] div.tabbar-workspace-button > button,
+div#app > div#browser[show-workspaces][custom-css] div.tabbar-workspace-button > button {
+  display: flex !important;
+}
+div#app > div#browser[show-workspaces] div.tabbar-workspace-button > button {
+  margin-bottom: 3px !important;
+}
+div#app > div#browser div.tab > div > span.favicon.jstest-favicon-image {
+  filter: none !important;
+  margin: -1px 0 0 -2px !important;
+}
+div#app > div#browser div.tab-strip button.close {
+  margin: -1px 0 0 -2px !important;
+}
+div#app > div#browser div.tab-position div.tab span.title {
+  margin: -3px 0 0 -2px !important;
+}
+div#app > div#browser div.tab-position div.tab.active span.title {
+  margin: -4px 0 0 -2px !important;
+}
+div#app > div#browser[custom-close] div.tab > div > span.favicon.jstest-favicon-image {
+  filter: none !important;
+  margin: -1px 4px 0 -2px !important;
+}
+div#app > div#browser[custom-close] div.tab-strip button.close {
+  background: #CCC !important;
+  border-radius: 50% !important;
+  height: 24px !important;
+  margin: -4px 0 0 -4px !important;
+  width: 24px !important;
+  position: relative !important;
+  z-index: 9 !important;
+}
+div#app > div#browser[custom-close] div.tab-strip button.close:hover {
+  background: #C00 !important;
+}
+div#app > div#browser[custom-close] div.tab-strip button.close svg {
+  color: #000 !important;
+}
+div#app > div#browser[custom-close] div.tab-strip button.close:hover svg {
+  color: #FFF !important;
+}
+div#app > div#browser[custom-close] div.tab-position div.tab span.title {
+  margin: -3px 0 0 -6px !important;
+}
+div#app > div#browser[custom-close] div.tab-position div.tab.active span.title {
+  margin: -4px 0 0 -6px !important;
+}
+
+/* Footer/Statusbar */
+
+div#app > div#browser[options-menu] button#options-button > span > svg {
+  background: url(/style/icons/optionsOn.png) !important;
+  height: 16px !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser span#calendar {
+  display: none !important;
+}
+div#app > div#browser[show-calendar] span#calendar {
+  border: 1px solid transparent !important;
+  border-radius: 4px !important;
+  display: block !important;
+  flex: none !important;
+  padding: 4px 8px 5px 8px !important;
+  text-shadow: 1px 1px 2px #000 !important;
+}
+
+/* Bookmark-bar */
+
+div#app > div#browser[custom-folder] button.folder > svg:not(.sd) {
+  background: url(/style/icons/folder.png) !important;
+  height: 16px !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser[custom-folder] button.folder > svg.sd > g {
+  display: none !important;
+}
+div#app > div#browser[custom-folder] button.folder > svg.sd {
+  background: url(/style/icons/speeddial.png) !important;
+  height: 16px !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser[fav-in-url] button.button-addressfield.SiteInfoButton.secure svg {
+  background: url(/style/icons/lock1.png) center no-repeat !important;
+  height: 16px !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser[fav-in-url] button.button-addressfield.SiteInfoButton.certified svg {
+  background: url(/style/icons/lock3.png) center no-repeat !important;
+  height: 16px !important;
+  padding-left: 18px !important;
+  width: 0 !important;
+}
+div#app > div#browser[fav-in-url] button.button-addressfield.SiteInfoButton.warning svg {
+  background: url(/style/icons/warning.png) center no-repeat !important;
+  height: 16px !important;
+  padding-left: 18px !important;
+  width: 0 !important;
+}
+div#app > div#browser[fav-in-url] div.UrlBar div[title^="Caution!"],
+div#app > div#browser[fav-in-url] div.toolbar.toolbar-small.toolbar-insideinput {
+  margin-right: 3px !important;
+}
+div#app > div#browser[fav-in-url] div.button-toolbar.BookmarkButton-Button > button svg {
+  background: url(/style/icons/bookmark.png) center no-repeat !important;
+  filter: grayscale(1) brightness(.5) !important;
+  height: 17px !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser[fav-in-url] img#favImg {
+  margin: 1px 0 0 3px !important;
+  max-height: 16px !important;
+  max-width: 16px !important;
+}
+div#app > div#browser[fav-in-url] div.UrlFragment-Wrapper {
+  margin-left: 20px !important;
+}
+
+/* Mainbar/Urlbar */
+
+div#app > div#browser[fav-in-url] div.tab > div > span.favicon.jstest-favicon-image > img[srcset="chrome://favicon/chrome://extensions/"] {
+  background: url(/style/icons/extensions.png) !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser[fav-in-url] div.tab > div > span.favicon.jstest-favicon-image > img[srcset*="gmail.ico"] {
+  background: url(/style/icons/gmail.png) !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser[fav-in-url] div.tab > div > span.favicon.jstest-favicon-image > img[srcset*="https://tv.youtube.com"] {
+  background: url(/style/icons/youtubetv.png) !important;
+  height: 16px !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser[fav-in-url] div.tab > div > span.favicon.jstest-favicon-image > img[srcset*="https://www.lincoln.com"] {
+  background: url(/style/icons/lincoln.png) !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser[fav-in-url] div.tab > div > span.favicon.jstest-favicon-image > img[srcset*="tampermonkey"] {
+  background: url(/style/icons/tampermonkey16.png) !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser[fav-in-url] div.UrlBar-AddressField button[title="Reader View"] svg > path,
+div#app > div#browser[fav-in-url] div.UrlBar-UrlObfuscationWarning > svg > path {
+  display: none !important;
+}
+div#app > div#browser[fav-in-url] div.UrlBar-AddressField button[title="Reader View"] svg {
+  background: url(/style/icons/reader.png) center no-repeat !important;
+}
+div#app > div#browser[fav-in-url] div.UrlBar-UrlObfuscationWarning > svg {
+  background: url(/style/icons/caution.png) center no-repeat !important;
+  position: relative !important;
+  z-index: 9 !important;
+}
+div#app > div#browser[fav-in-url] div.UrlBar-AddressField button[title="Reader View"],
+div#app > div#browser[fav-in-url] div.UrlBar-UrlObfuscationWarning {
+  margin: 0 2px 0 4px !important;
+}
+div#app > div#browser[fav-in-url] div.UrlBar-UrlObfuscationWarning {
+  display: none !important;
+}
+div#app > div#browser[fav-in-url] div.permission-popup > button {
+  margin: 0 0 0 2px !important;
+}
+div#app > div#browser[fav-in-url] div.button-toolbar.BookmarkButton-Button > button {
+  margin: 0 0 0 0 !important;
+  padding: 2px !important;
+}
+div#app > div#browser[fav-in-url] div.permission-popup svg > path {
+  display: none !important;
+}
+div#app > div#browser[fav-in-url] div.permission-popup svg {
+  background: url(/style/icons/location.png) center no-repeat !important;
+}
+div#app > div#browser[fav-in-url] img#favImg[src^="chrome-extension://cjpalhdlnbpafiamejdnhcphjbkeiagm/"] {
+  background: url(/style/icons/ublock.png) center no-repeat !important;
+  height: 16px !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser[fav-in-url] button.secure:hover,
+div#app > div#browser[fav-in-url] div.toolbar-mainbar > .button-toolbar.ExtensionIcon > button:hover {
+  background: #222 !important;
+  border: 1px solid #999 !important;
+}  
+div#app > div#browser[fav-in-url] span.siteinfo-text {
+  margin-top: 4px !important;
+}
+div#app > div#browser[fav-in-url] button.warning {
+  color: yellow !important;
+  margin-left: 2px !important;
+}
+div#app > div#browser[fav-in-url] button.certified {
+  color: lime !important;
+}
+div#app > div#browser[fav-in-url] div.UrlBar-UrlFieldWrapper > div > div > input {
+  padding-left: 9px !important;
+}
+div#app > div#browser[fav-in-url] .transparent-tabbar .tab-position .tab.active .tab-header .favicon:not(.svg),
+div#app > div#browser[fav-in-url] .theme-dark .tab-position .tab.active .tab-header .favicon:not(.svg),
+div#app > div#browser[fav-in-url] .acc-dark.color-behind-tabs-off .tab-position .tab.active .tab-header .favicon:not(.svg) {
+  filter: none !important;
+}
+
+/* Buttons & Custom Buttons */
+
+div#app > div#browser div.toolbar-extensions button[name="ckkinejbeeejbhkmjagfajnagnondgim"] > img {
+  background: url(/style/icons/encoder16.png) center no-repeat !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser button.ToolbarButton-Button.custom-button {
+  opacity: .6 !important;
+  width: 32px !important;
+}
+div#app > div#browser button.ToolbarButton-Button.custom-button svg {
+  filter: invert(0%) !important;
+}
+div#app > div#browser button#restart-browser {
+  opacity: .7 !important;
+}
+div#app > div#browser button#restart-browser:hover {
+  background: #1A73E8 !important;
+  border: 1px solid transparent !important;
+}
+div#app > div#browser button#restart-browser:hover,
+div#app > div#browser button.ToolbarButton-Button.custom-button:hover {
+  opacity: 1 !important;
+}
+div#app > div#browser button svg {
+  color: #AAA !important;
+}
+div#app > div#browser button:hover svg {
+  color: #FFF !important;
+  opacity: 1 !important;
+}
+
+/* Button Popup w/Arrow and Dark Theme */
+
+div#app > div#browser.theme-dark div.button-popup:before {
+  border-bottom-color: #AAA !important;
+  bottom: -11px !important;
+}
+div#app > div#browser.theme-dark div.button-popup {
+  border: 1px solid #AAA !important;
+  border-radius: 0 !important;
+  z-index: 9 !important;
+}
+div#app > div#browser.theme-dark[footer-in-header] div.button-popup:before {
+  border-bottom-color: #999 !important;
+  bottom: auto !important;
+  rotate: 0deg !important;
+  top: -11px !important;
+}
+
+/* Options Menu */
+
+div#app > div#browser div#options-menu {
+  background: #303030 !important;
+  border: 1px solid #666 !important;
+  box-shadow: 4px 4px 6px #000 !important;
+  display: none !important;
+  padding: 0 3px 3px 3px !important;
+  position: absolute !important;
+}
+div#app > div#browser[options-menu] div#options-menu {
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: auto !important;
+  flex-basis: 100% !important;
+}
+div#app > div#browser[options-menu] div#options-menu > div {
+  background: #202020 !important;
+  padding: 6px 4px !important;
+}
+div#app > div#browser[options-menu] div#div0 {
+  text-align: center !important;
+}
+div#app > div#browser[options-menu] div#div0 > span {
+  color: #FFF !important;
+  position: relative !important;
+  top: 3px !important;
+}
+div#app > div#browser[options-menu] div#options-menu > div > button#position-menu {
+  float: left !important;
+  height: 24px !important;
+  width: 24px !important;
+}
+div#app > div#browser[options-menu] div#options-menu > div > button#options-menu-close {
+  float: right !important;
+  height: 24px !important;
+  width: 24px !important;
+}
+div#app > div#browser[options-menu] div#options-menu > div > button:hover {
+  background-color: #FFF !important;
+   border-color: #999 !important;
+}
+div#app > div#browser[options-menu] div#options-menu > div > input#input0 {
+  display: none !important;
+  height: 25px !important;
+  text-align: center !important;
+  width: 25px !important;
+}
+div#app > div#browser[options-menu] div#options-menu > label {
+  border: 1px solid transparent !important;
+  border-radius: 6px !important;
+  height: 28px !important;
+  padding: 3px 4px 0 4px !important;
+}
+div#app > div#browser[options-menu] div#options-menu > label:hover {
+  background: #111 !important;
+  border-color: #666 !important;
+}
+div#app > div#browser[options-menu] div#options-menu > label > input,
+div#app > div#browser[options-menu] div#options-menu > label > button {
+  background: #23242B !important;
+  border-color: #666 !important;
+  border-radius: 4px !important;
+  outline: none !important;
+}
+div#app > div#browser[options-menu] div#options-menu > label > input[type=checkbox]:before,
+div#app > div#browser[options-menu] div#options-menu > label > input[type=checkbox]:after {
+  background: #0A0 !important;
+}
+div#app > div#browser[options-menu] div#options-menu > label > input {
+  margin-right: 4px !important;
+}
+div#app > div#browser[options-menu] div#options-menu > label > span {
+  position: relative !important;
+  top: 1px !important;
+}
+div#app > div#browser[options-menu] div#options-menu > span {
+  margin: auto !important;
+  padding: 3px 0 !important;
+}
+div#app > div#browser[options-menu] div#options-menu button#button3 {
+  float: right !important;
+}
+div#app > div#browser[options-menu] div#options-menu > span > button,
+div#app > div#browser[options-menu] div#options-menu > span > input {
+  background: #23242B !important;
+  border: 1px solid #666 !important;
+  border-radius: 6px !important;
+  color: #FFF !important;
+  height: 26px !important;
+  outline: none !important;
+  text-align: center !important;
+}
+div#app > div#browser[options-menu] div#options-menu input.input-timer:hover,
+div#app > div#browser[options-menu] div#options-menu input.input-timer:focus {
+  background: #111 !important;
+  border-color: #999 !important;
+}
+div#app > div#browser[options-menu] div#options-menu > span.span-number > span {
+  position: relative !important;
+  top: 2px !important;
+}
+div#app > div#browser[options-menu] div#options-menu > span#span10 > input {
+  height: 24px !important;
+  padding: 0 0 1px 0 !important;
+  width: 42px !important;
+}
+div#app > div#browser[options-menu] div#options-menu > span#span10 > input#input10a {
+  margin-right: 6px !important;
+}
+div#app > div#browser[options-menu] div#options-menu > span#span11 {
+  display: inline-flex !important;
+}
+div#app > div#browser[options-menu] div#options-menu > span > input#input11::selection {
+  background: transparent !important;
+  color: #FFF !important;
+}
+div#app > div#browser[options-menu] div#options-menu > span > input#input11 {
+  border-right: none !important;
+  border-radius: 6px 0 0 6px !important;
+  caret-color: #23242B !important;
+  color: #FFF !important;
+  cursor: default !important;
+  font-family: monospace !important;
+  font-size: 105% !important;
+  padding: 0 !important;
+  user-select: none !important;
+  width: 226px !important;
+}
+div#app > div#browser[options-menu] div#options-menu > span > span#span11a {
+  background: #23242B !important;
+  border: 1px solid #666 !important;
+  border-left: none !important;
+  border-radius: 0 6px 6px 0 !important;
+  height: 26px !important;
+  width: 26px !important;
+}
+div#app > div#browser[options-menu] div#options-menu span#span11a:hover {
+  background: #111 !important;
+}
+div#app > div#browser[options-menu] div#options-menu span#span11a > svg {
+  border: 1px solid transparent !important;
+  border-radius: 0 !important;
+  height: 26px !important;
+  width: 26px !important;
+}
+div#app > div#browser[options-menu] div#options-menu span#span11a:hover > svg {
+  border-left-color: #666 !important;
+}
+div#app > div#browser[options-menu] div#options-menu > label > button:hover,
+div#app > div#browser[options-menu] div#options-menu > span > button:hover {
+  background: #111 !important;
+}
+div#app > div#browser[options-menu] div#options-menu > span#span13 > button {
+  margin: 0 4px !important;
+}
+
+/* Complete Mod Custom CSS */
+
+div#app > div#browser[custom-css] {
+  background-image: none !important;
+}
+div#app > div#browser[custom-css] > div#header {
+  margin-top: -1px !important;
+}
+/*
+div#app > div#browser[custom-css] div#titlebar > button.vivaldi {
+  background: #282828 !important;
+  height: 30px !important;
+  top: 3px !important;
+  width: 36px !important;
+}
+*/
+div#app > div#browser[custom-css] div#titlebar > button.vivaldi {
+  background: transparent !important;
+  border-radius: 0 !important;
+  height: 36px !important;
+  margin: 0 !important;
+  opacity: .7 !important;
+  width: 28px !important;
+}
+div#app > div#browser[custom-css] div#titlebar > button.vivaldi:hover {
+  opacity: 1 !important;
+}
+div#app > div#browser[custom-css] div#titlebar > button.vivaldi svg {
+  background: url(/style/icons/vivaldi22.png) !important;
+  height: 22px !important;
+  padding-left: 22px !important;
+  width: 0 !important;
+}
+div#app > div#browser[show-workspaces][custom-css] div.tabbar-workspace-button > button > span.button-icon > svg {
+  display: none !important;
+}
+/*
+div#app > div#browser[show-workspaces][custom-css] div.tabbar-workspace-button > button {
+  background: url(/style/icons/workspaces.png) center no-repeat !important;
+  border: none !important;
+  height: 25px !important;
+  margin: 0 1px 1px -3px !important;
+  opacity: .7 !important;
+  width: 25px !important;
+}
+*/
+div#app > div#browser[show-workspaces][custom-css] div.tabbar-workspace-button > button {
+  background: url(/style/icons/workspaces.png) center no-repeat !important;
+  border: none !important;
+  height: 22px !important;
+  margin: 2px 4px 0 -20px !important;
+  opacity: .7 !important;
+  width: 22px !important;
+}
+div#app > div#browser[show-workspaces][custom-css] div.tabbar-workspace-button > button:hover {
+  opacity: 1 !important;
+}
+div#app > div#browser.win[custom-css] div#titlebar > div.window-buttongroup {
+  background: #282828 !important;
+}
+div#app > div#browser[custom-css] div#titlebar > div.window-buttongroup > button {
+  border: 1px solid transparent !important;
+  height: 31px !important;
+  width: 32px !important;
+}
+.tabs-top#browser.win[custom-css] div.window-buttongroup button:not(.vivaldi) {
+  height: 31px !important;
+}
+div#app > div#browser[custom-css] div#titlebar > div.window-buttongroup > button:not(.window-close):hover {
+  background: #111 !important;
+  border-color: #999 !important;
+}
+div#app > #browser.win:not(.fullscreen)[custom-css] > #header {
+  background: #111 !important;
+  min-height: 32px !important;
+}
+div#app > div#browser[custom-css] > #main {
+  background: #2E2F37 !important;
+}
+div#app > div#browser[custom-css] > #main > div.inner {
+  border-top: 1px solid #666 !important;
+}
+div#app > div#browser[custom-css] div.mainbar > div.toolbar-mainbar {
+  background: #282828 !important;
+  border-bottom: none !important;;
+}
+div#app > div#browser[custom-css] div#tabs-tabbar-container {
+  background: #111 !important;
+  padding: 0 !important;
+}
+div#app > div#browser[custom-css] div#tabs-container {
+  background: #2E2F37 !important;
+}
+div#app > div#browser.fullscreen[custom-css] div.tab-strip {
+  max-height: 0 !important;
+}
+div#app > div#browser[custom-css] div.tab-strip {
+  background: #111 !important;
+  border-left: none !important;
+  border-bottom: 1px solid #666 !important;
+  border-right: 1px solid #666 !important;
+  border-radius: 10px 0 0 0 !important;
+  margin: 1px 0 !important;
+}
+div#app > div#browser[custom-css] div.tab {
+  background: #111 !important;
+  border: 1px solid #777 !important;
+  border-bottom: 1px solid #666 !important; !important;
+  border-radius: 10px 10px 0 0 !important;
+  height: 28px !important;
+}
+div#app > div#browser[custom-css] div.tab.active {
+  background: linear-gradient(#000, 20%, #282828) !important;
+  border-bottom: none !important;
+  border-left: 1px solid #999 !important;
+  border-right: 1px solid #999 !important;
+  border-top: 3px solid #FFF !important;
+  margin-bottom: -1px !important;
+}
+div#app > div#browser[custom-css] div.tab.active div.tab-header,
+div#app > div#browser[custom-close][custom-css] div.tab.active div.tab-header {
+  margin-top: -1px !important;
+}
+div#app > div#browser[custom-css] div.tab-position > div.tab.active.active span.title {
+  color: #FFF !important;
+  text-shadow: 1px 1px 3px #000 !important;
+}
+div#app > div#browser[custom-css] div.tab:not(.active) {
+  color: #BBB !important;
+}
+div#app > div#browser[custom-css] div.tab:not(.active):hover {
+  background: #202020 !important;
+  color: #FFF !important;
+}
+div#app > div#browser[custom-css] div.synced-tabs-button > button[disabled] {
+  display: none !important;
+}
+div#app > div#browser:not(.native)[custom-css] div.sync-and-trash-container {
+  margin-right: -41px !important;
+}
+div#app > div#browser[custom-css] div.sync-and-trash-container {
+  background: #282828 !important;
+}
+div#app > div#browser[custom-css] div#tabs-tabbar-container div.synced-tabs-button > button,
+div#app > div#browser[custom-css] div#tabs-tabbar-container div.toggle-trash > button {
+  border: 1px solid transparent !important;
+  border-radius: 0 !important;
+  height: 30px !important;
+  margin-left: 2px !important;
+  position: relative !important;
+  top: -1px !important;
+  width: 33px !important;
+}
+div#app > div#browser[custom-css] div#tabs-tabbar-container div.toggle-trash > button svg {
+  background: url(/style/icons/trash.png) center no-repeat !important;
+  height: 16px !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser[custom-css] div#tabs-tabbar-container div.toggle-trash > button svg > path {
+  display: none !important;
+}
+div#app > div#browser[custom-css] div#tabs-tabbar-container div.synced-tabs-button:hover > button,
+div#app > div#browser[custom-css] div#tabs-tabbar-container div.toggle-trash:hover > button {
+  background: #111 !important;
+  border-color: #999 !important;
+}
+div#app > div#browser[custom-css] button[title^="Show Closed Tabs"]:hover {
+  background: #555 !important;
+  opacity: 1 !important;
+}
+div#app > div#browser[custom-css] div.toolbar-statusbar {
+  background: #282828 !important;
+  padding: 3px 0 !important;
+}
+div#app > div#browser[custom-css] > div#main footer button#options-button {
+  height: 28px !important;
+  width: 32px !important;
+}
+div#app > div#browser[custom-css] p > span {
+  padding-right: 0 !important;
+}
+div#app > div#browser[custom-css] div.StatusInfo {
+  background: transparent !important;
+  margin-right: 2px !important;
+}
+div#app > div#browser[custom-css] button[title="Reset Zoom"] {
+  background: #222 !important;
+  border-color: #999 !important;
+  opacity: 1 !important;
+}
+div#app > div#browser[custom-css] input[type=range] {
+  background: #CCC !important;
+  height: 2px !important;
+  width: 64px !important;
+}
+div#app > div#browser[custom-css] input[type=range]:hover {
+  background: #FFF !important;
+}
+div#app > div#browser[custom-css] div.page-zoom-controls > span {
+  color: #CCC !important;
+  pointer-events: none !important;
+}
+div#app > div#browser[custom-css] div.page-zoom-controls > div:hover > button > span {
+  color: #FFF !important;
+}
+div#app > div#browser[custom-css]  button[title="Page Actions"] {
+  color: #999 !important;
+}
+div#app > div#browser[custom-css] div.button-toolbar > button.button-on svg {
+  fill: lime !important;
+}
+div#app > div#browser[custom-css] div.ClockButton {
+  margin-left: -4px !important;
+  text-shadow: 1px 1px 2px #000 !important;
+}
+div#app > div#browser[custom-css] div.StatusInfo,
+div#app > div#browser[custom-css] div.ClockButton {
+  color: yellow !important;
+}
+div#app > div#browser[custom-css] div.ClockButton > button:hover {
+  background: #181818 !important;
+  border: 1px solid #999 !important;
+  border-radius: 4px !important;
+}
+div#app > div#browser[custom-css] button[title="chrome://extensions/"] > img {
+  background: url(/style/icons/extensions.png) !important;
+  height: 16px !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser[custom-css] button[title*="https://mail.google.com"] > img {
+  background: url(/style/icons/gmail.png) !important;
+  height: 16px !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser[custom-css] button[title*="settings.html"] > span > svg > path {
+  display: none !important;
+}
+div#app > div#browser[custom-css] button[title*="settings.html"] > span > svg {
+  background: url(/style/icons/settings.png) !important;
+  height: 16px !important;
+  width: 16px !important;
+}
+div#app > div#browser[custom-css] button[title="https://truthsocial.com/"] > img {
+  background: url(/style/icons/truth.png) !important;
+  height: 16px !important;
+  width: 16px !important;
+}
+div#app > div#browser[custom-css] button[title*="https://tv.youtube.com"] > img {
+  background: url(/style/icons/youtubetv.png) !important;
+  height: 16px !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser[custom-css] div.bookmark-bar {
+  background: #282828 !important;
+  border-bottom: none !important;
+}
+div#app > div#browser[custom-css] button.bookmarkbarItem {
+  background: #282828 !important;
+  border: 1px solid transparent !important;
+  border-radius: 4px !important;
+  color: #BBB !important;
+  text-shadow: 1px 1px 2px #000 !important;
+}
+div#app > div#browser[custom-css] button.bookmarkbarItem:hover {
+  background-color: #111 !important;
+  border-color: #999 !important;
+  color: #FFF !important;
+}
+div#app > div#browser[custom-css] div.UrlBar-UrlFieldWrapper {
+  background: transparent !important;
+}
+div#app > div#browser[custom-css]  div.UrlField {
+  background: transparent !important;
+  margin-right: 24px !important;
+  top: -1px !important;
+}
+div#app > div#browser[custom-css] div.UrlBar-AddressField,
+div#app > div#browser[custom-css] div.UrlBar-SearchField.iconmenu-container.SearchField {
+  background: #111 !important;
+  border: 1px solid #555 !important;
+  border-radius: 8px !important;
+  height: 34px !important;
+  text-shadow: 1px 1px 2px #000 !important;
+}
+div#app > div#browser[custom-css] div.UrlBar-AddressField button:hover {
+  background: red !important;
+}
+div#app > div#browser[custom-css] button.button-addressfield.SiteInfoButton {
+  height: 22px !important;
+  width: 22px !important;
+}
+div#app > div#browser[custom-css] div.button-toolbar.BookmarkButton-Button > button.button-on svg {
+  filter: grayscale(0) brightness(1) !important;
+}
+div#app > div#browser[custom-css] div.UrlBar button[title="Bookmark Page"] {
+  height: 22px !important;
+  margin-top: -1px !important;
+}
+div#app > div#browser[custom-css] div.UrlBar-AddressField div.button-toolbar.ContentBlocker-Control > button.ToolbarButton-Button:hover,
+div#app > div#browser[custom-css] div.UrlBar-AddressField > button.button-addressfield:hover,
+div#app > div#browser[custom-css] div.UrlBar-AddressField div.toolbar > div.BookmarkButton:hover button.ToolbarButton-Button {
+  background-color: transparent !important;
+  border-radius: 4px !important;
+}
+div#app > div#browser[custom-css] div.UrlBar-AddressField .pageload,
+div#app > div#browser[custom-css] div.UrlBar-AddressField .pageload:not(.unstarted).progress-done,
+div#app > div#browser[custom-css] div.UrlBar-AddressField .pageload:not(.unstarted).stopped {
+  opacity: 0 !important;
+}
+div#app > div#browser[custom-css] div.UrlBar-AddressField .pageload:not(.unstarted).progressing {
+  opacity: 1 !important;
+}
+div#app > div#browser[custom-css] div.UrlBar-AddressField .pageload .pageload-indicator {
+  background: #F00 !important;
+  border-radius: 0 8px 8px 0 !important;
+  filter: contrast(300%) !important;
+  height: 32px !important;
+  left: 70px !important;
+  top: 0 !important;
+}
+div#app > div#browser[custom-css] .UrlBar-AddressField .pageload .pageload-ticker {
+  display: none !important;
+}
+div#app > div#browser[custom-css] div.toolbar-extensions button > img {
+  height: 26px !important;
+  width: 26px !important;
+}
+div#app > div#browser[custom-css] span#calendar:hover {
+  background: #111 !important;
+  border-color: #999 !important;
+}
+div#app > div#browser[custom-css] div.button-toolbar > button[title="Page Actions"] svg {
+  background: url(/style/icons/css.png) center no-repeat !important;
+  height: 16px !important;
+  opacity: .6 !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser[custom-css] div.button-toolbar > button[title="Page Actions"].button-pressed svg {
+  background: url(/style/icons/cssOn.png) center no-repeat !important;
+  height: 16px !important;
+  opacity: .6 !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser[custom-css] div.button-toolbar > button[title="Page Actions"]:hover svg {
+  opacity: 1 !important;
+}
+div#app > div#browser[custom-css] div.button-toolbar > button[title="Page Actions"] svg > path {
+  display: none !important;
+}
+div#app > div#browser[custom-css] button.ToolbarButton-Button {
+  background: transparent !important;
+  border: 1px solid transparent !important;
+  border-radius: 4px !important;
+}
+div#app > div#browser[custom-css] button.ToolbarButton-Button:hover {
+  background-color: #111 !important;
+  border-color: #999 !important;
+}
+div#app > div#browser[custom-css] div.button-toolbar:not(.newtab) > button.ToolbarButton-Button:hover {
+  background-color: #111 !important;
+}
+div#app > div#browser[custom-css] div.newtab {
+  border-bottom: 2px solid transparent !important;
+  margin-top: 1px !important;
+  margin-left: 0 !important;
+}
+div#app > div#browser[custom-css] div.newtab > button {
+  background: transparent !important;
+  border-bottom: none !important;
+  border-radius: 10px 10px 0 0 !important;
+  min-height: 28px !important;
+}
+div#app > div#browser[custom-css] div.newtab > button svg {
+  margin-top: -2px !important;
+}
+div#app > div#browser[custom-css] div.newtab > button:hover {
+  background: #202020 !important;
+}
+#app > div#browser[custom-css] .toolbar .toolbar-spacer-flexible {
+  flex: 0 !important;
+}
+div#app > div#browser[custom-css] div.toolbar-extensions button[name="ckkinejbeeejbhkmjagfajnagnondgim"] > img {
+  background: url(/style/icons/encoder26.png) center no-repeat !important;
+  padding-left: 26px !important;
+  width: 0 !important;
+}
+div#app > div#browser.fullscreen[custom-css] footer {
+  height: 0 !important;
+}
+div#app > div#browser[custom-css] .vivaldi .expand-arrow {
+  display: none !important;
+}
+div#app > div#browser.win #tabs-container:not(.none).top {
+  padding-left: 28px !important;;
+  padding-right: calc(140px / var(--uiZoomLevel)) !important;
+}
+div#app > div#browser.win[show-workspaces="true"] #tabs-container:not(.none).top {
+  padding-left: calc(var(--menuWidth) / var(--uiZoomLevel)) !important;
+}
+div#app > div#browser[custom-css] .toolbar > .StatusInfo {
+  color: yellow !important;
+}
