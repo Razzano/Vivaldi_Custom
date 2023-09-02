@@ -1,0 +1,861 @@
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Global */
+
+#browser .bookmark-bar,
+#browser .toolbar-mainbar,
+#browser .toolbar-statusbar {
+  border: none !important;
+}
+#browser .toolbar-statusbar {
+  background: #2E2F37 !important;
+}
+
+/* Tabbar */
+
+div#app > div#browser div.tabbar-workspace-button > button,
+div#app > div#browser div.tabbar-workspace-button span.button-toolbar-menu-indicator,
+div#app > div#browser[show-workspaces][custom-css] div.tabbar-workspace-button span.button-toolbar-menu-indicator {
+  display: none !important;
+}
+div#app > div#browser[show-workspaces] div.tabbar-workspace-button > button,
+div#app > div#browser[show-workspaces][custom-css] div.tabbar-workspace-button > button {
+  display: flex !important;
+}
+div#app > div#browser[show-workspaces] div.tabbar-workspace-button > button {
+  margin-bottom: 3px !important;
+}
+div#app > div#browser div.tab > div > span.favicon.jstest-favicon-image {
+  filter: none !important;
+  margin: -1px 0 0 -2px !important;
+}
+div#app > div#browser div.tab-strip button.close {
+  margin: -1px 0 0 -2px !important;
+}
+div#app > div#browser div.tab-position div.tab span.title {
+  margin: -3px 0 0 -2px !important;
+}
+div#app > div#browser div.tab-position div.tab.active span.title {
+  margin: -4px 0 0 -2px !important;
+}
+div#app > div#browser[custom-close] div.tab > div > span.favicon.jstest-favicon-image {
+  filter: none !important;
+  margin: -1px 4px 0 -2px !important;
+}
+div#app > div#browser[custom-close] div.tab-strip button.close {
+  background: #CCC !important;
+  border-radius: 50% !important;
+  height: 24px !important;
+  margin: -4px 0 0 -4px !important;
+  width: 24px !important;
+  position: relative !important;
+  z-index: 9 !important;
+}
+div#app > div#browser[custom-close] div.tab-strip button.close:hover {
+  background: #C00 !important;
+}
+div#app > div#browser[custom-close] div.tab-strip button.close svg {
+  color: #000 !important;
+}
+div#app > div#browser[custom-close] div.tab-strip button.close:hover svg {
+  color: #FFF !important;
+}
+div#app > div#browser[custom-close] div.tab-position div.tab span.title {
+  margin: -3px 0 0 -6px !important;
+}
+div#app > div#browser[custom-close] div.tab-position div.tab.active span.title {
+  margin: -4px 0 0 -6px !important;
+}
+
+/* Footer/Statusbar */
+
+div#app > div#browser[options-menu] button#options-button > span > svg {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAALNJREFUOE+lU8sNwyAMfW+HrtYM2Zy6VyfoxZWxERgMqoRPEeR94xCHw0M8GoFAnOwGcZVnwQvAM4iwwwCBQF9UgM4F4t6RiMiD5IcwZQNIUTOSQSncdfeVwFTNrlmeCWrEloigEsw5PYZA3iS/7rICVahG9Q56631j6qKVG13peXEwzo4s+ebrPVgpDyQ5QQ+ugLFUP88itLZ3HaQEu8IWTrJVnnfA1jo6Cw7+LCwjOf4bf4IVPw8LaJ31AAAAAElFTkSuQmCC) !important;
+  height: 16px !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser span#calendar {
+  display: none !important;
+}
+div#app > div#browser[show-calendar] span#calendar {
+  border: 1px solid transparent !important;
+  border-radius: 4px !important;
+  display: block !important;
+  flex: none !important;
+  padding: 4px 8px 5px 8px !important;
+  text-shadow: 1px 1px 2px #000 !important;
+}
+
+/* Bookmark-bar */
+
+div#app > div#browser[custom-folder] button.folder > svg:not(.sd) {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAActJREFUOE+tk99LU2EYxz9nhmbDM7c12LqySYXhKhgE3oQQy5u68qIywUVXBYqQsH+grFv/gWghBV0UeGlhkijZKMJFarKBVtTWaLq141nz7JVz1tFtzrrQ5+b9+f283/d5n1dyOznrssmzVEU0nukDHlXPV48lt50nE+GWK22XXBVrp1oXd9VG45lBYETfsCvgXyfr8Gg8IxkATzPj41OBQDb5okLT0SFD44manAqAo4lvb176j9wa+Ezip4TFsq0pir99s62Bk3xeWdwPHef28Hsmnl3AflLlIApQrTLHB1CpJxaRxdXga2l/AP3XjvIq8oXHz50glraMijIT5nXqLA0kkxY0zS+6AnMlBxc7HdiaCoTu5VlNpwzA1v3NNAjQgbIMq+lGJp/6xOXQ24gBcLvqGLph5Vz3V34kdiauqICiQCEH1kOgFJp5GHaLkdGF8P4AkFTGHnhIa8vG8doG/P4FuXTJTf4PiGLpXQ47wCk76R3aEHOxtbuGg++pDCuf2piemUdJgZqFolb2kGXJtNvA7/Nw/npOr8YeA6Dks0Qm27GvJ0uZMkPdWUGqZOXdx2PcvDOrA87sHQB88Hnl0//7tjW+exgIbgLrZuzC8iqY9AAAAABJRU5ErkJggg==) !important;
+  height: 16px !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser[custom-folder] button.folder > svg.sd > g {
+  display: none !important;
+}
+div#app > div#browser[custom-folder] button.folder > svg.sd {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAYtJREFUOE+tk00rRFEYx3/HaLx2GSORhZJZkIlSlkqIvZBS2CgpSl6WY0rJUs0HoKzId0Aohg2KYpSyYJJhmOt6uXN17sxwG4zIqVPn5Xl+//855znCCx0GLJHUBHR6YDl5/VPcFBieL6K8KTKtcPEdIJWyhE+BkDH/B0hl+Ss3K+WKufzuQAIG9tpwVGlkogJGUl5ino6GnYBfobtv/Z8BnkcXGCfvyobFRDQ+tqVlEAymoet1tLbsfziYHSllcuaJ29C1CUgkJGgSJruiwG0oi9UlN12TOxHzDhqddrSZIhraL7i8iqdY1VVQVXiJQE42qC/5zC8UM7d4fGoCbK5c6sfz/w6Qmr1rZYT0c1Nef4WHG4iEYm6ensGIxt6lsACcipOesVf2A3cbpgMZNHFRyebWEeo1aPcQ1S0PaTmOIw/q3CU09Uc4OAv7xCgYsiSGT9w4HoOxm0o0LbkWQBM57B26GJzexlXb7BNdYOyWCvyr1b8G9A15fKJGHi9elj99Xev+wVk4AFS8AfJJwUTck1DMAAAAAElFTkSuQmCC) !important;
+  height: 16px !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser[fav-in-url] button.button-addressfield.SiteInfoButton.secure svg {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAWdJREFUOE9jZMACLl26FMrAwFB54cIFQ5C0gYHBeQYGhnY9Pb3V6MoZ0QVAmhkZGWedP39eQF5eHiz98OFDBkNDw9v///+vRjcExQCQZiYmptBz586F6uvrT9DX1y8EGXDx4sX+ixcvFhgZGa3+9+/famRDMAx4+vTpqtevXzPExcWhyC1atOi/qKgog7S0dNhIMUBfXx8UdXBw8eJFQ5xhAAtlbGkClxgslsAhDQphWJwjaxAWFmZ4/PgxAwcHB8OPHz9QzILFFNwAJSUlFAV///5l4OXlZXj58iWDhIQEWO7Xr18M//79Y/j58yfDo0ePwFENN8DCwoIBpAkEQDbCwI0bNxhYWVnBGGTAnz9/wAZ8+vQJ1QBsXoC5AGQYFxcXigtByRvuAi8vr/9bG9+DFfA5XQHTn/bp4OXn+H5maF/GAPFCZRTD/7ZCS6I1gwyv6j+OasCUzbxE2QxzmXe9IMO2bdsYAd3k7RFOQkcYAAAAAElFTkSuQmCC) center no-repeat !important;
+  height: 16px !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser[fav-in-url] button.button-addressfield.SiteInfoButton.certified svg {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAXxJREFUOE9jZMACSneVhjIyMlbOPz/fECSdaJh4/v///+3dbt2r0ZUzogtANc+af36+gI2cDVj6yKMjDPEG8bcZGRir0Q1BMQCkmYmJKXTeuXmh0XrREyZ4TCgEGVCwo6B/6aWlBUlGSav//fu3GtkQDAOOPTm26tabWwyvy16jyIl2if5XE1FjsJKxChuuBhTuKDzHwMAgeOrZKQVQGMToxZxHjqEll5YYgsLATMrsAQMDw/t+j34jkDw4oGChjC1N4BKDxRLYAFAI51vkM/z++xusnoeNB67vwIMDDB9/fsQw5+abm+CYghvgouSCoUiAQ4Dh0qtLDAbiBmC5b7+/Mfz6+4vh6++vDEcfHUU1AJcLNtzcwCDGJQY2AKQRhL/8+sLw7NMzVANgyRbZGRI8EmAXwAxAlgMlb7gXikIY/veWW4Ll+ZyugOlP+3Tw8pWtlBku7LwACQMDd4P/51s4idYMMtyw5juqAXeP3SXKZpjLijuPM/StYWAEAIjm7xHkmScVAAAAAElFTkSuQmCC) center no-repeat !important;
+  height: 16px !important;
+  padding-left: 18px !important;
+  width: 0 !important;
+}
+div#app > div#browser[fav-in-url] button.button-addressfield.SiteInfoButton.warning svg {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAM9JREFUOE/t0z9qQkEQx/HPgo2IlUESQirr8E4QL5HYewvPkFuk9s8R0mhnJ9ZWEpJIUgWxCbywmgePh7wU22aLXXZmft/ZYWeC37Wmd+Dxi7tPuoW9fHbYtVk0Gd2yib4QtxUPrzxltC7QOKfGNz5O8fsrhhnTEDO/sOrTapaEkwpkULofMGd/TRaWTG+4v6wIImCQ50frJARlQLS9YcssPPPep1t99l+AWM6cXRiTV+nHrDUlFK4YUwuoK6FI8g8g/RuTGym5lZOHKXWcfwDl6XUrNl6Y3gAAAABJRU5ErkJggg==) center no-repeat !important;
+  height: 16px !important;
+  padding-left: 18px !important;
+  width: 0 !important;
+}
+div#app > div#browser[fav-in-url] div.UrlBar div[title^="Caution!"],
+div#app > div#browser[fav-in-url] div.toolbar.toolbar-small.toolbar-insideinput {
+  margin-right: 3px !important;
+}
+div#app > div#browser[fav-in-url] div.button-toolbar.BookmarkButton-Button > button svg {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAAAXNSR0IArs4c6QAAAllJREFUOE+tk01oE0EUx/8zmwR7VfDqSaQBobQHKYgnTy0VlFKpJDsrvUg9CEImCWi6UA+GgAVBsJfGWptaGrRZ2ItehH5EWpsag22IvQgWRFpYCJKGdjMyWzdkW5AefJd58583v/cxDEGLcc5vEEK0ZDJ5rVV3fc55mFL60OfzBfb3988lk0lCotGoAHBHY+y5G9geDBLOeTshZA7AeY2xQCvwxeSks6WUQgJ2NcZOtwa8mp7+btv2b6aqQVefz+VgWVZWCGEMDw+/lPr4+DhkpsxtTRuUQmZm5ikhpJNSetm27V/V7e2znRMTqAP43NaGyOampzMHEI1GRzXGHsiyAoGAGQ6He92o0Z4eXNnawjqAbwCeVSoeQDqdBonFYteZqr6RgKGhoWbAwcEBynNzeDcygksAPgG4u7HhnPt8Pmd1AVeZqr53AfKia+VsFl8SCSgAfspJl0rOkaJIBZiamgKJx+NBNRz+KgGMMU+JhVwOlXgcuwA6AHSurR1W8BfwenYWRNf1UzcHBmoSEAqFPBkKpolcJIIzgAPhq6vN55NONpsFkc56oSAk7dag8xgee9TRgfv5PJ50d+Pe4qIngWEYh4CP+bx4Oz+P/v5+Twa5edzV1bx4FG6a5iHAMAyxtLSEvr6+YxX8S/h/gEwmI4rF4okrqFarWF5eNoUQvU4LqVRK7OzsHAM0Gg3s7e1hYWGhpCjKxUajsUgpHdR1/YfbmgNIJBKiXq83AZZlYWVlRQY7f8K2ba1Wq30YGxurHZ2JA+CcX/D7/WVKqakoSkjXdeuk0/wD2IkGjMHEy9UAAAAASUVORK5CYII=) center no-repeat !important;
+  filter: grayscale(1) brightness(.5) !important;
+  height: 17px !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser[fav-in-url] img#favImg {
+  margin: 1px 0 0 3px !important;
+  max-height: 16px !important;
+  max-width: 16px !important;
+}
+div#app > div#browser[fav-in-url] div.UrlFragment-Wrapper {
+  margin-left: 20px !important;
+}
+
+/* Mainbar/Urlbar */
+
+div#app > div#browser div#rewindForward {
+  display: none !important;
+}
+div#app > div#browser[rewind-forward] div#rewindForward {
+  display: flex !important;
+}
+div#app > div#browser[fav-in-url] div.tab > div > span.favicon.jstest-favicon-image > img[srcset="chrome://favicon/chrome://extensions/"] {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAJ1JREFUOE9jZMABpIpf/AdJPeuVYMSlBiSOVVK66Hnof0bGVWAF//+HPe2TXI3LEKwGwGyHacLnCrgByLai24bXAHwasTkb3UuM6M7FF2DYvMRIqgvQY4aoMMAXJhixQIqXQOFBkQEYCUm68OH//0zsxIQjXA3cBaQ4HaYb7gVSNKMnKqzpAKYIWxQTNABdAaF8gZKQcKV5mCHYciYAAB5bi/Wkn3YAAAAASUVORK5CYII=) !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser[fav-in-url] div.tab > div > span.favicon.jstest-favicon-image > img[srcset*="gmail.ico"] {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAmRJREFUOE+N089PE0EUB/DvdH90W/qDqi3UWFMMrA2agEhsQkIqCTFaDl5MISYePAkJFw9ePHnQGC8evIgH/wFijDejIhGpIhFCNKQhkeAPMKWC9Iel3e62O2a2tFYE4lxmM5n3mfdm35BufzPF1pj8skgq33vNQxeOVmNILcAJPF59WtgTqQ1mh5CBpmYa5CgOg+ARNSFuMu2KnG4JUFnWMXxxE0srIp69F0GuNh2hIZMOL4CYJOEj4TBXKP2DsOCgx4Sbt74Z1S0nLHg86QK51nyMdnNFeIoFOJx1+C7ymCpQjGfVKsKCe6wiLl2Pw9eQB08VLKccePLGDXK54yztISrk5CJc9TbY7RJyHI/opobRpGKcFnFJ6LII4Ic+V4HpdTdG3zpBevpu0DbXQbRuxBBaHYPTLoCIAtJFYC6vGsAJiwgHgNxgGXip+BBdc2HqnQ7S3j9CD/mC8CvrGIjdhY9uwM7p7H6RKrEZqOdMoDpB+soSlPlGPOw8gPl1CSszOZD2yH3qkMMQ6hrAzdzD8fg4emkcQasIkK0/SimmsyW8sAAfZCsyvV7QjAZlNlkGnC1h8LYGFLMJJKK30bX2GiGbGSctnJHBbL6EiayGqF+C9ZwXQqMZepoBqZ0B99cxeCQRZ2yiATzPqvihqEi01v8fsDAxYnQoQ9hgwazN5XAn/ZNBsVxCR+QBtQXCEK0eaL9WjRIYwAIrbV55IxXA7LVAzajQZpIgbefv0Dq5D2anD3o+9Rew/UFVM9gvQvupQmMZBEKDdN+pYQii3dhfm8FuQGU99zReBrZvrJSwE7B97Td/YRr70QXSTAAAAABJRU5ErkJggg==) !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser[fav-in-url] div.tab > div > span.favicon.jstest-favicon-image > img[srcset*="https://tv.youtube.com"] {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAIVJREFUOE+9k0sOgCAMRF9viAu9gxxNN95KboGpEd3wCSWRFQnpm2k7CECEDZj13nF2gUWMxUlnV0DMqjoHx9E0VAbECNPUhNQBqq8uvIfzzLppA1KZiBGgDtYVQjAAhmbQsQVLiL4cDCexlpQUMoH8Cqg8PM7ulP4DKP6JQo/J1dubFXABwhA9VWpxE1sAAAAASUVORK5CYII=) !important;
+  height: 16px !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser[fav-in-url] div.tab > div > span.favicon.jstest-favicon-image > img[srcset*="https://www.lincoln.com"] {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAGJJREFUOE/tU0EKwCAMSx45H7k9MpJBwUkFxeMMlBZJg7QNkUDSBSDCjMdB0vkD9g9Jc1BSkZHADaAAcDaiLv0vhgIkKUnubupfCWTr9TCnh7gtcLbwnvDWKbdOXDOT2St2rsuzmBFY0vl2AAAAAElFTkSuQmCC) !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser[fav-in-url] div.tab > div > span.favicon.jstest-favicon-image > img[srcset*="tampermonkey"] {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAZRJREFUOE+Vk7FOwzAQhv9zAIGEKhigFIqUqAPPwNaBzkx5mDxBX4EBBtZm6sBUhm4MDIipCKl0AIl2QEJIDKi1D90lIaFph3pIbJ/vu/8/J/QQIDSM8MehtWGwiXxYMFiW+pA3YZourQf0HSGmRx8dAKGecAAbgkmmIMsAAbqxeMR0Xwd7Xhp1gPMSgPIEUMyfA1kGU+8QrPuFIJuUKPmiQHSzU0VUOKeAmyMwid4FAGIHTjOWAq6rYCdWCwBKFRQBMrdzCpwouNpPAalUbfla1hTgn4qZTRylZxVwsQfOrkkrZ6CljQfYWrXsLJgu98HSbHFAXp6deS8qyJhqR8qKgm7t7zvB+TvaAE4B3HVriIxJgM5xKab72TVK+dabJkcF5e3bY9L12SuXYr06IgUMfPCuRzgYch9AswDoDwJqirWTUTk2blDzY8ZMowC8ZRRQqvLS8CIB+ENbio0bFH0LYBLkPaiO8h5MAkRmPblON7WYj2W/Dj37lc6O95X8TCuOT1uJ6SnYDg2bkMErQQgUO3LxL14+yb/dYop2AAAAAElFTkSuQmCC) !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser[fav-in-url] div.UrlBar-AddressField button[title="Reader View"] svg > path,
+div#app > div#browser[fav-in-url] div.UrlBar-UrlObfuscationWarning > svg > path {
+  display: none !important;
+}
+div#app > div#browser[fav-in-url] div.UrlBar-AddressField button[title="Reader View"] svg {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAcFJREFUOE+VkjFrwlAQx99TBAcJQkDFKQ8XpQhNQNBFzOIoZi1VGvwAbfET9BOku0MKShEH45zF4qKCGl10ERKHCg5ZRMRBTHmBhBilaLZ3/7vf/e9yELi+fr+vZjIZ5I7j9zUNOhPH47Ewn8/fAoEAy3Hcj1OTJCm32+268Xj8M5VKvVvaGUBVVbnZbP5GIpEPnuc1J0AURWq1Wr2WSqWHWCyWvwBst9sXXdefEEL5Xq/XzWazrBNgxXATkiS/CYL4wrrtAAu4+Nrs7pgz1wQ4u98KsFzAe4utBpYLeI/1a6NgwAQhxNxi/SpgNBqp+/1eUxQl7PF4zJzT6QSOx+OkWq0+47cgCA0IIeP1em1GMBjcJ5NJErZaLalQKBRns9lZg3A4DCiKMpe8XC4NXdfPdJqmQbvd7sBarZYrl8vd6XR6MQVJkmbMXYxjDMOARqPB/guQZXni8/kAy7IXO7IBgiA8VioVxe/3A0VRbBfOETRNMzabja1h+4fDAdTrddqccTgcGm7/iUQCEARhHZqxWCzOUhBCIBQKQTNBFMViNBqV8PYhhAD/jXQ6zVv3jo9tMBiIWDcMw9TX6zXH83znD3ZL4N6jeJ8DAAAAAElFTkSuQmCC) center no-repeat !important;
+}
+div#app > div#browser[fav-in-url] div.UrlBar-UrlObfuscationWarning > svg {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAUVJREFUOE+dkzFSwzAQRZ9kp4E2spKSoYIeDgA9XAEquAQUcAmo4ArQwwGgp4KhSyIrLTSRJUaJnQm2kzC48/7d9/9asmDFMx7zGeVul61lbWKZkOe8OMde1NOU1yxjv623FRACibW4EGYjQoBSpEJQ1CGtAGN4SFOOnPvV/qg1x38C5Dmhcq8GYooso2HYKBjDTZJwVhSg9WzcGJASvOdWa84XUzQA1uK9nzktAuK7lASlkEsBxnCRJFxF9zZAkkBRcKk11/PVFmnWMvGetKrVE5QpnFJ0GoDhkJNOh7vKvS1BrMUUkwmn/T730yOuSNby5T0bKy7mXJKSb6XYnANGIw6k5Kl+dG0rlGvEb3HY6/E8TWAt1nu6dfdlgBIyVgolBgN20pS3uvu6VeLFco5dkee8h8D2uoE2XQg+hDGUv8x/EPADuIdxhzeRpC8AAAAASUVORK5CYII=) center no-repeat !important;
+  position: relative !important;
+  z-index: 9 !important;
+}
+div#app > div#browser[fav-in-url] div.UrlBar-AddressField button[title="Reader View"],
+div#app > div#browser[fav-in-url] div.UrlBar-UrlObfuscationWarning {
+  margin: 0 2px 0 4px !important;
+}
+div#app > div#browser[fav-in-url] div.UrlBar-UrlObfuscationWarning {
+  display: none !important;
+}
+div#app > div#browser[fav-in-url] div.permission-popup > button {
+  margin: 0 0 0 2px !important;
+}
+div#app > div#browser[fav-in-url] div.button-toolbar.BookmarkButton-Button > button {
+  margin: 0 0 0 0 !important;
+  padding: 2px !important;
+}
+div#app > div#browser[fav-in-url] div.permission-popup svg > path {
+  display: none !important;
+}
+div#app > div#browser[fav-in-url] div.permission-popup svg {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAQtJREFUOE+9k7FOAkEQhr85KhsqSSx5CRpIDBc7H0AppfABKKwwMSZYWfgAFlCqD2BHICRc40tYmkhFY8WN2VtW3Ls9KCROdbcz/7f/TmaEfIxpEkWXoBd+Skak6SMnJL/PxSuayhylWYD6ioS2ttzRBpDdLPOtYpdMteWcWEBI/A4M14ouUM+h15BywA0wU6s6Frj9d8Cfn7Crm14PTPGEc5CnXTqb1w4xz+Zrj3NgXdRB3oDDEicL0AYxpkNZ+A4spA8yCAP0mpi78lE2mRcq1OQj4GLBpx5xxmo7wE1mRe5/9kJIWOlVfpHCT3D4STTcbKSMiFMz0IUo9sCVvFLlgF72+8UDpyxDgG9/9VwR1jfNPgAAAABJRU5ErkJggg==) center no-repeat !important;
+}
+div#app > div#browser[fav-in-url] img#favImg[src^="chrome-extension://cjpalhdlnbpafiamejdnhcphjbkeiagm/"] {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAb1JREFUOE+VkztPG0EUhb8xs8T2Olhu+AFEIB5FCqpE/AJaRArcJI2hQaC8oOEhQZE6SsKjAzonsmhoSBNRQATIEgJEgYREEUVCiSNAtqUdryeaxXayxuZxm9Xu3XvOuTPnCG6oCSG0ac9oLer9dq0x3tjYbymVLAKB0pQLNADKsp69c5zP/4MJw6ItC6EUHh1Qj84BLMCVkqCUBCIRPICb1rit5wMoABIoy1clRvM0Zdir62qFkuye6Wma21pJDcSJtDxi5HAfxymgsllCDyNszs/x7c1b34o+BdcBDlgdSnCwtIIOBZnI/OFDVxfnJycVIXUVNHW0M5xO8769g8vTU2/g+c4uX1+95MfGhh+g/FZLQTIe5ziVwpzPZC7HfHc3maOjfwBfBgf13uKi90GGw4z9/kX27AwZjbG/skxnXx/6QRA7HGJ74SPro68rZ/A4kUAY4wSUShqjXKFIAraNqxQil8MVgqBt47guIp/3XYIxlueZT0+f6J9b32+7cl+/pbeXF2tromK6+xhKxmJMZTLerM+1Zp0GpZLlDFRLMgZzq/JQ0/ZT0aguXlz45o3ZZmuksm5MzfRd4vwX+BGlAwFw7cIAAAAASUVORK5CYII=) center no-repeat !important;
+  height: 16px !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser[fav-in-url] button.secure:hover,
+div#app > div#browser[fav-in-url] div.toolbar-mainbar > .button-toolbar.ExtensionIcon > button:hover {
+  background: #222 !important;
+  border: 1px solid #999 !important;
+}  
+div#app > div#browser[fav-in-url] span.siteinfo-text {
+  margin-top: 4px !important;
+}
+div#app > div#browser[fav-in-url] button.warning {
+  color: yellow !important;
+  margin-left: 2px !important;
+}
+div#app > div#browser[fav-in-url] button.certified {
+  color: lime !important;
+}
+div#app > div#browser[fav-in-url] div.UrlBar-UrlFieldWrapper > div > div > input {
+  padding-left: 9px !important;
+}
+div#app > div#browser[fav-in-url] .transparent-tabbar .tab-position .tab.active .tab-header .favicon:not(.svg),
+div#app > div#browser[fav-in-url] .theme-dark .tab-position .tab.active .tab-header .favicon:not(.svg),
+div#app > div#browser[fav-in-url] .acc-dark.color-behind-tabs-off .tab-position .tab.active .tab-header .favicon:not(.svg) {
+  filter: none !important;
+}
+
+/* Buttons & Custom Buttons */
+
+div#app > div#browser div.toolbar-extensions button[name="ckkinejbeeejbhkmjagfajnagnondgim"] > img {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAypJREFUOE9tk11sU2UYx3/d2p4O53ra7dTW2c5AB2sLq6v3UxJjTFRQlJkAEZSPRG4VNTFRvDAxcumFCYKyBEyciTdqSDSRdLrRIrRLJ0xc0WbdaNez0nPafbh+nGN6xiYhvlf/vMnze5/nfX+viXvWpWj009XV1Reys7OPNLeDfX2IoojdbqdarXIrk7lUKZeH9+zePbxeZmqGZCJxZ7XWcGiahq5pVGs1dE3HKljIZP5mRyiEubV14yhd16nV66WBSMRpAE6f/aKwdUuvpKoqmEw82uOjvb0dtazw69gY2WwWj8dDJBLBarHgEEV+Gb8sHzv8ussAnPnyXGF7ICiVFAWXJBEO76DRaJBMJsnPzxOLx2nCO51OvF4vwWCQm9Np+chrh+4BBINSqaQiSV2E+7fTHCc5MUEulyN+5YoBcDqd+P4PwHvD0+LUmP/b46/g9jxM71Y/zTmvJRLk8/kNgMfloqvTyfFECTw9aT462GuMULjQttd18Z0RUlHQarz/6ks4Oh6kzWxiQV4gGouTK5X5fQmwPYB5515uB44OufavfGMA8ufbvpeLvmd/i9/kzhLMqaC1wjIC2rKOsFJFEGDLZnCLMOPfw76HLv7gPrDy3EYHNwr+kYA0bTxVQ6tTmqkbWSubMCtmIwtWGz9btxl51+PX/+vA+uH56erVcf+b3Qme37ZEE7QOWQesF4/8tYkfXc9g7falqx8cWLsD8eSZQSU9E2Vy1BCm56mnabVtoqXFimlphcbtLNV/Fslk0iC0Ydv5IjaL/oRy8sioARj56sLUT7GrfV+b/VRUFb2mADosFKG8CIvLYBGwhAaQ3J2cEBW6fb4/hvbtDxiAs+eGC6G+gFSuVPB43Ij2Dur1OqnJSYrFIrNzc2i6TovJZIgWCoX4M31LPnzo4JpIn53+vDDQHzZMbIoUGXjMECmVSlGQZWKxGHKxiL2jgx6vl0AoxPUbU/Ibx46uAT7+5FTpycFBsaSUcUld9N81MZFMMD9fIB6Po9xn4tj4ZeXdt084DIAgCG9Fo6OnFLWCJHUS7r/7FyYmyOdyxO5T2SE6GRp6eRfw3b+qmX0g+vI/HAAAAABJRU5ErkJggg==) center no-repeat !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser button.ToolbarButton-Button.custom-button {
+  opacity: .6 !important;
+  width: 32px !important;
+}
+div#app > div#browser button.ToolbarButton-Button.custom-button svg {
+  filter: invert(0%) !important;
+}
+div#app > div#browser button#restart-browser {
+  opacity: .7 !important;
+}
+div#app > div#browser button#restart-browser:hover {
+  background: #1A73E8 !important;
+  border: 1px solid transparent !important;
+}
+div#app > div#browser button#restart-browser:hover,
+div#app > div#browser button.ToolbarButton-Button.custom-button:hover {
+  opacity: 1 !important;
+}
+div#app > div#browser button svg {
+  color: #AAA !important;
+}
+div#app > div#browser button:hover svg {
+  color: #FFF !important;
+  opacity: 1 !important;
+}
+
+/* Button Popup w/Arrow and Dark Theme */
+
+div#app > div#browser.theme-dark div.button-popup:before {
+  border-bottom-color: #AAA !important;
+  bottom: -11px !important;
+}
+div#app > div#browser.theme-dark div.button-popup {
+  border: 1px solid #AAA !important;
+  border-radius: 0 !important;
+  z-index: 9 !important;
+}
+div#app > div#browser.theme-dark[footer-in-header] div.button-popup:before {
+  border-bottom-color: #999 !important;
+  bottom: auto !important;
+  rotate: 0deg !important;
+  top: -11px !important;
+}
+
+/* Options Menu */
+
+div#app > div#browser div#options-menu {
+  background: #303030 !important;
+  border: 1px solid #666 !important;
+  box-shadow: 4px 4px 6px #000 !important;
+  display: none !important;
+  padding: 0 3px 3px 3px !important;
+  position: absolute !important;
+}
+div#app > div#browser[options-menu] div#options-menu {
+  display: flex !important;
+  flex-basis: 100% !important;
+  flex-direction: column !important;
+  overflow: auto !important;
+  z-index: 9 !important;
+}
+div#app > div#browser[options-menu] div#options-menu > div {
+  background: #202020 !important;
+  padding: 6px 4px !important;
+}
+div#app > div#browser[options-menu] div#div0 {
+  text-align: center !important;
+}
+div#app > div#browser[options-menu] div#div0 > span {
+  color: #FFF !important;
+  position: relative !important;
+  top: 3px !important;
+}
+div#app > div#browser[options-menu] div#options-menu > div > button#position-menu {
+  float: left !important;
+  height: 24px !important;
+  width: 24px !important;
+}
+div#app > div#browser[options-menu] div#options-menu > div > button#options-menu-close {
+  float: right !important;
+  height: 24px !important;
+  width: 24px !important;
+}
+div#app > div#browser[options-menu] div#options-menu > div > button:hover {
+  background-color: #FFF !important;
+   border-color: #999 !important;
+}
+div#app > div#browser[options-menu] div#options-menu > div > input#input0 {
+  display: none !important;
+  height: 25px !important;
+  text-align: center !important;
+  width: 25px !important;
+}
+div#app > div#browser[options-menu] div#options-menu > label {
+  border: 1px solid transparent !important;
+  border-radius: 6px !important;
+  height: 28px !important;
+  padding: 3px 4px 0 4px !important;
+}
+div#app > div#browser[options-menu] div#options-menu > label:hover {
+  background: #111 !important;
+  border-color: #666 !important;
+}
+div#app > div#browser[options-menu] div#options-menu > label > input,
+div#app > div#browser[options-menu] div#options-menu > label > button {
+  background: #23242B !important;
+  border-color: #666 !important;
+  border-radius: 4px !important;
+  outline: none !important;
+}
+div#app > div#browser[options-menu] div#options-menu > label > input[type=checkbox]:before,
+div#app > div#browser[options-menu] div#options-menu > label > input[type=checkbox]:after {
+  background: #0A0 !important;
+}
+div#app > div#browser[options-menu] div#options-menu > label > input {
+  margin-right: 4px !important;
+}
+div#app > div#browser[options-menu] div#options-menu > label > span {
+  position: relative !important;
+  top: 1px !important;
+}
+div#app > div#browser[options-menu] div#options-menu > span {
+  margin: auto !important;
+  padding: 3px 0 !important;
+}
+div#app > div#browser[options-menu] div#options-menu button#button3 {
+  float: right !important;
+}
+div#app > div#browser[options-menu] div#options-menu > span > button,
+div#app > div#browser[options-menu] div#options-menu > span > input {
+  background: #23242B !important;
+  border: 1px solid #666 !important;
+  border-radius: 6px !important;
+  color: #FFF !important;
+  height: 26px !important;
+  outline: none !important;
+  text-align: center !important;
+}
+div#app > div#browser[options-menu] div#options-menu input.input-timer:hover,
+div#app > div#browser[options-menu] div#options-menu input.input-timer:focus {
+  background: #111 !important;
+  border-color: #999 !important;
+}
+div#app > div#browser[options-menu] div#options-menu > span.span-number > span {
+  position: relative !important;
+  top: 2px !important;
+}
+div#app > div#browser[options-menu] div#options-menu > span#span10 > input {
+  height: 24px !important;
+  padding: 0 0 1px 0 !important;
+  width: 42px !important;
+}
+div#app > div#browser[options-menu] div#options-menu > span#span10 > input#input10a {
+  margin-right: 6px !important;
+}
+div#app > div#browser[options-menu] div#options-menu > span#span11 {
+  display: inline-flex !important;
+}
+div#app > div#browser[options-menu] div#options-menu > span > input#input11::selection {
+  background: transparent !important;
+  color: #FFF !important;
+}
+div#app > div#browser[options-menu] div#options-menu > span > input#input11 {
+  border-right: none !important;
+  border-radius: 6px 0 0 6px !important;
+  caret-color: #23242B !important;
+  color: #FFF !important;
+  cursor: default !important;
+  font-family: monospace !important;
+  font-size: 105% !important;
+  padding: 0 !important;
+  user-select: none !important;
+  width: 226px !important;
+}
+div#app > div#browser[options-menu] div#options-menu > span > span#span11a {
+  background: #23242B !important;
+  border: 1px solid #666 !important;
+  border-left: none !important;
+  border-radius: 0 6px 6px 0 !important;
+  height: 26px !important;
+  width: 26px !important;
+}
+div#app > div#browser[options-menu] div#options-menu span#span11a:hover {
+  background: #111 !important;
+}
+div#app > div#browser[options-menu] div#options-menu span#span11a > svg {
+  border: 1px solid transparent !important;
+  border-radius: 0 !important;
+  height: 26px !important;
+  width: 26px !important;
+}
+div#app > div#browser[options-menu] div#options-menu span#span11a:hover > svg {
+  border-left-color: #666 !important;
+}
+div#app > div#browser[options-menu] div#options-menu > label > button:hover,
+div#app > div#browser[options-menu] div#options-menu > span > button:hover {
+  background: #111 !important;
+}
+div#app > div#browser[options-menu] div#options-menu > span#span13 > button {
+  margin: 0 4px !important;
+}
+
+/* Complete Mod Custom CSS */
+
+div#app > div#browser[custom-css] {
+  background-image: none !important;
+}
+div#app > div#browser[custom-css] > div#header {
+  margin-top: -1px !important;
+}
+/*
+div#app > div#browser[custom-css] div#titlebar > button.vivaldi {
+  background: #282828 !important;
+  height: 30px !important;
+  top: 3px !important;
+  width: 36px !important;
+}
+*/
+div#app > div#browser[custom-css] div#titlebar > button.vivaldi {
+  background: transparent !important;
+  border-radius: 0 !important;
+  height: 36px !important;
+  margin: 0 !important;
+  opacity: .7 !important;
+  width: 28px !important;
+}
+div#app > div#browser[custom-css] div#titlebar > button.vivaldi:hover {
+  opacity: 1 !important;
+}
+div#app > div#browser[custom-css] div#titlebar > button.vivaldi svg {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAAl9JREFUSEu1lb9LG2EYx79vkosNaahVSkMK7WCliGZRHO4fUBx0EMymKIKTEhxaTBDMIlkEyRqrOMfBISDo0k654XKkgziUJLRLK7Vg0hhjYu7e8r4kIWcu8frDW+7ufb7vh+/zvM/7vgS1JyeKMyohMfZrobQ+bOqtEcJ1Vkp93ZJ0wL75yKUoxlRKZ6w1gSmagUilFFZCDp5Kko8wp1VKY4QQWP6WWJunAaCUwkaIj1yKYtu8icsFmyjCNjICi9vNp2vn56gqCqqSBFootLXSFiyMjcEZCnXMoRgK4fbkxFBjCO6an4djaclUYUrRKMr7+y3aFrAZp3cpRs51YFbTJ8fHfN7V6SluMhn0TkyA2O0tjq7PzlBUFDybneWx/Pi4ruY6cLPbz8vLuEp9gnNgAG/e77SAsysruFYUDCUSPHbXtQ7sCATQNTnJhem375D/+IE3+qv1dfROTQFNff7F70chkYBXlrm+HI+jFA43DOjAzkgEwugoDxZkGdm1NWj5X3D0v0bf9jaEWsux+MXeHnLxOPoPD7n+VpZR9PvvB/M6y0l8DQag5XKwezzoY6uvaahkMrjY3YVnYwOCx3M/uLkUTE1VlTv7EY3yyY+9Xg4up9N4vrqK7unpRnk6lsKo1WilguzcHHfJHrbtHw0O4uXODoggNFLvuHjN7dbcBvmjI3zf3ASpVGB1ufBiawuO4WFdp3RsN6Y0cq3m8/gWDOImmUTPwgJ6Fhc7umUcc1uaUpRSKfyMROAOhxsLxgCmt3Q9PzNb+48PoTr8n47NBzvombsHuZrqaf/vy/Q3iIxFlG1My58AAAAASUVORK5CYII=) !important;
+  height: 22px !important;
+  padding-left: 22px !important;
+  width: 0 !important;
+}
+div#app > div#browser[show-workspaces][custom-css] div.tabbar-workspace-button > button > span.button-icon > svg {
+  display: none !important;
+}
+/*
+div#app > div#browser[show-workspaces][custom-css] div.tabbar-workspace-button > button {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAA11JREFUSEvVlFtIFGEUx/+fzuzsWmpGq6ux3Wgpt9Iw26KLm0lhgmHZVkaXF7s8ZCllV7CLCIXRlbKH6Ek0yjCie6llplb0EJVQbGxmmaZZ287ONrOXiZnRWaEIEnvoe/nO/Od/fnPmfHOG7F+ycPLXtvZDpoQEEwBoGYqRdoAQnYamonQ0PYyhaR1DUZIapaNoLUNTWi0VqvgAmiJ9Ic6XlT3Ia+rcRK7Oj2nJLNkcj6Q85WaIRjX5AkBrNw/eK0LwirLO+wL47hMxzahTff2D9pIM75TShwdJVWr0q+x8mxmpBb2Pj1B9VU0umMZEg9GEgOmtSkOF/BYovyMVCvGMDbMO3WsaEPhTfS0+ni7+5QHTL9cHwaVJ+vvbC6xWLNqhGBm9mlDxyI3sNDNEELhZVtYdDgc+lO6T46zKatV7JWcJLGUXwebMRH1rN08GCu4P7aO3f/MGwUeS9XXbtlrn/W3FfwLXvesKkKPJ+rqCQQD3b0WNo0skeRP0F07mm1cgq1B5I904tW/VTzyYYUmAVkOBEwKy3mB3om3/FsQ3lKu+76G0HM97y6F54nA8ExmRlGVMOr5pIdmK7F2KMcysJjxzeOEMN8NkGAqXoMhn7wKnVhEUjkpQfZtL5sgxlXkCI65bMTe/xUP2Wk07DmRwh0NtexRjeJKa0MNyqHwZj2lJsWh1KvJKszJlF1pE3GlWrXJQvNSH2Jo0LC60uwYElqDS+iN4o8WYczjNXRGxbrtsJlHJahm8T8SROzGYYk2EX2kxeB/A+5W4uVH5tq3aS/KekrkGsbXpyNr5nCUSeI+lp8KYu14BGxao4IBfwL7zHUhcvgEevzLKgh/gvADb23NJa6t7rOYcH7MbtqIXLFk6NW72sTnOhsEELy96ATI5brixMl14P2m1UimJmxk8EYrGrcZu1HJrYbRMUFvhdgFOPmjj2OCF4fEuvL5RLpAZY6NjzqVyHf8PeO54g/5MCvt5UCu+WSGQfwaW/sA3bGE96bnJYfJxRI4PnorIw9nRhaJrIxGVeULWOSZc/tScP4K2gDIv8opgu3G9eBknzSeVO4qqyVtpSJFutHsiVdPtp51otrv9gfBoz5ewRFkfnbJzaKe9EV/bnosgREY6O974+pKGDIv0Ci77u59B2ePqUueUPAAAAABJRU5ErkJggg==) center no-repeat !important;
+  border: none !important;
+  height: 25px !important;
+  margin: 0 1px 1px -3px !important;
+  opacity: .7 !important;
+  width: 25px !important;
+}
+*/
+div#app > div#browser[show-workspaces][custom-css] div.tabbar-workspace-button > button {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAA11JREFUSEvVlFtIFGEUx/+fzuzsWmpGq6ux3Wgpt9Iw26KLm0lhgmHZVkaXF7s8ZCllV7CLCIXRlbKH6Ek0yjCie6llplb0EJVQbGxmmaZZ287ONrOXiZnRWaEIEnvoe/nO/Od/fnPmfHOG7F+ycPLXtvZDpoQEEwBoGYqRdoAQnYamonQ0PYyhaR1DUZIapaNoLUNTWi0VqvgAmiJ9Ic6XlT3Ia+rcRK7Oj2nJLNkcj6Q85WaIRjX5AkBrNw/eK0LwirLO+wL47hMxzahTff2D9pIM75TShwdJVWr0q+x8mxmpBb2Pj1B9VU0umMZEg9GEgOmtSkOF/BYovyMVCvGMDbMO3WsaEPhTfS0+ni7+5QHTL9cHwaVJ+vvbC6xWLNqhGBm9mlDxyI3sNDNEELhZVtYdDgc+lO6T46zKatV7JWcJLGUXwebMRH1rN08GCu4P7aO3f/MGwUeS9XXbtlrn/W3FfwLXvesKkKPJ+rqCQQD3b0WNo0skeRP0F07mm1cgq1B5I904tW/VTzyYYUmAVkOBEwKy3mB3om3/FsQ3lKu+76G0HM97y6F54nA8ExmRlGVMOr5pIdmK7F2KMcysJjxzeOEMN8NkGAqXoMhn7wKnVhEUjkpQfZtL5sgxlXkCI65bMTe/xUP2Wk07DmRwh0NtexRjeJKa0MNyqHwZj2lJsWh1KvJKszJlF1pE3GlWrXJQvNSH2Jo0LC60uwYElqDS+iN4o8WYczjNXRGxbrtsJlHJahm8T8SROzGYYk2EX2kxeB/A+5W4uVH5tq3aS/KekrkGsbXpyNr5nCUSeI+lp8KYu14BGxao4IBfwL7zHUhcvgEevzLKgh/gvADb23NJa6t7rOYcH7MbtqIXLFk6NW72sTnOhsEELy96ATI5brixMl14P2m1UimJmxk8EYrGrcZu1HJrYbRMUFvhdgFOPmjj2OCF4fEuvL5RLpAZY6NjzqVyHf8PeO54g/5MCvt5UCu+WSGQfwaW/sA3bGE96bnJYfJxRI4PnorIw9nRhaJrIxGVeULWOSZc/tScP4K2gDIv8opgu3G9eBknzSeVO4qqyVtpSJFutHsiVdPtp51otrv9gfBoz5ewRFkfnbJzaKe9EV/bnosgREY6O974+pKGDIv0Ci77u59B2ePqUueUPAAAAABJRU5ErkJggg==) center no-repeat !important;
+  border: none !important;
+  height: 22px !important;
+  margin: 2px 4px 0 -20px !important;
+  opacity: .7 !important;
+  width: 22px !important;
+}
+div#app > div#browser[show-workspaces][custom-css] div.tabbar-workspace-button > button:hover {
+  opacity: 1 !important;
+}
+div#app > div#browser.win[custom-css] div#titlebar > div.window-buttongroup {
+  background: #282828 !important;
+}
+div#app > div#browser[custom-css] div#titlebar > div.window-buttongroup > button {
+  border: 1px solid transparent !important;
+  height: 31px !important;
+  width: 32px !important;
+}
+.tabs-top#browser.win[custom-css] div.window-buttongroup button:not(.vivaldi) {
+  height: 31px !important;
+}
+div#app > div#browser[custom-css] div#titlebar > div.window-buttongroup > button:not(.window-close):hover {
+  background: #111 !important;
+  border-color: #999 !important;
+}
+div#app > #browser.win:not(.fullscreen)[custom-css] > #header {
+  background: #111 !important;
+  min-height: 32px !important;
+}
+div#app > div#browser[custom-css] > #main {
+  background: #2E2F37 !important;
+}
+div#app > div#browser[custom-css] > #main > div.inner {
+  border-top: 1px solid #666 !important;
+}
+div#app > div#browser[custom-css] div.mainbar > div.toolbar-mainbar {
+  background: #282828 !important;
+  border-bottom: none !important;;
+}
+div#app > div#browser[custom-css] div#tabs-tabbar-container {
+  background: #111 !important;
+  padding: 0 !important;
+}
+div#app > div#browser[custom-css] div#tabs-container {
+  background: #2E2F37 !important;
+}
+div#app > div#browser.fullscreen[custom-css] div.tab-strip {
+  max-height: 0 !important;
+}
+div#app > div#browser[custom-css] div.tab-strip {
+  background: #111 !important;
+  border-left: none !important;
+  border-bottom: 1px solid #666 !important;
+  border-right: 1px solid #666 !important;
+  border-radius: 10px 0 0 0 !important;
+  margin: 1px 0 !important;
+}
+div#app > div#browser[custom-css] div.tab {
+  background: #111 !important;
+  border: 1px solid #777 !important;
+  border-bottom: 1px solid #666 !important; !important;
+  border-radius: 10px 10px 0 0 !important;
+  height: 28px !important;
+}
+div#app > div#browser[custom-css] div.tab.active {
+  background: linear-gradient(#000, 20%, #282828) !important;
+  border-bottom: none !important;
+  border-left: 1px solid #999 !important;
+  border-right: 1px solid #999 !important;
+  border-top: 3px solid #FFF !important;
+  margin-bottom: -1px !important;
+}
+div#app > div#browser[custom-css] div.tab.active div.tab-header,
+div#app > div#browser[custom-close][custom-css] div.tab.active div.tab-header {
+  margin-top: -1px !important;
+}
+div#app > div#browser[custom-css] div.tab-position > div.tab.active.active span.title {
+  color: #FFF !important;
+  text-shadow: 1px 1px 3px #000 !important;
+}
+div#app > div#browser[custom-css] div.tab:not(.active) {
+  color: #BBB !important;
+}
+div#app > div#browser[custom-css] div.tab:not(.active):hover {
+  background: #202020 !important;
+  color: #FFF !important;
+}
+div#app > div#browser[custom-css] div.synced-tabs-button > button[disabled] {
+  display: none !important;
+}
+div#app > div#browser:not(.native)[custom-css] div.sync-and-trash-container {
+  margin-right: -41px !important;
+}
+div#app > div#browser[custom-css] div.sync-and-trash-container {
+  background: #282828 !important;
+}
+div#app > div#browser[custom-css] div#tabs-tabbar-container div.synced-tabs-button > button,
+div#app > div#browser[custom-css] div#tabs-tabbar-container div.toggle-trash > button {
+  border: 1px solid transparent !important;
+  border-radius: 0 !important;
+  height: 30px !important;
+  margin-left: 2px !important;
+  position: relative !important;
+  top: -1px !important;
+  width: 33px !important;
+}
+div#app > div#browser[custom-css] div#tabs-tabbar-container div.toggle-trash > button svg {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAGVJREFUOE/tU0EKwCAMSx65PtI9MsOCQ6sdeNhNL0IwqSkJEY6kC0CJOAAjeUecFZCkBeETIuncXsA2RMogsEGcnvoPOhvuU1KdYIvb99OmvxaOwFniL0HKot2amiUxq3HUG2r9AOJo7hFoNw9zAAAAAElFTkSuQmCC) center no-repeat !important;
+  height: 16px !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser[custom-css] div#tabs-tabbar-container div.toggle-trash > button svg > path {
+  display: none !important;
+}
+div#app > div#browser[custom-css] div#tabs-tabbar-container div.synced-tabs-button:hover > button,
+div#app > div#browser[custom-css] div#tabs-tabbar-container div.toggle-trash:hover > button {
+  background: #111 !important;
+  border-color: #999 !important;
+}
+div#app > div#browser[custom-css] button[title^="Show Closed Tabs"]:hover {
+  background: #555 !important;
+  opacity: 1 !important;
+}
+div#app > div#browser[custom-css] div.toolbar-statusbar {
+  background: #282828 !important;
+  padding: 3px 0 !important;
+}
+div#app > div#browser[custom-css] > div#main footer button#options-button {
+  height: 28px !important;
+  width: 32px !important;
+}
+div#app > div#browser[custom-css] p > span {
+  padding-right: 0 !important;
+}
+div#app > div#browser[custom-css] div.StatusInfo {
+  background: transparent !important;
+  margin-right: 2px !important;
+}
+div#app > div#browser[custom-css] button[title="Reset Zoom"] {
+  background: #222 !important;
+  border-color: #999 !important;
+  opacity: 1 !important;
+}
+div#app > div#browser[custom-css] input[type=range] {
+  background: #CCC !important;
+  height: 2px !important;
+  width: 64px !important;
+}
+div#app > div#browser[custom-css] input[type=range]:hover {
+  background: #FFF !important;
+}
+div#app > div#browser[custom-css] div.page-zoom-controls > span {
+  color: #CCC !important;
+  pointer-events: none !important;
+}
+div#app > div#browser[custom-css] div.page-zoom-controls > div:hover > button > span {
+  color: #FFF !important;
+}
+div#app > div#browser[custom-css]  button[title="Page Actions"] {
+  color: #999 !important;
+}
+div#app > div#browser[custom-css] div.button-toolbar > button.button-on svg {
+  fill: lime !important;
+}
+div#app > div#browser[custom-css] div.ClockButton {
+  margin-left: -4px !important;
+  text-shadow: 1px 1px 2px #000 !important;
+}
+div#app > div#browser[custom-css] div.StatusInfo,
+div#app > div#browser[custom-css] div.ClockButton {
+  color: yellow !important;
+}
+div#app > div#browser[custom-css] div.ClockButton > button:hover {
+  background: #181818 !important;
+  border: 1px solid #999 !important;
+  border-radius: 4px !important;
+}
+div#app > div#browser[custom-css] button[title="chrome://extensions/"] > img {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAJ1JREFUOE9jZMABpIpf/AdJPeuVYMSlBiSOVVK66Hnof0bGVWAF//+HPe2TXI3LEKwGwGyHacLnCrgByLai24bXAHwasTkb3UuM6M7FF2DYvMRIqgvQY4aoMMAXJhixQIqXQOFBkQEYCUm68OH//0zsxIQjXA3cBaQ4HaYb7gVSNKMnKqzpAKYIWxQTNABdAaF8gZKQcKV5mCHYciYAAB5bi/Wkn3YAAAAASUVORK5CYII=) !important;
+  height: 16px !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser[custom-css] button[title*="https://mail.google.com"] > img {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAmRJREFUOE+N089PE0EUB/DvdH90W/qDqi3UWFMMrA2agEhsQkIqCTFaDl5MISYePAkJFw9ePHnQGC8evIgH/wFijDejIhGpIhFCNKQhkeAPMKWC9Iel3e62O2a2tFYE4lxmM5n3mfdm35BufzPF1pj8skgq33vNQxeOVmNILcAJPF59WtgTqQ1mh5CBpmYa5CgOg+ARNSFuMu2KnG4JUFnWMXxxE0srIp69F0GuNh2hIZMOL4CYJOEj4TBXKP2DsOCgx4Sbt74Z1S0nLHg86QK51nyMdnNFeIoFOJx1+C7ymCpQjGfVKsKCe6wiLl2Pw9eQB08VLKccePLGDXK54yztISrk5CJc9TbY7RJyHI/opobRpGKcFnFJ6LII4Ic+V4HpdTdG3zpBevpu0DbXQbRuxBBaHYPTLoCIAtJFYC6vGsAJiwgHgNxgGXip+BBdc2HqnQ7S3j9CD/mC8CvrGIjdhY9uwM7p7H6RKrEZqOdMoDpB+soSlPlGPOw8gPl1CSszOZD2yH3qkMMQ6hrAzdzD8fg4emkcQasIkK0/SimmsyW8sAAfZCsyvV7QjAZlNlkGnC1h8LYGFLMJJKK30bX2GiGbGSctnJHBbL6EiayGqF+C9ZwXQqMZepoBqZ0B99cxeCQRZ2yiATzPqvihqEi01v8fsDAxYnQoQ9hgwazN5XAn/ZNBsVxCR+QBtQXCEK0eaL9WjRIYwAIrbV55IxXA7LVAzajQZpIgbefv0Dq5D2anD3o+9Rew/UFVM9gvQvupQmMZBEKDdN+pYQii3dhfm8FuQGU99zReBrZvrJSwE7B97Td/YRr70QXSTAAAAABJRU5ErkJggg==) !important;
+  height: 16px !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser[custom-css] button[title*="settings.html"] > span > svg > path {
+  display: none !important;
+}
+div#app > div#browser[custom-css] button[title*="settings.html"] > span > svg {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAKVJREFUOE+lU8ENwCAI1FF8dBmH6ALO0FdncIEO4TJ9OIoNJhggYBr1ZTg4jkO9M044Q6NQfarXUtUgFOcrs/x0J6eRDALZEQjiETte3tKAQFPUE7SOEKcEUj4q8rQYCyxfMA6K4A4kg0ArxkQLYwRUspyb+oHYUEA9kKah6zimhjMTlwgsE+nqpiNIeXQDWybOVsnWuP2QsNPWU5Zylz6TRvLnO3+w2rfLpiEalQAAAABJRU5ErkJggg==) !important;
+  height: 16px !important;
+  width: 16px !important;
+}
+div#app > div#browser[custom-css] button[title="https://truthsocial.com/"] > img {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAgpJREFUOE+Vk8FrE1EQh79ZTbJJKrEoqEhLLq2pHmrJ1VMlFvEgqaSNWr2UiFTUHi0IHuv/EIuinjx50R6lB6GCxaIgtDFYjWAUK0TapE3CPnm7m2TTKOjAwvJ25pvfzO+tAMQGMupw7yRmOAqGDwwBAWUABij9bj8KRY3K5hrF/By55azIQCyj+o7MghhOgZvcAOjCBsR7psTi45sZJDG8qELh/lbHZrfOwnY1UN5YRc6eLiox/G1Sm/K9anaMpHMsqkhyZF3pmbsiwq3bYT0J8/Pb+APC8Em/XlErBFbyde493nIaopDRUz+Vpu3dJ2QfRTAM4eGDMgFTGE8H2wHA0nKNO3c37KVqiJzTACAQhDPJgL2Ld2/rDMV9jJ0PohQ8e16h9MtO4+t3i4WXNQegzWoA9Ec7xZ01PWEydsEB3Lhe4vMXq+WQa20HoKFXg9KXTVIXHcDNax6Ax2qtok2Bd+DxSyapCRcwVaJQcBV4uv8zYPpqideDeWrd2/iLIfa/6G2OKqOJdSWiN9IeXgXTV0ospJaoHqwQykXouX/M3YdCkomiMmSH38Dx+G4G4z6b+vTJFh+GCtT31PD/MOl+dci+9paqIiMnFlVXqL9Dwd8OHDNB7YLNyipytC+jYtFZRF/B/whLWax8mtFOgob0HJgkFIwi+PjTTuyuyvmdy5U1Ct/meJ/Lym/j2dyR393qzAAAAABJRU5ErkJggg==) !important;
+  height: 16px !important;
+  width: 16px !important;
+}
+div#app > div#browser[custom-css] button[title*="https://tv.youtube.com"] > img {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAIVJREFUOE+9k0sOgCAMRF9viAu9gxxNN95KboGpEd3wCSWRFQnpm2k7CECEDZj13nF2gUWMxUlnV0DMqjoHx9E0VAbECNPUhNQBqq8uvIfzzLppA1KZiBGgDtYVQjAAhmbQsQVLiL4cDCexlpQUMoH8Cqg8PM7ulP4DKP6JQo/J1dubFXABwhA9VWpxE1sAAAAASUVORK5CYII=) !important;
+  height: 16px !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser[custom-css] div.bookmark-bar {
+  background: #282828 !important;
+  border-bottom: none !important;
+}
+div#app > div#browser[custom-css] button.bookmarkbarItem {
+  background: #282828 !important;
+  border: 1px solid transparent !important;
+  border-radius: 4px !important;
+  color: #BBB !important;
+  text-shadow: 1px 1px 2px #000 !important;
+}
+div#app > div#browser[custom-css] button.bookmarkbarItem:hover {
+  background-color: #111 !important;
+  border-color: #999 !important;
+  color: #FFF !important;
+}
+div#app > div#browser[custom-css] div.UrlBar-UrlFieldWrapper {
+  background: transparent !important;
+}
+div#app > div#browser[custom-css]  div.UrlField {
+  background: transparent !important;
+  margin-right: 24px !important;
+  top: -1px !important;
+}
+div#app > div#browser[custom-css] div.UrlBar-AddressField,
+div#app > div#browser[custom-css] div.UrlBar-SearchField.iconmenu-container.SearchField {
+  background: #111 !important;
+  border: 1px solid #555 !important;
+  border-radius: 8px !important;
+  height: 34px !important;
+  text-shadow: 1px 1px 2px #000 !important;
+}
+div#app > div#browser[custom-css] div.UrlBar-AddressField button:hover {
+  background: red !important;
+}
+div#app > div#browser[custom-css] button.button-addressfield.SiteInfoButton {
+  height: 22px !important;
+  width: 22px !important;
+}
+div#app > div#browser[custom-css] div.button-toolbar.BookmarkButton-Button > button.button-on svg {
+  filter: grayscale(0) brightness(1) !important;
+}
+div#app > div#browser[custom-css] div.UrlBar button[title="Bookmark Page"] {
+  height: 22px !important;
+  margin-top: -1px !important;
+}
+div#app > div#browser[custom-css] div.UrlBar-AddressField div.button-toolbar.ContentBlocker-Control > button.ToolbarButton-Button:hover,
+div#app > div#browser[custom-css] div.UrlBar-AddressField > button.button-addressfield:hover,
+div#app > div#browser[custom-css] div.UrlBar-AddressField div.toolbar > div.BookmarkButton:hover button.ToolbarButton-Button {
+  background-color: transparent !important;
+  border-radius: 4px !important;
+}
+div#app > div#browser[custom-css] div.UrlBar-AddressField .pageload,
+div#app > div#browser[custom-css] div.UrlBar-AddressField .pageload:not(.unstarted).progress-done,
+div#app > div#browser[custom-css] div.UrlBar-AddressField .pageload:not(.unstarted).stopped {
+  opacity: 0 !important;
+}
+div#app > div#browser[custom-css] div.UrlBar-AddressField .pageload:not(.unstarted).progressing {
+  opacity: 1 !important;
+}
+div#app > div#browser[custom-css] div.UrlBar-AddressField .pageload .pageload-indicator {
+  background: #F00 !important;
+  border-radius: 0 8px 8px 0 !important;
+  filter: contrast(300%) !important;
+  height: 32px !important;
+  left: 70px !important;
+  top: 0 !important;
+}
+div#app > div#browser[custom-css] .UrlBar-AddressField .pageload .pageload-ticker {
+  display: none !important;
+}
+div#app > div#browser[custom-css] div.toolbar-extensions button > img {
+  height: 26px !important;
+  width: 26px !important;
+}
+div#app > div#browser[custom-css] span#calendar:hover {
+  background: #111 !important;
+  border-color: #999 !important;
+}
+div#app > div#browser[custom-css] div.button-toolbar > button[title="Page Actions"] svg {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAJBJREFUOE+lk1EOgCAMQ9tD6iH1kDVbQCcKLIEvU6SURyEWBxfXg5I2AEcx2kme9p3WJQmALwKwkfRUaT38aCbHj8FYrwYkd4sdjuDJpno0iECzukG8d2oMDKwB9hR1TtJL7xoUkHOTXoJ2xwr3ow8gOtAaOdzOW59co53dOLT9ePR0YXoFS1e2V/Hlx7RqcAFyjcmWaKySvwAAAABJRU5ErkJggg==) center no-repeat !important;
+  height: 16px !important;
+  opacity: .6 !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser[custom-css] div.button-toolbar > button[title="Page Actions"].button-pressed svg {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAItJREFUOE+tk0EOgCAMBKePxEfqIzGlIGC0mFROZJMO220RgkeC9QiZBOwVtCEc5f5RV0CGWgQJwVx91EeAvrw/AFy9A4St2O4tmLOFPgPGRFsLCnB0D6DBasDmop1cAr/0d4AFuYT4gBHSpnNz4oVogTYXfbyTvhqj9q793vfj0n9ZpOAqB39T+Deefyd1qlWi294AAAAASUVORK5CYII=) center no-repeat !important;
+  height: 16px !important;
+  opacity: .6 !important;
+  padding-left: 16px !important;
+  width: 0 !important;
+}
+div#app > div#browser[custom-css] div.button-toolbar > button[title="Page Actions"]:hover svg {
+  opacity: 1 !important;
+}
+div#app > div#browser[custom-css] div.button-toolbar > button[title="Page Actions"] svg > path {
+  display: none !important;
+}
+div#app > div#browser[custom-css] button.ToolbarButton-Button {
+  background: transparent !important;
+  border: 1px solid transparent !important;
+  border-radius: 4px !important;
+}
+div#app > div#browser[custom-css] button.ToolbarButton-Button:hover {
+  background-color: #111 !important;
+  border-color: #999 !important;
+}
+div#app > div#browser[custom-css] div.button-toolbar:not(.newtab) > button.ToolbarButton-Button:hover {
+  background-color: #111 !important;
+}
+div#app > div#browser[custom-css] div.newtab {
+  border-bottom: 2px solid transparent !important;
+  margin-top: 1px !important;
+  margin-left: 0 !important;
+}
+div#app > div#browser[custom-css] div.newtab > button {
+  background: transparent !important;
+  border-bottom: none !important;
+  border-radius: 10px 10px 0 0 !important;
+  min-height: 28px !important;
+}
+div#app > div#browser[custom-css] div.newtab > button svg {
+  margin-top: -2px !important;
+}
+div#app > div#browser[custom-css] div.newtab > button:hover {
+  background: #202020 !important;
+}
+#app > div#browser[custom-css] .toolbar .toolbar-spacer-flexible {
+  flex: 0 !important;
+}
+div#app > div#browser[custom-css] div.toolbar-extensions button[name="ckkinejbeeejbhkmjagfajnagnondgim"] > img {
+  background: url(data:image/png;base64,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) center no-repeat !important;
+  padding-left: 26px !important;
+  width: 0 !important;
+}
+div#app > div#browser.fullscreen[custom-css] footer {
+  height: 0 !important;
+}
+div#app > div#browser[custom-css] .vivaldi .expand-arrow {
+  display: none !important;
+}
+div#app > div#browser.win #tabs-container:not(.none).top {
+  padding-left: 28px !important;;
+  padding-right: calc(140px / var(--uiZoomLevel)) !important;
+}
+div#app > div#browser.win[show-workspaces="true"] #tabs-container:not(.none).top {
+  padding-left: calc(var(--menuWidth) / var(--uiZoomLevel)) !important;
+}
+div#app > div#browser[custom-css] .toolbar > .StatusInfo {
+  color: yellow !important;
+}
