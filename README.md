@@ -1,6 +1,6 @@
-Zip file contains 2 bat files, 1 js file, 1 css file, png icons and a how-to.txt file. Posted complete.zip file contents separately minus the how-to install text file.
+Zip file contains 2 bat files, 1 js file, 1 css file, png icons and a how-to.txt file. Posted custom-ui-mod.zip file contents separately minus the how-to install text file.
 
-Create a new folder (recommended) and name it (for example) Vivaldi UI Mod. Un-zip the complete.zip mod into newly created folder. All the un-zipped files need to remain together and DO NOT rename any file. Click the Install.bat file to load created files into Vivaldi browser app. Click the Uninstall.bat to remove the installed files from Vivaldi browser app. Follow the simple instructions in the How-To.txt file.
+Create a new folder (recommended) and name it (for example) Vivaldi UI Mod. Un-zip the custom-ui-mod.zip mod into newly created folder. All the un-zipped files need to remain together and DO NOT rename any file. Click the custom-ui-mod-Install.bat file to load created files into Vivaldi browser app. Click the custom-ui-mod-Uninstall.bat to remove the installed files from Vivaldi browser app. Follow the simple instructions in the How-To.txt file.
 
 Description for complete.zip mod:
 1. Installs a bat file (custom-ui-mod-Install.bat) to auto-insert edits/changes made to js and css files into Vivaldi Browser App.
@@ -25,7 +25,7 @@ NOTE:
 2. Requires re-install after each Vivaldi Browser App update by left-clicking on custom-ui-mod-Install.bat file.
 3. Uninstall using custom-ui-mod-Uninstall.bat to restore Vivaldi Browser App to default UI.
 4. The custom-ui-mod.css file get auto-written into Vivaldi's common.css file so no external location needed.
-5. The custom-ui-mod.css entries get removed from the common.css file on complete-Uninstall.
+5. The custom-ui-mod.css entries get removed from the common.css file on custom-ui-mod-Uninstall.
 
 Complete Mod View With Complete Custom CSS (Vivaldi Dark Theme)
 
