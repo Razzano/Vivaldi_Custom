@@ -27,7 +27,7 @@ NOTE:
 4. The custom-ui-mod.css file get auto-written into Vivaldi's common.css file so no external location needed.
 5. The custom-ui-mod.css entries get removed from the common.css file on custom-ui-mod-Uninstall.
 
-Complete Mod View With Complete Custom CSS (Vivaldi Dark Theme)
+With Complete Custom CSS (Vivaldi Dark Theme)
 
 <img src="https://github.com/Razzano/Images/blob/master/Complete_Mod_View.png"/>
 
@@ -35,6 +35,6 @@ Options Menu Dropdown List
 
 <img src="https://github.com/Razzano/Images/blob/master/Options_Menu_Dropdown.png"/>
 
-Complete Mod View Without Complete Custom CSS (Vivaldi Default CSS)
+Without Complete Custom CSS (Vivaldi Default CSS)
 
 <img src="https://github.com/Razzano/Images/blob/master/Complete_Mod_View2.png"/>
