@@ -1,6 +1,6 @@
 The custom-ui-mod.zip file contains 2 bat files, 1 js file, 2 css files, 2 html files, png icons and 1 how-to.txt file. Other posted files are all contained in custom-ui-mod.zip file.
 
-Create a new folder (recommended) and name it (for example) Vivaldi UI Mod. Un-zip the custom-ui-mod.zip mod into newly created folder. All the un-zipped files need to remain together and DO NOT rename any file. Click the custom-ui-mod-Install.bat file to load created files into Vivaldi browser app. Click the custom-ui-mod-Uninstall.bat to remove the installed files from Vivaldi browser app. Follow the simple instructions in the How-To.txt file.
+Create a new folder (recommended) and name it (for example) Vivaldi UI Mod. Un-zip the custom-ui-mod.zip contents into newly created folder. All the un-zipped files need to remain together and DO NOT rename any file. Click the custom-ui-mod-Install.bat file to load created files into Vivaldi browser app. Click the custom-ui-mod-Uninstall.bat to remove the installed files from Vivaldi browser app. Follow the simple instructions in the How-To.txt file.
 
 Description for complete.zip mod:
 1. Installs a bat file (custom-ui-mod-Install.bat) to auto-insert edits/changes made to js and css files into Vivaldi Browser App.
