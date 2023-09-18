@@ -33,7 +33,7 @@ With Complete Custom CSS (Vivaldi Dark Theme)
 
 Options Menu Dropdown List
 
-<img src="https://github.com/Razzano/Images/blob/master/Options_Menu_Dropdown.png"/>
+<img src="https://github.com/Razzano/Images/blob/master/Options_Menu_Dropdown2.png"/>
 
 Without Complete Custom CSS (Vivaldi Default CSS)
 
