@@ -29,11 +29,11 @@ NOTE:
 
 With Complete Custom CSS (Vivaldi Dark Theme)
 
-<img src="https://github.com/Razzano/Images/blob/master/Complete_Mod_View.png"/>
+<img src="https://github.com/Razzano/Images/blob/master/custom-ui-mod View.png"/>
 
 Options Menu Dropdown List
 
-<img src="https://github.com/Razzano/Images/blob/master/Options_Menu_Dropdown2.png"/>
+<img src="https://github.com/Razzano/Images/blob/master/OptionsMenuDropdown.png"/>
 
 Without Complete Custom CSS (Vivaldi Default CSS)
 
