@@ -27,7 +27,7 @@ NOTE:
 4. The custom-ui-mod.css file get auto-written into Vivaldi's common.css file so no external location needed.
 5. The custom-ui-mod.css entries get removed from the common.css file on custom-ui-mod-Uninstall.
 
-With Complete Custom CSS (Vivaldi Dark Theme)
+With Complete Custom CSS (Vivaldi Issuna Theme)
 
 <img src="https://github.com/Razzano/Images/blob/master/CompleteCustomCSSView2.png"/>
 
