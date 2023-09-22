@@ -29,7 +29,7 @@ NOTE:
 
 With Complete Custom CSS (Vivaldi Dark Theme)
 
-<img src="https://github.com/Razzano/Images/blob/master/CompleteCustomCSSView.png"/>
+<img src="https://github.com/Razzano/Images/blob/master/CompleteCustomCSSView2.png"/>
 
 Options Menu Dropdown List
 
