@@ -24,8 +24,6 @@ NOTE:
 1. If Vivaldi App install path is NOT your C:\Users folder or C:\Program Files folder, the Install.bat and Uninstall.bat files needs to be amended.
 2. Requires re-install after each Vivaldi Browser App update by left-clicking on custom-ui-mod-Install.bat file.
 3. Uninstall using custom-ui-mod-Uninstall.bat to restore Vivaldi Browser App to default UI.
-4. The custom-ui-mod.css file get auto-written into Vivaldi's common.css file so no external location needed.
-5. The custom-ui-mod.css entries get removed from the common.css file on custom-ui-mod-Uninstall.
 
 With Complete Custom CSS (Vivaldi Issuna Theme)
 
