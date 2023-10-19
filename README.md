@@ -25,13 +25,13 @@ NOTE:
 2. Requires re-install after each Vivaldi Browser App update by left-clicking on custom-ui-mod-Install.bat file.
 3. Uninstall using custom-ui-mod-Uninstall.bat to restore Vivaldi Browser App to default UI.
 
-With Complete Custom CSS (Vivaldi Issuna Theme)
-
-<img src="https://github.com/Razzano/Images/blob/master/CompleteCustomCSSView2.png"/>
-
 Options Menu Dropdown List
 
 <img src="https://github.com/Razzano/Images/blob/master/OptionsMenuDropdown3.png"/>
+
+With Complete Custom CSS (Vivaldi Issuna Theme)
+
+<img src="https://github.com/Razzano/Images/blob/master/CompleteCustomCSSView2.png"/
 
 Without Complete Custom CSS (Vivaldi Default CSS)
 
