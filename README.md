@@ -27,12 +27,12 @@ NOTE:
 
 Options Menu Dropdown List
 
-<img src="https://github.com/Razzano/Images/blob/master/OptionsMenuDropdown3.png"/>
+<img src="https://github.com/Razzano/Images/blob/master/Custom_UI_Mod_MenuDropdownList.png"/>
 
-With Complete Custom CSS (Vivaldi Issuna Theme)
+Custom UI Mod (Vivaldi Issuna Theme)
 
-<img src="https://github.com/Razzano/Images/blob/master/CompleteCustomCSSView2.png"/>
+<img src="https://github.com/Razzano/Images/blob/master/Custom_UI_Mod.png"/>
 
-Without Complete Custom CSS (Vivaldi Default CSS)
+Vivaldi Default
 
-<img src="https://github.com/Razzano/Images/blob/master/Complete_Mod_View2.png"/>
+<img src="https://github.com/Razzano/Images/blob/master/Default_UI.png"/>
