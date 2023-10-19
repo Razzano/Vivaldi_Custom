@@ -31,7 +31,7 @@ Options Menu Dropdown List
 
 With Complete Custom CSS (Vivaldi Issuna Theme)
 
-<img src="https://github.com/Razzano/Images/blob/master/CompleteCustomCSSView2.png"/
+<img src="https://github.com/Razzano/Images/blob/master/CompleteCustomCSSView2.png"/>
 
 Without Complete Custom CSS (Vivaldi Default CSS)
 
