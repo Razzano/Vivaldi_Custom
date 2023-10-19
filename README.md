@@ -33,6 +33,6 @@ Custom UI Mod (Vivaldi Issuna Theme)
 
 <img src="https://github.com/Razzano/Images/blob/master/Custom_UI_Mod.png"/>
 
-Vivaldi Default
+Vivaldi Default UI
 
 <img src="https://github.com/Razzano/Images/blob/master/Default_UI.png"/>
