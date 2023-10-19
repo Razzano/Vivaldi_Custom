@@ -3,11 +3,8 @@ The custom-ui-mod.zip file contains 2 bat files, 1 js file, 2 css files, 2 html 
 Create a new folder (recommended) and name it (for example) Vivaldi UI Mod. Un-zip the custom-ui-mod.zip contents into newly created folder. All the un-zipped files need to remain together and DO NOT rename any file. Click the custom-ui-mod-Install.bat file to load created files into Vivaldi browser app. Click the custom-ui-mod-Uninstall.bat to remove the installed files from Vivaldi browser app. Follow the simple instructions in the How-To.txt file.
 
 Description for complete.zip mod:
-1. Installs a bat file (custom-ui-mod-Install.bat) to auto-insert edits/changes made to js and css files into Vivaldi Browser App.
-2. Installs a bat file (custom-ui-mod-Uninstall.bat) to auto-remove all created files and restores app to default mode.
-3. Creates custom-ui-mod.css & custom-ui-mod.js files for theming/functionality of browser ui.
-4. Creates button [ <img src="https://github.com/srazzano/Images/blob/master/options.png"/> ] in footer/statusbar to display Options Menu.
-5. Refer to How-To.txt file for full instructions.
+1. Creates button [ <img src="https://github.com/srazzano/Images/blob/master/options.png"/> ] at first position in footer/statusbar to display Options Menu.
+2. Refer to How-To.txt file for full instructions.
 
 NOTE: 
 1. If Vivaldi App install path is NOT your C:\Users folder or C:\Program Files folder, the Install.bat and Uninstall.bat files needs to be amended.
