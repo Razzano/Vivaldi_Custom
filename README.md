@@ -13,7 +13,7 @@ NOTE:
 
 Options Menu Dropdown List
 
-<img src="https://github.com/Razzano/Images/blob/master/Custom_UI_Mod_MenuDropdownList.png"/>
+<img src="https://github.com/Razzano/Images/blob/master/Custom_UI_Mod_Menu List.png"/>
 
 Custom UI Mod (Vivaldi Issuna Theme)
 
