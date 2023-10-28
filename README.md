@@ -6,7 +6,8 @@ Create a new folder (recommended) and name it (for example) Vivaldi UI Mod. Un-z
 
 Description for complete.zip mod:
 1. Creates button [ <img src="https://github.com/srazzano/Images/blob/master/options.png"/> ] at first position in footer/statusbar to display Options Menu.
-2. Refer to How-To.txt file for full instructions.
+2. Customizes all Vivaldi Library Themes.
+3. Refer to How-To.txt file for full instructions.
 
 NOTE: 
 1. If Vivaldi App install path is NOT your C:\Users folder or C:\Program Files folder, the Install.bat and Uninstall.bat files needs to be amended.
