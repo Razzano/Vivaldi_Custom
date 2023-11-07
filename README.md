@@ -7,7 +7,7 @@ Create a new folder (recommended) and name it (for example) Vivaldi UI Mod. Un-z
 Description for complete.zip mod:
 1. Creates button [ <img src="https://github.com/srazzano/Images/blob/master/options.png"/> ] at first position in footer/statusbar to display Options Menu.
 2. Customizes all Vivaldi Library Themes.
-3. Customized for Tabbar Position Top, Left and Right.
+3. Customized for Tabbar Position Top and Left.
 4. Refer to How-To.txt file for full instructions.
 
 NOTE: 
