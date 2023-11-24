@@ -8,14 +8,14 @@ Description for complete.zip mod:
 1. Creates button [ <img src="https://github.com/srazzano/Images/blob/master/options.png"/> ] at first position in footer/statusbar to display Options Menu.
 2. Customizes all Vivaldi Library Themes.
 3. Customized for Tabbar Position Top, Left and Right.
-4. Refer to How-To.txt file for full instructions.
+4. Adds contextmenuitem "Open Link in Dialog Window" when right clicking on links.
+5. Refer to How-To.txt file for full instructions.
 
 NOTE: 
 1. If Vivaldi App install path is NOT your C:\Users folder or C:\Program Files folder, the Install.bat and Uninstall.bat files needs to be amended.
 2. Requires re-install after each Vivaldi Browser App update by left-clicking on custom-ui-mod-Install.bat file.
 3. Uninstall using custom-ui-mod-Uninstall.bat to restore Vivaldi Browser App to default UI.
-4. Adds contextmenuitem "Open Link in Dialog Window" when right clicking on links.
-5. Optional: Create shortcut on desktop for easy and quick access to newly created folder containing custom-ui-mod contents.
+4. Optional: Create shortcut on desktop for easy and quick access to newly created folder containing custom-ui-mod contents.
 
 Options Menu Dropdown List
 
