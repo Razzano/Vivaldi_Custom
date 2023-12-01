@@ -15,7 +15,7 @@ Description for complete.zip mod:
 
 NOTE: 
 1. If Vivaldi App install path is NOT your C:\Users folder or C:\Program Files folder, the Install.bat and Uninstall.bat files needs to be amended by entering
-   your Vivaldi\Application\ path in between the quotation marks of $vivpath3 = "" on line 6, while in the Edit Mode of both bat files.
+   your Vivaldi\Application\ path in between the quotation marks of $vivpath3 = "Your Vivaldi\Application install path here" on line 6, while in the Edit Mode of both bat files.
 2. Requires re-install after each Vivaldi Browser App update by left-clicking on custom-ui-mod-Install.bat file.
 3. Uninstall using custom-ui-mod-Uninstall.bat to restore Vivaldi Browser App to default UI.
 4. Optional: Create shortcut on desktop for easy and quick access to newly created folder containing custom-ui-mod contents.
