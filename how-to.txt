@@ -11,7 +11,7 @@ Or:
 To install Vivaldi Custom:
 
 (1) Create a new folder (recommended) and name it, for an example, Vivaldi UI Mod.
-(2) Unzip/Extract the contents of the custom-ui-mod.zip file into the new folder.
+(2) Unzip/Extract the contents of the Custom-UI-Mod.zip file into the new folder.
 (3) Keep all files together in the new folder and DO NOT rename any file.
 (4) Left-click on custom-ui-mod-Install.bat file to auto install all files into Vivaldi App.
 (5) Whenever Vivaldi Browser updates, it will remove all changes made. Necessary to go to new folder and left-click on custom-ui-mod-Install.bat to reinstall files.
