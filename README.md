@@ -6,7 +6,7 @@ Create a new folder (recommended) and name it (for example) Vivaldi UI Mod. Un-z
 All the un-zipped files need to remain together and DO NOT rename any file. Click the custom-ui-mod-Install.bat file to load created files into Vivaldi browser app.
 Click the custom-ui-mod-Uninstall.bat to remove the installed files from Vivaldi browser app. Follow the simple instructions in the How-To.txt file.
 
-Description for complete.zip mod:
+Description:
 1. Creates button [ <img src="https://github.com/srazzano/Images/blob/master/options.png"/> ] at first position in footer/statusbar to display Options Menu.
 2. Customizes all Vivaldi Library Themes.
 3. Customized for Tabbar Position Top, Left and Right.
