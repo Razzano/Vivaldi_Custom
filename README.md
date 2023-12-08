@@ -11,7 +11,6 @@ DESCRITION:
 2. Customizes all Vivaldi Library Themes.
 3. Customized for Tabbar Position Top, Left and Right.
 4. Adds contextmenuitem "[Dialog Tab] Open Link" when right clicking on links.
-5. Refer to How-To.txt file for full instructions.
 
 NOTES: 
 1. If Vivaldi App install path is NOT your C:\Users folder or C:\Program Files folder, the Install.bat and Uninstall.bat files needs to be amended by entering
