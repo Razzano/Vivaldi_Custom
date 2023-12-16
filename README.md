@@ -2,17 +2,17 @@ Updated for 6.5.3206.39 (Stable channel) (64-bit)
 
 The Custom-UI-Mod.zip file contains the listed 2 bat files, 1 empty window.html file for backup/storage, 1 js file, 1 css file, how-to.txt file and all custom-ui-mod-icons.
 
-INSTALLATION:
-
-Create a new folder (recommended) and name it (for example) Vivaldi UI Mod. Un-zip the Custom-UI-Mod.zip contents into newly created folder. 
-All the un-zipped files need to remain together and DO NOT rename any file. Click the custom-ui-mod-Install.bat file to load created files into Vivaldi browser app.
-Click the custom-ui-mod-Uninstall.bat to remove the installed files from Vivaldi browser app. Follow the simple instructions in the how-to.txt file.
-
 DESCRIPTION:
 1. Creates button [ <img src="https://github.com/srazzano/Images/blob/master/options.png"/> ] at first position in footer/statusbar to display Options Menu.
 2. Customizes all Vivaldi Library Themes.
 3. Customized for Tabbar Position Top, Left and Right (Tabs Bottom disabled).
 4. Adds contextmenuitem "[Dialog Tab] Open Link" when right clicking on links.
+
+INSTALLATION:
+
+Create a new folder (recommended) and name it (for example) Vivaldi UI Mod. Un-zip the Custom-UI-Mod.zip contents into newly created folder. 
+All the un-zipped files need to remain together and DO NOT rename any file. Click the custom-ui-mod-Install.bat file to load created files into Vivaldi browser app.
+Click the custom-ui-mod-Uninstall.bat to remove the installed files from Vivaldi browser app. Follow the simple instructions in the how-to.txt file.
 
 NOTES: 
 1. If Vivaldi App install path is NOT your C:\Users folder or C:\Program Files folder, the Install.bat and Uninstall.bat files needs to be amended by entering
