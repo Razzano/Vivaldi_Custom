@@ -19,4 +19,5 @@ NOTES:
    your Vivaldi\Application\ path in between the quotation marks of $vivpath3 = "Your Vivaldi\Application install path here" on line 6, while in the Edit Mode of both bat files.
 2. Requires re-install after each Vivaldi Browser App update by left-clicking on custom-ui-mod-Install.bat file.
 3. Uninstall using custom-ui-mod-Uninstall.bat to restore Vivaldi Browser App to default UI.
-4. For easy and quick access to custom-ui-mod contents, create shortcut on desktop linking to newly created folder.
+4. If any manual changes were made to custom-ui-mod files, first un-install current mod, then re-install edited mod with install.bat file.
+5. For easy and quick access to custom-ui-mod contents, create shortcut on desktop linking to newly created folder.
