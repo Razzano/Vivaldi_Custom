@@ -11,8 +11,8 @@ DESCRIPTION:
 INSTALLATION:
 
 Create a new folder (recommended) and name it (for example: Vivaldi UI Mod). Un-zip the Custom-UI-Mod.zip contents into newly created folder. 
-All the un-zipped files need to remain together and DO NOT rename any file. Click the custom-ui-mod-Install.bat file to load created files into Vivaldi browser app.
-Click the custom-ui-mod-Uninstall.bat to remove the installed files from the Vivaldi Browser App. Follow the simple instructions in the how-to.txt file.
+All the un-zipped files need to remain together and DO NOT rename any file. Click the custom-ui-mod-Install.bat file to load created files into Vivaldi Browser App.
+Click the custom-ui-mod-Uninstall.bat to remove all the installed files from the Vivaldi Browser App. Follow the simple instructions in the how-to.txt file.
 
 NOTES: 
 1. If Vivaldi App install path is NOT your C:\Users folder or C:\Program Files folder, the Install.bat and Uninstall.bat files needs to be amended by entering
