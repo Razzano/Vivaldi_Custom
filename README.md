@@ -9,10 +9,11 @@ DESCRIPTION:
 4. Adds contextmenuitem "[Dialog Tab] Open Link" when right clicking on links.
 
 INSTALLATION:
-
-Create a new folder (recommended) and name it (for example: Vivaldi UI Mod). Un-zip the Custom-UI-Mod.zip contents into newly created folder. 
-All the un-zipped files need to remain together and DO NOT rename any file. Click the custom-ui-mod-Install.bat file to load created files into Vivaldi Browser App.
-Click the custom-ui-mod-Uninstall.bat to remove all the installed files from the Vivaldi Browser App. Follow the simple instructions in the how-to.txt file.
+1. Follow the simple instructions in the how-to.txt file.
+2. Create a new folder (recommended) and name it (for example: Vivaldi UI Mod).
+3. Un-zip the Custom-UI-Mod.zip contents into newly created folder. All the un-zipped files need to remain together and DO NOT rename any file.
+4. Click the custom-ui-mod-Install.bat file to load created files into Vivaldi Browser App.
+5. Click the custom-ui-mod-Uninstall.bat to remove all the installed files from the Vivaldi Browser App.
 
 NOTES: 
 1. If Vivaldi App install path is NOT your C:\Users folder or C:\Program Files folder, the Install.bat and Uninstall.bat files needs to be amended by entering
