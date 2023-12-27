@@ -23,4 +23,4 @@ NOTE:
 
 (1) If using Home button as Restart button, need to go in Settings > General > Homepage > Specific Page > and enter: vivaldi://restart
 (2) If Vivaldi App install path is NOT C:\Users folder or C:\Program Files folder, the Install.bat and Uninstall.bat files needs to be amended by adding Vivaldi\Application path in-between the quotation marks for $vivpath3 on line 6 of both bat files.
-
+(3) To search highlighted text in Google search results, go to Search Settings > URL input textbox and enter {google:baseURL}search?q=%s&{google:RLZ}{google:originalQueryForSuggestion}
