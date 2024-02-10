@@ -17,9 +17,8 @@ To install Vivaldi Custom:
 (5) Whenever Vivaldi Browser updates, it will remove all changes made. Necessary to go to new folder and left-click on custom-ui-mod-Install.bat to reinstall files.
 (6) Left-click on the custom-ui-mod-Uninstall.bat file to remove all created files and back to Vivaldi App default UI.
 (7) If any edits/changes to css or js files, in the new custom folder, first un-install current mod, then re-install added changes.
-(8) Adding shortcut to Desktop for newly added folder makes for easy access to custom-ui-mod-Install.bat and custom-ui-mod-Uninstall.bat files, when needed.
-(9) Add shortcut link to Desktop for C:\Users\(Your Username)\AppData\Local\Vivaldi\Application\(Version Number)\resources\vivaldi folder, so when Vivaldi updates, goto shortcut Properties and change the Target input box (Version Number) to updated
-version number and apply.
+(8) Adding shortcut link to Desktop for newly added folder makes for easy access to custom-ui-mod-Install.bat and custom-ui-mod-Uninstall.bat files, when needed.
+(9) Add shortcut link to Desktop for C:\Users\(Your Username)\AppData\Local\Vivaldi\Application\(Version Number)\resources\vivaldi folder, so when Vivaldi updates, goto shortcut Properties and change the Target input box (Version Number) to updated version number and apply.
 
 NOTE:
 
@@ -29,5 +28,3 @@ NOTE:
 {google:baseURL}search?q=%s&{google:RLZ}{google:originalQueryForSuggestion}
 Or
 {google:baseURL}search?q=%s&{google:originalQueryForSuggestion}{google:prefetchSource}{google:sourceId}{google:contextualSearchVersion}ie={inputEncoding}
-
-
