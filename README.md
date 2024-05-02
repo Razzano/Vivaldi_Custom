@@ -10,8 +10,8 @@ DESCRIPTION:
 
 INSTALLATION:
 1. Follow the simple instructions in the how-to.txt file.
-2. Create a new folder (recommended) and name it (for example: Vivaldi UI Mod).
-3. Un-zip the Custom-UI-Mod.zip contents into the newly created folder. All the unzipped files need to remain together and DO NOT rename any file.
+2. Create a new folder and name it Vivaldi UI Mod.
+3. Un-zip the Custom-UI-Mod.zip contents into the newly created folder Vivaldi UI Mod. All the unzipped files need to remain together and DO NOT rename any file.
 4. Click the custom-ui-mod-Install.bat file to load created files into the Vivaldi Browser App.
 5. Click the custom-ui-mod-Uninstall.bat to remove all the installed files from the Vivaldi Browser App.
 
