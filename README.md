@@ -1,4 +1,4 @@
-Updated for 7.0.3495.11 (Stable channel) (64-bit)
+Updated for 7.0.3495.14 (Stable channel) (64-bit)
 
 The Custom-UI-Mod.zip file contains the listed 2 bat files, 1 empty window.html file for backup/storage, 1 js file, 1 css file, a how-to.txt file, and all custom-ui-mod-icons.
 
