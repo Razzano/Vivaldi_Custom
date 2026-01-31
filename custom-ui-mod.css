@@ -85,10 +85,10 @@ div#browser.tabs-top[toolbar-toggle][custom-css] button#toggle-toolbars {
 div#browser.tabs-top[toolbar-toggle][custom-css] button#toggle-toolbars:hover {
   opacity: 1 !important;
 }
-div#browser[toolbar-toggle][custom-css][toggle-toolbars] button#toggle-toolbars {
+div#browser[toolbar-toggle][toggle-toolbars][custom-css] button#toggle-toolbars {
   background: url(/style/icons/mask24On.png) center no-repeat !important;
 }
-div#browser[toolbar-toggle][custom-css][show-workspaces] button#toggle-toolbars {
+div#browser[toolbar-toggle][show-workspaces][custom-css] button#toggle-toolbars {
   left: -20px !important;
   margin-right: -14px !important;
 }
@@ -129,13 +129,17 @@ div#browser div#tabs-container:not(.none).top {
   padding-right: 62px !important;
 }
 div#browser[custom-css] div#tabs-container:not(.none).top {
+  padding-left: 20px !important;
+  padding-right: 50px !important;
+}
+div#browser[toolbar-toggle][custom-css] div#tabs-container:not(.none).top {
   padding-left: 16px !important;
   padding-right: 50px !important;
 }
-div#browser[show-workspaces] div#tabs-container:not(.none).top {
+div#browser[show-workspaces][custom-css] div#tabs-container:not(.none).top {
   padding-left: 28px !important;
 }
-div#browser[toolbar-toggle][show-workspaces] div#tabs-container:not(.none).top {
+div#browser[toolbar-toggle][show-workspaces][custom-css] div#tabs-container:not(.none).top {
   padding-left: 48px !important;
 }
 div#browser.fullscreen div.tab-strip {
@@ -677,6 +681,7 @@ div#browser button#restart-browser {
   background: url(/style/icons/restart.png) center no-repeat !important;
 }
 div#browser[custom-css] button#restart-browser {
+  margin-left: -3px !important;
   opacity: .7 !important;
 }
 div#browser[custom-css] button#restart-browser:hover,
@@ -1440,7 +1445,7 @@ div#browser.disable-titlebar[toggle-toolbars] label#label14 {
 }
 div#browser.theme-dark[custom-css] button.vivaldi {
   background: url(/style/icons/vivaldi.png) center no-repeat !important;
-  left: 0px !important;
+  left: 4px !important;
   position: absolute !important;
 }
 div#browser.disable-titlebar[show-workspaces] div.tabbar-workspace-button > button svg {
@@ -1913,8 +1918,6 @@ div#browser div#options-menu > span#span12 > button:hover {
   background-color: rgba(0, 0, 0, .5) !important;
 }
 
-// Div Inner Positioning
-
 div#browser[hide-bookmark][toggle-toolbars]:not([hide-mainbar][hide-footer]) > div#main > div.inner,
 div#browser[hide-footer][toggle-toolbars]:not([hide-bookmark][hide-mainbar]) > div#main > div.inner,
 div#browser[hide-bookmark][hide-footer][toggle-toolbars]:not([hide-mainbar]) > div#main > div.inner,
@@ -1927,8 +1930,6 @@ div#browser[hide-mainbar][hide-footer][toggle-toolbars]:not([hide-bookmark])  > 
 div#browser[hide-bookmark][hide-mainbar][hide-footer][toggle-toolbars] > div#main > div.inner {
   top: 0px !important;
 }
-
-// Disabling Tabs Left, Right And Bottom
 
 #webpage-stack button[title="Left"],
 #webpage-stack button[title="Right"],
