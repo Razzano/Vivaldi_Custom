@@ -1,4 +1,4 @@
-Updated for 7.7.3851.67 (Stable channel) (64-bit)
+Updated for 7.8.3925.56 (Stable channel) (64-bit)
 
 The Custom-UI-Mod.zip file contains the listed 2 bat files, 1 empty window.html file for backup/storage, 1 js file, 1 css file, a how-to.txt file, and all custom-ui-mod-icons.
 
@@ -22,3 +22,4 @@ NOTES:
 3. Uninstall using custom-ui-mod-Uninstall.bat to restore the Vivaldi Browser App to the default UI.
 4. If any manual changes were made to custom-ui-mod files, first uninstall the current mod, then re-install the edited mod with the install.bat file.
 5. For easy and quick access to custom-ui-mod contents, create a shortcut on the desktop linking to the newly created folder.
+6. Customized for Vivaldi Dark Theme Issuna and only for tabs-top.
