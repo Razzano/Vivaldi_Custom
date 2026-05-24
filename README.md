@@ -1,4 +1,4 @@
-May 17, 2026 Updated for 7.9.3970.67 (Stable channel) (64-bit)
+May 24, 2026 Updated for 8.0.4033.34 (Stable channel) (64-bit)
 
 The Custom-UI-Mod.zip file contains the listed 2 bat files, 1 empty window.html file for backup/storage, 1 js file, 1 css file, a how-to.txt file, and all custom-ui-mod-icons.
 Customized for Vivaldi Dark Theme "Issuna" and only for tabs-top.
